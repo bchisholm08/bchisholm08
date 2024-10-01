@@ -1,4 +1,4 @@
-Hello! My name is Brady, and I'm an undergraduate at University of Minnesota, Twin-Cities. I am a Psychology major, with a Computer Science minor. 
+Hello! My name is Brady, and I'm an undergraduate student at University of Minnesota, Twin-Cities. I am a Psychology major, with a Computer Science minor. 
 
 Currently working in the Auditory Perception and Cognition Lab with Professor Andrew Oxenham, working on research related to speech and listening effort.
 
