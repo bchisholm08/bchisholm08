@@ -7,7 +7,7 @@
 - **Researching speech and listening effort** in the Auditory Perception and Cognition Lab under Professor Andrew Oxenham  
   - My Current Lab Project: working on statistic models for pupillometry data; specifically GAMM and LME
     
-  **To see work from the lab click here ➡️**
+  **To see work from the APC lab click here ➡️**
   <a href="https://apc.psych.umn.edu/" target="_blank">
     <img src="https://apc.psych.umn.edu/sites/sandbox-apc.psych.umn.edu/files/styles/folwell_third/public/2024-08/APC_Maroon_Gold_Logo_big_0.png?itok=wAUWBNNx" alt="APC Lab Logo" width="55"/>
   </a>
