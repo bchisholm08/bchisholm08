@@ -12,9 +12,9 @@
     <img src="https://apc.psych.umn.edu/sites/sandbox-apc.psych.umn.edu/files/styles/folwell_third/public/2024-08/APC_Maroon_Gold_Logo_big_0.png?itok=wAUWBNNx" alt="APC Lab Logo" width="55"/>
   </a>
   
-- I also enjoy cooking, experimental design, jazz, LEGOs, and anything related to statistics
+- **Present Career Goal:** Working towards applying for PhD programs in Psychology
 - Member of Psi Chi International Honor Society and American Psychological Association  
-- ** Present Career Goal:** Working towards applying for PhD programs in Psychology
+- I also enjoy cooking, baking, experimental design, jazz, LEGOs and anything related to statistics
 ---
 
 ### 🖥️ My Coding Languages:
