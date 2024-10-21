@@ -4,7 +4,7 @@
 ---
 ### 🔎 About Me
 - **Where I Am Now**: In-progress Bachelor of Science in Psychology, Computer Science minor at University of Minnesota, Twin Cities
-- **Researching speech and listening effort** in the Auditory Perception and Cognition Lab under Professor Andrew Oxenham  
+- **Researching speech and listening effort** with Professor Andrew Oxenham in the Auditory Perception and Cognition Lab 
   - My Current Lab Project: working on statistical models of pupillometry data; specifically GAMM and LME
     
   **To see work from the APC lab click here ➡️**
