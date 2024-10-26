@@ -2,7 +2,7 @@
 <h2 align="center">3rd year undergraduate who loves reading, spending time outside, science, and going for runs! </h2>
 
 ### 🔎 About Me
- <h4 align="left"><b><u>Check out my resume</u></b> ⮕<a href="https://github.com/bchisholm08/bchisholm08/blob/f006f3110d06e14b88d110ac6abc9d8d8f2f9c6f/professional_materials/resume_fa24_v1.pdf"> Here!</a>
+ <h4 align="left"><b><u>See my resume</u></b> ⮕<a href="https://github.com/bchisholm08/bchisholm08/blob/f006f3110d06e14b88d110ac6abc9d8d8f2f9c6f/professional_materials/resume_fa24_v1.pdf"> Here!</a>
    
 - **Where I Am Now**: Working on a Bachelor of Science in Psychology, Computer Science minor at University of Minnesota, Twin Cities
 - **Researching speech and listening effort** with Professor Andrew Oxenham in the Auditory Perception and Cognition Lab 
