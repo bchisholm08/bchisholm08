@@ -1,5 +1,4 @@
 <h1 align="center">Hello! I'm Brady M. Chisholm 👋</h1>
-<h2 align="center">3rd year undergraduate who loves reading, spending time outside, science, and going for runs! </h2>
 
 ### 🔎 About Me
  <h4 align="left"><b><u>See my resume</u></b> ⮕<a href="https://github.com/bchisholm08/bchisholm08/blob/f006f3110d06e14b88d110ac6abc9d8d8f2f9c6f/professional_materials/resume_fa24_v1.pdf"> Here!</a>
@@ -15,8 +14,8 @@
   
 - **Present Career Goal:** Working towards applying for PhD programs in Psychology
 - Member of Psi Chi International Honor Society and American Psychological Association  
-- I also enjoy cooking, baking, jazz, LEGOs and anything related to statistics
-- **Favorite Recent Read** 📖 Mistborn series by Brandon Sanderson
+- I also love reading, running, baking, jazz, LEGOs and anything that lets me spend time outside 
+- **Favorite Recent Book** 📖 Mistborn series by Brandon Sanderson
   
 ---
 ### 🖥️ My Coding Languages:
