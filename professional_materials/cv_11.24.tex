@@ -38,6 +38,8 @@
 \usepackage{ifthen} % for conditional statements
 \usepackage{needspace} % for avoiding page brake right after the section title
 \usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+\usepackage{fontawesome5} % allow use of symbols 
+
 
 % Ensure that generate pdf is machine readable/ATS parsable:
 \ifPDFTeX
@@ -118,7 +120,6 @@
 
 
 % save the original href command in a new command:
-\let\hrefWithoutArrow\href\
 
 \newenvironment{onecolentry}{
     \begin{adjustwidth}{
@@ -177,30 +178,24 @@
 \begin{document} 
 
     \begin{header}
+
     % decrease inches between name and top of page (TOP, ha) 
-        \fontsize{20 pt}{20pt}
-        \textbf{Brady M. Chisholm\\}
-        \vspace{-0.8cm} % space between my name and the info block after wards 
-        \kern{0.25 cm} % some type of normalized space in the document
-        \normalsize
-        % unsure whether or not I want to include location? Not interesting enough for the clutter it creates. Uncomment if needed
-       % \mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}Minneapolis, MN}
-       % \kern 0.25 cm
-       
-       % so apparently 
-        \kern{0.4 cm}
-        \mbox{\hrefWithoutArrow{https://github.com/bchisholm08}{{\footnotesize\faGithub}\hspace*{0.13cm}github.com/bchisholm}}%
-        \kern{0.4 cm} 
-        \mbox{\hrefWithoutArrow{mailto:chish071@umn.edu}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}chish071@umn.edu}}%
-        \kern{0.4 cm}
-        \mbox{\hrefWithoutArrow{tel: 612.499.6865}{{\footnotesize\faPhone*}\hspace*{0.13cm}612.499.6865}}%
 
+    \fontsize{30pt}{30pt}\selectfont\textbf{Brady M. Chisholm}
+
+    \vspace{0.3cm}
+
+    \normalsize
+    \mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}Minneapolis, MN}%
+    \kern 0.4cm %
+    \mbox{\href{https://github.com/bchisholm08}{{\footnotesize\faGithub}\hspace*{0.13cm}github.com/bchisholm08}}%
+    \kern 0.4cm %
+    \mbox{\href{mailto:chish071@umn.edu}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}chish071@umn.edu}}%
+    \kern 0.4cm %
+    \mbox{\href{tel:6124996865}{{\footnotesize\faPhone*}\hspace*{0.13cm}612.499.6865}}
     \end{header}
-
 %% END HEADER BLOCK
-
 %% BEGIN SECTIONS 
-
 {\fontsize{13}{12}\selectfont \textbf{Education}\\} % use fontsize{} wrapper to specify section header size 
 
 \vspace{-.3in}
