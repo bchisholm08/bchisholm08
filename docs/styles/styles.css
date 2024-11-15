@@ -22,33 +22,33 @@ h1, h2 {
     align-items: center;
     padding: 20px;
     background-color: #f9f9f9;
-}
-
-.banner-content {
-    display: flex;
-    align-items: center;
-    width: 75%; /* Takes up 3/4 of the width */
+    position: relative;
 }
 
 .banner-photo {
-    max-width: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
+    width: 75%; /* Makes the image span 3/4 of the page width */
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.intro-text {
-    text-align: left;
+.caption {
+    width: 75%; /* Matches the width of the image */
+    text-align: center;
+    margin-top: 10px;
 }
 
-.intro-text h1 {
+.caption h1 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.intro-text p {
+.caption p {
     font-size: 1.2rem;
     margin: 0;
+    color: #333;
 }
 
 /* Explore Section */
