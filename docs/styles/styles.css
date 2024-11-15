@@ -1,69 +1,86 @@
-/* General Styles */
-body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background: #007BFF;
-    color: white;
-    padding: 1rem 0;
+/* Contact Page Styles */
+.contact-intro {
     text-align: center;
+    margin: 2rem 0;
 }
 
-header h1 {
-    margin: 0;
+.contact-intro h2 {
+    font-size: 2rem;
+    color: #800000; /* Maroon */
 }
 
-header nav a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.contact-intro p {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    max-width: 600px;
 }
 
-header nav a:hover {
-    text-decoration: underline;
-}
-
-.hero {
-    background: #f4f4f4;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.hero .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 10px 20px;
-    background: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.hero .btn:hover {
-    background: #0056b3;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #f4f4f4;
-    margin-top: 2rem;
-}
-
-.slideshow-container {
+.contact-form {
     max-width: 600px;
     margin: 2rem auto;
-    text-align: center;
-}
-
-.slideshow-container img {
-    max-width: 100%;
+    padding: 1rem;
+    background: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Times New Roman', serif;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #800000; /* Maroon */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #a00000; /* Darker Maroon */
+}
+
+.social-media {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.social-media h2 {
+    font-size: 2rem;
+    color: #800000;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
