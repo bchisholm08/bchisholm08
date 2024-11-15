@@ -5,69 +5,82 @@ body {
     padding: 0;
     background: #ffffff;
     color: #000000;
-    transition: background 0.5s, color 0.5s;
 }
 
-header {
-    background: #800000; /* Maroon */
+h1, h2 {
+    margin: 0;
+    color: #800000; /* Maroon */
+}
+
+/* Header Banner Section */
+.banner {
+    position: relative;
+    text-align: center;
     color: white;
-    padding: 1rem 0;
+}
+
+.banner-photo {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+.intro-text h1 {
     font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-header nav a {
-    margin: 0 15px;
-    color: white;
+.intro-text p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+/* Links Section */
+.links-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.links-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.links-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-section li {
+    margin: 0.5rem 0;
+}
+
+.links-section a {
     text-decoration: none;
+    color: #800000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+.links-section a:hover {
+    color: #a00000; /* Slightly darker maroon */
 }
 
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.hero-text {
-    flex: 1;
-    margin-right: 2rem;
-}
-
-.hero-photo img {
-    max-width: 300px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.dark-mode {
-    background: #121212;
-    color: #e0e0e0;
-}
-
-.dark-mode header {
-    background: #444444;
-}
-
-.dark-mode-toggle {
-    margin: 20px;
-    padding: 10px 20px;
-    background: #800000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.dark-mode-toggle:hover {
-    background: #a00000;
+/* Footer */
+footer {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 10px 0;
+    margin-top: 2rem;
+    color: #000;
 }
