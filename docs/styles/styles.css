@@ -54,3 +54,16 @@ footer {
     background: #f4f4f4;
     margin-top: 2rem;
 }
+
+.slideshow-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.slideshow-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
