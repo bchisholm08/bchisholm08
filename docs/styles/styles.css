@@ -19,7 +19,7 @@ h1, h2 {
 .banner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     padding: 20px;
     background-color: #f9f9f9;
     position: relative;
@@ -27,8 +27,8 @@ h1, h2 {
 
 .banner-photo {
     width: 75%; /* Makes the image span 3/4 of the page width */
-    height: auto;
-    max-height: 300px;
+    height: 500px;
+    max-height: 500px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
