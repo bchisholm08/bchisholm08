@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poppy Photo Gallery | Brady M. Chisholm</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Google Fonts for Enhanced Typography -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Swiper.js CSS for Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="images/photo.jpg" alt="Brady M. Chisholm" class="profile-picture">
+            <h1>Poppy Photo Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Back to Homepage</a></li>
+                    <li><a href="photographs.html">Back to Photographs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="gallery-section">
+            <div class="container">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <img src="images/poppy/poppy1.jpg" alt="Poppy Playing">
+                            <div class="caption">Poppy taking a swipe at the camera </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <img src="images/poppy/poppy2.jpg" alt="Poppy Sleeping">
+                            <div class="caption">action wd</div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <img src="images/poppy/poppy3.jpg" alt="Poppy Eating">
+                            <div class="caption">action wd </div>
+                        </div>
+                        <!-- Add more slides as needed -->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Brady M. Chisholm. All rights reserved.</p>
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                    <img src="images/github.svg" alt="GitHub Icon">
+                </a>
+                <!-- Add more social media links as needed -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper.js JS for Carousel -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

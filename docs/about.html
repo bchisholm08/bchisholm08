@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Photographs | Brady M. Chisholm</title>
+    <!-- Link to External CSS -->
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- Google Fonts for Enhanced Typography -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Header Section (Same as Main Page) -->
     <header>
         <div class="container">
-            <h1>About Me</h1>
+            <img src="images/others/mePNW.jpg" alt="Brady M. Chisholm" class="profile-picture">
+            <h1>Brady M. Chisholm</h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="research.html">Research</a>
-                <a href="poppy.html">Poppy Pics</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <!-- Add more navigation links if needed -->
+                </ul>
             </nav>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main>
-        <section>
-            <h2>Hi, I'm Brady!</h2>
-            <p>I'm an undergraduate student at the University of Minnesota, studying Psychology and Computer Science. My passion lies in exploring human behavior through the lens of technology, using experimental design and statistical analysis to uncover insights.</p>
-            <p>Beyond my studies, I enjoy running, jazz music, cooking, LEGO creations, and of course, spending time with my cat, Poppy!</p>
+        <section class="documents">
+            <div class="container">
+                <p>Click below to view my current Curriculum Vitae, Resume, and Statement of Purpose.</p>
+                <h2>Documents About Me</h2>
+                <table class="documents-table">
+                    <tr>
+                        <td>
+                            <a href="cv.html" class="document-link" aria-label="View Curriculum Vitae">
+                                <img src="images/others/logos/personoutline.svg" alt="Curriculum Vitae Icon">
+                                <span>Curriculum Vitae</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="resume.html" class="document-link" aria-label="View Resume">
+                                <img src="images/others/logos/kidClipboard.svg" alt="Resume Icon">
+                                <span>Resume</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="purpose.html" class="document-link" aria-label="View Statement of Purpose">
+                                <img src="images/others/logos/cvDoc.svg" alt="Statement of Purpose Icon">
+                                <span>Statement of Purpose</span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </section>
     </main>
+
+    <!-- Footer Section (Same as Main Page) -->
     <footer>
-        <p>&copy; 2024 Brady M. Chisholm</p>
+        <div class="container">
+            <p>&copy; 2024 Brady M. Chisholm</p>
+            <!-- Social Media Links -->
+        </div>
     </footer>
 </body>
 </html>

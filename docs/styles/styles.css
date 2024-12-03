@@ -1,94 +1,466 @@
-/* General Styling */
-body {
-    font-family: 'Times New Roman', serif;
+/* =========================================================
+   General Styling
+========================================================= */
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Resetting default margins and paddings */
+* {
     margin: 0;
     padding: 0;
-    background: #ffffff;
-    color: #000000;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-h1, h2 {
-    margin: 0;
-    color: #800000; /* Maroon */
-}
-
-/* Header Banner Section */
-.banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    padding: 20px;
-    background-color: #f9f9f9;
-    position: relative;
-}
-
-.banner-photo {
-    width: 75%; /* Makes the image span 3/4 of the page width */
-    height: 500px;
-    max-height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.caption {
-    width: 75%; /* Matches the width of the image */
+/* Container Class */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 10px;
 }
 
-.caption h1 {
-    font-size: 2rem;
-    margin-bottom: 5px;
+/* =========================================================
+   Header Section
+========================================================= */
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
 }
 
-.caption p {
-    font-size: 1.2rem;
-    margin: 0;
-    color: #333;
+/* Header Container: Flex layout for profile and explore sections */
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    gap: 40px;
+}
+
+/* Profile Section */
+.profile-section {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /* Explore Section */
-.explore {
-    width: 25%; /* Takes up 1/4 of the width */
-    text-align: center;
+.explore-section {
+    flex: 1 1 300px;
 }
 
-.explore h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #800000;
+.explore-section h2 {
+    color: #800000; /* Maroon */
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
-.explore ul {
+.explore-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.explore-link {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #800000;
+    border: 2px solid #800000;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.explore-link:hover {
+    background-color: #a00000; /* Darker maroon */
+    transform: translateY(-3px);
+}
+
+/* Navigation Menu */
+nav {
+    margin-top: 20px;
+}
+
+.nav-menu {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-menu li {
     margin: 0;
 }
 
-.explore li {
-    margin: 10px 0;
-}
-
-.explore a {
+.nav-menu a {
     text-decoration: none;
     color: #800000;
-    font-weight: bold;
+    font-size: 1rem;
     transition: color 0.3s;
 }
 
-.explore a:hover {
-    color: #a00000; /* Slightly darker maroon */
+.nav-menu a:hover {
+    color: #a00000; /* Darker maroon */
 }
 
-/* Footer */
-footer {
+/* =========================================================
+   Main Content
+========================================================= */
+
+/* Intro Section */
+.intro {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 10px auto;
+    color: #333333;
+}
+
+/* =========================================================
+   Documents Section
+========================================================= */
+
+.documents {
+    background-color: #fafafa; /* Light background to differentiate section */
+    padding: 40px 0;
+}
+
+.documents h2 {
+    color: #800000; /* Maroon */
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.documents p {
+    color: #555555;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* Flexbox Layout for Documents */
+.documents-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.document-link {
+    text-decoration: none;
+    color: #800000;
+    background-color: #ffffff;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.document-link img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.document-link span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Hover Effects for Document Links */
+.document-link:hover {
+    background-color: #800000;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.document-link:hover img {
+    filter: brightness(0) invert(1); /* Invert image colors for contrast */
+}
+
+/* =========================================================
+   Photographs Section
+========================================================= */
+
+/* Gallery Section */
+.gallery-section {
+    padding: 40px 0;
+    background-color: #fafafa;
+}
+
+.gallery-section h2 {
+    color: #800000;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.gallery-section h3 {
+    color: #555555;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Swiper Container */
+.swiper-container {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Swiper Slide */
+.swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Figure and Figcaption */
+.swiper-slide figure {
+    margin: 0;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.swiper-slide figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(128, 0, 0, 0.6); /* Semi-transparent maroon */
+    color: #ffffff;
+    font-size: 1rem;
     text-align: center;
-    background: #f4f4f4;
-    padding: 10px 0;
-    color: #000;
-    margin-top: auto; /* Ensures the footer is at the bottom */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show Caption on Hover */
+.swiper-slide:hover figcaption {
+    opacity: 1;
+}
+
+/* Optional: Always Show Caption */
+.swiper-slide figcaption {
+    opacity: 1;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #800000;
+}
+
+.swiper-pagination-bullet {
+    background: #800000;
+}
+
+.swiper-pagination-bullet-active {
+    background: #a00000;
+}
+
+/* =========================================================
+   Footer Section
+========================================================= */
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #800000;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #a00000;
+}
+
+/* =========================================================
+   Responsive Design
+========================================================= */
+
+/* Tablet and Larger Mobile */
+@media (max-width: 992px) {
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .explore-link {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-section {
+        flex: 1 1 100%;
+    }
+
+    .explore-section {
+        flex: 1 1 100%;
+    }
+
+    .explore-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .explore-links {
+        gap: 10px;
+    }
+
+    .explore-link {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .documents-flex {
+        gap: 20px;
+    }
+
+    .document-link {
+        width: 120px;
+        padding: 15px;
+    }
+
+    .document-link img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .document-link span {
+        font-size: 0.9rem;
+    }
+
+    .gallery-section h3 {
+        font-size: 1rem;
+    }
+
+    .swiper-container {
+        max-width: 100%;
+    }
+
+    .swiper-slide figcaption,
+    .swiper-slide .caption {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .explore-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .explore-link {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .nav-menu a {
+        font-size: 0.9rem;
+    }
+}
+
+/* =========================================================
+   Smooth Scrolling
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================================================
+   Accessibility Enhancements
+========================================================= */
+
+/* Focus States */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #800000;
+    outline-offset: 2px;
 }
