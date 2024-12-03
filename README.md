@@ -1,8 +1,10 @@
 <h1 align="center">Hello! I'm Brady M. Chisholm 👋</h1>
 
 ### 🔎 About Me
- <h4 align="left"><b><u>See my resume</u></b> ⮕<a href="https://github.com/bchisholm08/bchisholm08/blob/a82b11ff14daf9b38fd94a9a8ae35e9b3bd5f5d8/professional_materials/resume_fa24_v1.pdf"> Here!</a>
-   
+ <h4 align="left"><b><u>Check out my website</u></b> <a href="https://brady-c.cc"> here </a> <b> for more info about me</b>
+   <b><h4>Or search <a>brady-c.cc</a></h4></b>
+
+  
 - **Where I Am Now**: Working on a Bachelor of Science in Psychology, Computer Science minor at University of Minnesota, Twin Cities
 - **Researching speech and listening effort** with Professor Andrew Oxenham in the Auditory Perception and Cognition Lab 
   - My Current Lab Project: working on statistical models of pupillometry data; specifically GAMM and LME
