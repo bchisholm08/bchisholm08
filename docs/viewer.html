@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Viewer | Brady M. Chisholm</title>
@@ -15,34 +16,23 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-
+            <h1>Document Viewer</h1>
             <nav>
                 <ul>
-                    <a href="index.html">Back to Homepage</a>
-                    <!-- Add more navigation links if needed -->
+                    <li><a href="about.html">Back to Documents</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Viewer Section -->
+    <!-- Main Content -->
     <main>
-        <section class="document-viewer">
+        <section class="document-viewer-section">
             <div class="container">
-                <h2>Document Viewer</h2>
-                <iframe 
-                    src="" 
-                    id="pdf-viewer-frame" 
-                    width="100%" 
-                    height="800px" 
-                    frameborder="0">
-                </iframe>
+                <iframe id="document-viewer" width="100%" height="800px" style="border: none;"></iframe>
             </div>
         </section>
     </main>
-
-    <button onclick="window.history.back();" class="back-button">Back to Documents</button>
-
 
     <!-- Footer Section -->
     <footer>
@@ -53,17 +43,15 @@
 
     <!-- JavaScript to Load the PDF -->
     <script>
-        // Get the document URL from the query string
-        const params = new URLSearchParams(window.location.search);
-        const pdfUrl = params.get('pdf');
-
-        // Update iframe src with the provided URL
-        if (pdfUrl) {
-            document.getElementById('pdf-viewer-frame').src = pdfUrl;
-        } else {
-            // Display a message if no document is specified
-            document.getElementById('pdf-viewer-frame').parentElement.innerHTML = '<p>No document found to display. Please use the menu to select a document.</p>';
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const pdfUrl = urlParams.get('pdf');
+            if (pdfUrl) {
+                document.getElementById('document-viewer').src = pdfUrl;
+            } else {
+                document.getElementById('document-viewer').innerHTML = '<p>Error loading document. Please check the URL.</p>';
+            }
+        });
     </script>
 </body>
 </html>
