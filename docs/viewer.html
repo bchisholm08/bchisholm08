@@ -41,13 +41,14 @@
         </div>
     </footer>
 
-    <!-- JavaScript to Load the PDF -->
+    <!-- JavaScript to Load the PDF via Google Docs Viewer -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const pdfUrl = urlParams.get('pdf');
             if (pdfUrl) {
-                document.getElementById('document-viewer').src = pdfUrl;
+                const googleViewerUrl = `https://docs.google.com/viewer?url=${pdfUrl}&embedded=true`;
+                document.getElementById('document-viewer').src = googleViewerUrl;
             } else {
                 document.getElementById('document-viewer').innerHTML = '<p>Error loading document. Please check the URL.</p>';
             }
