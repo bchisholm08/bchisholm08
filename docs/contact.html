@@ -25,7 +25,7 @@
             <!-- Navigation Menu -->
             <nav>
                 <ul>
-                    <li><a href="index.html">Back to Homepage</a></li>
+                    <a href="index.html">Back to Homepage</a>
                 </ul>
             </nav>
         </div>
@@ -41,29 +41,29 @@
                     <!-- Name Field -->
                     <div class="form-group">
                         <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-label="Full Name">
                     </div>
                     
                     <!-- Email Field -->
                     <div class="form-group">
                         <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-label="Email Address">
                     </div>
                     
                     <!-- Message Field -->
                     <div class="form-group">
                         <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required aria-label="Message"></textarea>
                     </div>
                     
                     <!-- Submit Button -->
                     <button type="submit" class="btn">Send Message</button>
                     
                     <!-- Success Message -->
-                    <p class="success-message">Thank you for reaching out! I'll get back to you soon.</p>
+                    <p class="success-message" style="display: none;">Thank you for reaching out! I'll get back to you soon.</p>
                     
                     <!-- Error Message -->
-                    <p class="error-message">Oops! Something went wrong. Please try again.</p>
+                    <p class="error-message" style="display: none;">Oops! Something went wrong. Please try again.</p>
                 </form>
             </div>
         </section>
@@ -73,7 +73,6 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Brady M. Chisholm. All rights reserved.</p>
-            </div>
         </div>
     </footer>
 
@@ -102,7 +101,7 @@
                         form.reset();
                     } else {
                         return response.json().then(data => {
-                            throw new Error(data.error || 'Something went wrong!');
+                            throw new Error(data.error || 'Something went wrong! Please try again.');
                         });
                     }
                 })
@@ -115,5 +114,4 @@
         });
     </script>
 </body>
-
 </html>

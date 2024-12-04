@@ -4,7 +4,7 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photographs | Brady M. Chisholm</title>
+    <title>About Me | Brady M. Chisholm</title>
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="styles/styles.css">
     <!-- Google Fonts for Enhanced Typography -->
@@ -16,7 +16,7 @@
     <!-- Header Section (Same as Main Page) -->
     <header>
         <div class="container">
-            <img src="images/others/mePNW.jpg" alt="Brady M. Chisholm" class="profile-picture">
+            <img src="images\others\seattleFog.jpg" alt="Brady M. Chisholm" class="profile-picture">
             <h1>Brady M. Chisholm</h1>
             <nav>
                 <ul>
@@ -32,32 +32,42 @@
         <section class="documents">
             <div class="container">
                 <p>Click below to view my current Curriculum Vitae, Resume, and Statement of Purpose.</p>
-                <p>Note that currently my resume and statement of purpose are a work in progress and will be uploaded 
-                    as I finish them. Most information about me is in my CV, feel free to browse there.
-                </p>
-                <h2>My Documents</h2>
-                <table class="documents-table centered">
+                <p>Currently my resume and statement of purpose are a work in progress and will be uploaded as I finish them. 
+                    Most information about me is in my CV, feel free to browse there.</p>
+                
+                    <br></div></br>
+                    <br></div></br>
+                    
+                    <h2>My Documents</h2>
+                
+                <!-- Document Table Section -->
+                <table class="documents-table">
                     <tr>
                         <td>
-                            <a href="professional_materials/cv_fa24_verN.pdf" class="document-link centered" aria-label="View Curriculum Vitae">
-                                <img src="images/others/logos/personoutline.svg" alt="Curriculum Vitae Icon">
+                            <a href="javascript:void(0);" onclick="showDocument('professional_materials/cv_fa24_verN.pdf')" class="document-link" aria-label="View Curriculum Vitae">
+                                <img src="images/others/logos/personoutline.svg" alt="Curriculum Vitae Icon" class="document-icon">
                                 <span>Curriculum Vitae</span>
                             </a>
                         </td>
                         <td>
-                            <a href="professional_materials/placeholder.pdf" class="document-link" aria-label="View Resume">
-                                <img src="images/others/logos/kidClipboard.svg" alt="Resume Icon">
+                            <a href="javascript:void(0);" onclick="showDocument('professional_materials/placeholder.pdf')" class="document-link" aria-label="View Resume">
+                                <img src="images/others/logos/kidClipboard.svg" alt="Resume Icon" class="document-icon">
                                 <span>Resume (I.P.)</span>
                             </a>
                         </td>
                         <td>
-                            <a href="professional_materials/placeholder.pdf" class="document-link" aria-label="View Statement of Purpose">
-                                <img src="images/others/logos/cvDoc.svg" alt="Statement of Purpose Icon">
+                            <a href="javascript:void(0);" onclick="showDocument('professional_materials/placeholder.pdf')" class="document-link" aria-label="View Statement of Purpose">
+                                <img src="images/others/logos/cvDoc.svg" alt="Statement of Purpose Icon" class="document-icon">
                                 <span>Statement of Purpose (I.P.)</span>
                             </a>
                         </td>
                     </tr>
                 </table>
+
+                <!-- Document Viewer Section -->
+                <div id="document-viewer" class="document-viewer">
+                    <!-- This is where the document will be embedded dynamically -->
+                </div>
             </div>
         </section>
     </main>
@@ -69,5 +79,20 @@
             <!-- Social Media Links -->
         </div>
     </footer>
+
+    <!-- JavaScript to Display PDF -->
+    <script>
+        function showDocument(pdfUrl) {
+            const viewer = document.getElementById('document-viewer');
+            viewer.innerHTML = `
+                <iframe 
+                    src="${pdfUrl}" 
+                    width="100%" 
+                    height="800px"
+                    frameborder="0">
+                </iframe>
+            `;
+        }
+    </script>
 </body>
 </html>
