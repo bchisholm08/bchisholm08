@@ -333,3 +333,45 @@ textarea:focus {
 .error-message {
     color: #dc3545; /* Red for error */
 }
+
+/* =========================================================
+   Document Links Section
+========================================================= */
+
+.documents-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align all items */
+    gap: 20px; /* Space between each item */
+    margin-top: 30px; /* Space above the documents section */
+}
+
+.document-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #800000; /* Maroon border to match color scheme */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for some depth */
+    transition: transform 0.3s; /* Smooth scaling effect */
+    max-width: 200px; /* Limit the width of each document box */
+}
+
+.document-item:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+}
+
+.document-link {
+    text-decoration: none;
+    color: #800000; /* Maroon color for link text */
+    text-align: center;
+    font-weight: bold;
+}
+
+.document-icon {
+    width: 80px; /* Set a consistent width for icons */
+    height: 80px; /* Set a consistent height for icons */
+    margin-bottom: 10px; /* Space between the icon and text */
+}
