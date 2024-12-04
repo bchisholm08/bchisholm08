@@ -293,7 +293,7 @@ header {
     margin: 20px auto; /* Centers the footer and adds vertical spacing */
     max-width: none; /* Allow it to expand to the full 95% */
 }
-
+/* blibbidy bloah blah */
 .footer-container {
     display: flex;
     justify-content: space-between;
