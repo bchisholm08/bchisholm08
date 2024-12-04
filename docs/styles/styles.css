@@ -351,12 +351,13 @@ textarea:focus {
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 15px;
     border: 2px solid #800000; /* Maroon border to match color scheme */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for some depth */
-    transition: transform 0.3s; /* Smooth scaling effect */
-    max-width: 200px; /* Limit the width of each document box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+    max-width: 160px; /* Limit the width of each document box */
+    text-align: center; /* Align text to center */
 }
 
 .document-item:hover {
@@ -366,12 +367,12 @@ textarea:focus {
 .document-link {
     text-decoration: none;
     color: #800000; /* Maroon color for link text */
-    text-align: center;
     font-weight: bold;
 }
 
 .document-icon {
-    width: 80px; /* Set a consistent width for icons */
-    height: 80px; /* Set a consistent height for icons */
+    width: 50px !important; /* Set a consistent width for icons */
+    height: 50px !important; /* Set a consistent height for icons */
     margin-bottom: 10px; /* Space between the icon and text */
+    object-fit: contain; /* Ensure the entire icon is visible */
 }
