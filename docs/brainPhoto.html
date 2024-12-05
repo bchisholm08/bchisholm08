@@ -4,7 +4,7 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brain Scans Gallery | B.M.C.</title>
+    <title>Brain Photos | B.M.C.</title>
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="styles/styles.css">
     <!-- Google Fonts for Enhanced Typography -->
@@ -13,32 +13,36 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Swiper.js CSS for Carousel -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- Lightbox CSS for image viewing -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1>Brain Scans Gallery</h1>
-            <nav>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="header-name">
+                <h1>Brady M. Chisholm</h1>
+            </div>
+            <nav class="header-links">
                 <ul>
-                    <a href="index.html">Back to Homepage</a></li>
-                    <a href="photographs.html">Back to Photographs Homepage</a></li>
+                   <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
+
+    <main>
+        <section style="padding: 40px 20px; background-color: #f9f9f9;">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h1 style="font-size: 2.0rem; font-weight: bold; text-align: center; color: #800000; margin-bottom: 10px;">Brain Photo Gallery</h1>
+                <p style="font-size: 1.2rem; color: #555555; max-width: 800px; margin: 0 auto;">
+                    Browse my collection of fMRI scans. These are from my participation in an experiment 
+                    for Yongtian Ou, a Ph.D. student in the APC lab. </p>
+            </div>
+               <!-- Main Content -->
     <main>
         <section style="padding: 40px 20px;">
-            <h1 style="font-size: 2.5rem; text-align: center; font-weight: bold; color: #800000;">Brain Scans Gallery</h1>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666666;">
-                This page showcases different brain scan views I generated. Each scan shows a unique aspect of the brain using different imaging techniques. Feel free to click on each image for a larger view!
-            </p>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
-        
                 <!-- T1 Scan View 1 -->
                 <div style="width: 300px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s; background-color: #ffffff; border-radius: 10px;">
                     <a href="images/brainscans/T1_view1.png" data-lightbox="brain-gallery" data-title="T1 Brain Scan - View 1">
@@ -118,5 +122,9 @@
 
     <!-- Lightbox JS for Image Viewing -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
