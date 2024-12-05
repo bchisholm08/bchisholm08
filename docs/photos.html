@@ -4,7 +4,7 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photos | B.M.C.</title>
+    <title>Photos (main)| B.M.C.</title>
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="styles/styles.css">
     <!-- Google Fonts for Enhanced Typography -->
@@ -14,57 +14,81 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="container">
-            <img src="images/photo.jpg" alt="Brady M. Chisholm" class="profile-picture">
-            <h1>Brady M. Chisholm</h1>
-            <nav>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="header-name">
+                <h1>Brady M. Chisholm</h1>
+            </div>
+            <nav class="header-links">
                 <ul>
-                    <li><a href="index.html">Back to Homepage</a></li>
-                    <!-- Add more navigation links if needed -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="photographs">
-            <div class="container">
-                <h2>Photo Galleries</h2>
-                <h3>Browse photos featuring my kitten Poppy, fMRI scans of my brain, and outdoor photography.</h3>
-                <div class="icon-gallery">
-                    <a href="poppyPhoto.html" class="gallery-icon" aria-label="Poppy Photo Gallery">
-                        <img src="images/poppy-icon.svg" alt="Poppy Photo Icon">
-                        <span>Poppy</span>
-                    </a>
-                    <a href="brainscan.html" class="gallery-icon" aria-label="Brain Scan Gallery">
-                        <img src="images/brainscan-icon.svg" alt="Brain Scan Icon">
-                        <span>fMRI Scans</span>
-                    </a>
-                    <a href="outside.html" class="gallery-icon" aria-label="Outdoor Photography Gallery">
-                        <img src="images/outside-icon.svg" alt="Outdoor Photography Icon">
-                        <span>Outdoors</span>
-                    </a>
-                </div>
+    <section style="padding: 30px 10px; background-color:#d6d9dc;">
+        <div class="container">
+            <img src="images/others/portlandScenary.jpg" alt="Oregon Coast Sunset. August 2024.">
+            <br>
+            <h3>A beautiful Oregon Coast sunset. August 2024.</h3>
+            <br>
+        </div>
+    </section>
+
+    <section style="padding: 60px 20px; background-color: #f9f9f9;">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h1 style="font-size: 1.75rem; font-weight: bold; text-align: center; color: #800000; margin-bottom: 15px;">Video Highlight</h1>
+        </div>
+        
+        <div style="text-align: center; margin: 0 auto;">
+            <video controls style="width: 90%; max-width: 800px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <source src="images/brainscans/fsviz.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div style="padding: 10px; text-align: center;">
+                <h3 style="font-size: 1.0rem; font-weight: bold; color: #333333;">fMRI Visualization</h3>
+                <p style="font-size: 1rem; color: #666666;">Above is an animation of transverse slices of my brain animated together. From CMRR @ UMN-TC
+                </p>
             </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main style="padding-top: 35px;">
+        <section class="photographs">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 40px; align-items: flex-start;">
+                <a href="plotArt.html" class="gallery-icon" aria-label="Plot Art">
+                    <img src="images/others/logos/camera.svg" alt="Graphing Icon" style="display: block; margin: 0 auto;">
+                    <span style="display: block; text-align: center; font-weight: bold; font-size: 1.1em;">Graph & Plotting Art</span>
+                </a>
+                <a href="poppyPhoto.html" class="gallery-icon" aria-label="Poppy Photo Gallery">
+                    <img src="images/others/logos/camera.svg" alt="Poppy Photo Icon" style="display: block; margin: 0 auto;">
+                    <span style="display: block; text-align: center; font-weight: bold; font-size: 1.1em;">Poppy</span>
+                </a>
+                <a href="brainscan.html" class="gallery-icon" aria-label="Brain Scan Gallery">
+                    <img src="images/others/logos/camera.svg" alt="Brain Scan Icon" style="display: block; margin: 0 auto;">
+                    <span style="display: block; text-align: center; font-weight: bold; font-size: 1.1em;">fMRI Scans</span>
+                </a>
+                <a href="outsidePics.html" class="gallery-icon" aria-label="Outdoor Photography Gallery">
+                    <img src="images/others/logos/camera.svg" alt="Outdoor Photography Icon" style="display: block; margin: 0 auto;">
+                    <span style="display: block; text-align: center; font-weight: bold; font-size: 1.1em;">Outdoors</span>
+                </a>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
         </section>
     </main>
-
     <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Brady M. Chisholm. All rights reserved.</p>
-            <!-- Social Media Links -->
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
-                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
-                </a>
-                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
-                    <img src="images/github.svg" alt="GitHub Icon">
-                </a>
-                <!-- Add more social media links as needed -->
-            </div>
         </div>
     </footer>
 </body>
