@@ -4,41 +4,179 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | B.M.C.</title>
-    <!-- Link to External CSS -->
+    <title>B.M.C. | Contact</title>
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- Google Fonts for Enhanced Typography -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');">
+    
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Meta Description for SEO -->
+    <link rel="icon" href="images/logos/custom/colorschm2-smallLogo.svg" type="image/x-icon">
+    
+    <!-- Meta Description & Keywords -->
     <meta name="description" content="Contact Brady M. Chisholm, an undergraduate student in Psychology and Research Assistant in Auditory Perception and Neuroscience.">
-    <!-- Meta Keywords for SEO -->
     <meta name="keywords" content="Brady Chisholm, Contact, Psychology, AI, Artificial Intelligence, Machine Learning, Research Assistant, Auditory Perception, Neuroscience">
 </head>
 <body>
-    <!-- Header Section -->
+<!--HEADER BEGIN (end ln 179)-->
     <header class="main-header" aria-label="Site Header">
         <div class="header-container">
-          <div class="header-logo">
+          <div class="header-logo-name">
             <!-- Optional Logo Image -->
-            <img src="images/logo.png" alt="My Personal Logo" class="logo-img">
+            <img src="images/logos/custom/colorschm2-smallLogo.svg" alt="My Personal Logo" class="logo-img">
             <div class="header-name">Brady M. Chisholm</div>
           </div>
-          
+      
           <nav class="header-links" aria-label="Main Navigation">
             <ul>
               <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="projects.html" class="nav-link">Projects</a></li>
               <li><a href="about.html" class="nav-link">About Me</a></li>
               <li><a href="contact.html" class="nav-link">Contact</a></li>
-              <li><a href="photos.html" class="nav-link">Photo Library</a></li>
+              <li><a href="photos.html" class="nav-link">Image Gallery</a></li>
             </ul>
-            <!-- Possibly add a hamburger icon for mobile -->
           </nav>
+      
+          <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
         </div>
       </header>
+        <!-- Optional Logo Image -->
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=TimesNewRoman:400,700&display=swap');
       
-    <!-- /HEADER -->
+        :root {
+          --maroon: #800000;
+          --maroon-hover: #a00000;
+          --white: #ffffff;
+          --grey-light: #f4f4f4;
+          --grey-dark: #555555;
+        }
+      
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      
+        .main-header {
+          background-color: var(--maroon);
+          color: var(--white);
+          padding: 20px 0;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+          position: sticky;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+        }
+      
+        .header-container {
+          width: 95%;
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      
+        .header-logo-name {
+          display: flex;
+          align-items: center;
+        }
+      
+        .logo-img {
+          width: 125px;
+          height: 50px;
+          margin-right: 10px;
+        }
+      
+        .header-name {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      
+        .header-links ul {
+          list-style: none;
+          display: flex;
+          gap: 20px;
+          padding: 0;
+          margin: 0;
+        }
+      
+        .header-links .nav-link {
+          text-decoration: none;
+          font-size: 1rem;
+          color: var(--white);
+          font-weight: bold;
+          padding: 10px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease, color 0.3s ease;
+        }
+      
+        .header-links .nav-link.active {
+          font-weight: bold;
+          border-bottom: 2px solid var(--white);
+        }
+      
+        .header-links .nav-link:hover {
+          background-color: var(--white);
+          color: var(--maroon);
+        }
+      
+        .hamburger-menu {
+          display: none;
+          flex-direction: column;
+          gap: 5px;
+          border: none;
+          background: none;
+          cursor: pointer;
+        }
+      
+        .hamburger-menu .line {
+          width: 25px;
+          height: 3px;
+          background-color: var(--white);
+        }
+      
+        @media (max-width: 768px) {
+          .header-links {
+            display: none;
+          }
+      
+          .hamburger-menu {
+            display: flex;
+          }
+      
+          .header-links.active {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: var(--maroon);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+          }
+      
+          .header-links ul {
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+      </style>
+      
+      <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+          document.querySelector('.header-links').classList.toggle('active');
+        });
+      </script>
+      
+    <!-- /HEADER END -->
 
     <!-- Main Content -->
     <main>
