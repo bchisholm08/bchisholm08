@@ -1,0 +1,284 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Brady M. Chisholm | Home</title>
+    
+    <!-- Google Fonts (Roboto) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Contact Brady M. Chisholm, an undergraduate student in Psychology and Research Assistant in Auditory Perception and Neuroscience." />
+    <meta name="keywords" content="Brady Chisholm, Contact, Psychology, AI, Machine Learning, Research Assistant, Auditory Perception, Neuroscience" />
+</head>
+<body>
+    <header class="main-header" aria-label="Site Header">
+        <div class="header-container">
+          <div class="header-logo-name">
+            <!-- Optional Logo Image -->
+            <img src="images/logos/custom/tinyLogo.png" alt="My Personal Logo" class="logo-img">
+            <div class="header-name">Brady M. Chisholm</div>
+          </div>
+      
+          <nav class="header-links" aria-label="Main Navigation">
+            <ul>
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="projects.html" class="nav-link">Projects</a></li>
+              <li><a href="about.html" class="nav-link">About Me</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li><a href="photos.html" class="nav-link">Image Gallery</a></li>
+            </ul>
+          </nav>
+      
+          <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+        </div>
+      </header>
+      
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+      
+        :root {
+          --maroon: #800000;
+          --maroon-hover: #a00000;
+          --white: #ffffff;
+          --grey-light: #f4f4f4;
+          --grey-dark: #555555;
+        }
+      
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      
+        .main-header {
+          background-color: var(--maroon);
+          color: var(--white);
+          padding: 20px 0;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+          position: sticky;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+        }
+      
+        .header-container {
+          width: 95%;
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      
+        .header-logo-name {
+          display: flex;
+          align-items: center;
+        }
+      
+        .logo-img {
+          width: 125px;
+          height: 50px;
+          margin-right: 10px;
+        }
+      
+        .header-name {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      
+        .header-links ul {
+          list-style: none;
+          display: flex;
+          gap: 20px;
+          padding: 0;
+          margin: 0;
+        }
+      
+        .header-links .nav-link {
+          text-decoration: none;
+          font-size: 1rem;
+          color: var(--white);
+          font-weight: bold;
+          padding: 10px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease, color 0.3s ease;
+        }
+      
+        .header-links .nav-link.active {
+          font-weight: bold;
+          border-bottom: 2px solid var(--white);
+        }
+      
+        .header-links .nav-link:hover {
+          background-color: var(--white);
+          color: var(--maroon);
+        }
+      
+        .hamburger-menu {
+          display: none;
+          flex-direction: column;
+          gap: 5px;
+          border: none;
+          background: none;
+          cursor: pointer;
+        }
+      
+        .hamburger-menu .line {
+          width: 25px;
+          height: 3px;
+          background-color: var(--white);
+        }
+      
+        @media (max-width: 768px) {
+          .header-links {
+            display: none;
+          }
+      
+          .hamburger-menu {
+            display: flex;
+          }
+      
+          .header-links.active {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: var(--maroon);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+          }
+      
+          .header-links ul {
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+      </style>
+      
+      <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+          document.querySelector('.header-links').classList.toggle('active');
+        });
+      </script>
+      
+    <!-- /HEADER -->
+
+    <section class="collage-gallery">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Below are various projects I have worked on. Some 
+            are for coding competitions or just for fun. A brief description and 
+            links to code when available accompany each card. Click around to learn more!
+          </p>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <a href="project1.html" class="project-link">
+                <img src="images/others/bobMarsh.jpeg" alt="Bob Marshall Wilderness Area">
+                <h3>Big10LoveData Week Competition, 2025</h3>
+                <p>Opportunity for students, as well as faculty 
+                    and staff, at Big Ten institutions to showcase 
+                    their data visualization skills and to compete for 
+                    the title of Big Ten Academic Alliance Data Viz Champion
+            </p>
+              
+              <a href="https://app.griffith.edu.au/events/event/63600" target="_blank">Image Source</a>
+            </div>
+ 
+
+
+            
+              
+            <!-- Add more items as needed -->
+            <div class="gallery-item">
+                
+                  <img src="images/others/R-labStock.jpg" alt="R Coding Language">
+                  <h3>PsiChi R Data Science Competition</h3>
+                
+                <p>
+                  A monthly competition hosted by PsiChi through their <a href="https://osf.io/f5zjr/" target="_blank">Open Science Foundation page</a>. 
+                  A GitHub repo of my code submissions can be found <a href="https://github.com/bchisholm08/OSF_graphingCompetition" target="_blank">here</a>.
+                </p>
+                <a href="https://app.griffith.edu.au/events/event/63600" target="_blank">Image Source</a>
+              </div>
+        </div>
+      </section>
+      
+      <style>
+        .collage-gallery {
+          background-color: var(--grey-light);
+          padding: 60px 0;
+        }
+      
+        .gallery-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+        }
+      
+        .gallery-item {
+          width: 300px;
+          background-color: #ffffff;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          text-align: center;
+          transition: transform 0.3s;
+          padding-bottom: 20px;
+        }
+      
+        .gallery-item img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      
+        .gallery-item h3 {
+          font-size: 1.2rem;
+          margin: 15px 0 5px;
+        }
+      
+        .gallery-item p {
+          font-size: 1rem;
+          color: #666666;
+          margin: 0 10px;
+        }
+      
+        .gallery-item:hover {
+          transform: translateY(-5px);
+        }
+      
+        .project-link {
+          text-decoration: none;
+          color: inherit;
+        }
+      
+        .project-link:hover h3 {
+          color: var(--maroon);
+        }
+      </style>
+      
+      <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+          document.querySelector('.header-links').classList.toggle('active');
+        });
+      </script>

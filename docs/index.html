@@ -4,256 +4,318 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brady M. Chisholm | Home </title>
-    <!-- Link to External CSS -->
+    <title>Brady M. Chisholm | Home</title>
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- Google Fonts for Enhanced Typography -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');">
+    
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Meta Description for SEO -->
+    <link rel="icon" href="images/logos/custom/tinyLogo.png" type="image/x-icon">
+    
+    <!-- Meta Description & Keywords -->
     <meta name="description" content="Contact Brady M. Chisholm, an undergraduate student in Psychology and Research Assistant in Auditory Perception and Neuroscience.">
-    <!-- Meta Keywords for SEO -->
     <meta name="keywords" content="Brady Chisholm, Contact, Psychology, AI, Artificial Intelligence, Machine Learning, Research Assistant, Auditory Perception, Neuroscience">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="main-header" style="background-color: #800000; color: #ffffff; padding: 20px 0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
-        <div class="header-container" style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-            <!-- Name Section -->
-            <div class="header-name" style="font-size: 2rem; font-weight: bold;">
-                Brady M. Chisholm
-            </div>
-            <!-- Navigation Menu -->
-            <nav class="header-links" style="font-size: 1rem;">
-                <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
-                    <li><a href="index.html" style="text-decoration: none; color: #ffffff; font-weight: bold; transition: color 0.3s ease; padding: 10px; border-radius: 5px;">Home</a></li>
-                    <li><a href="about.html" style="text-decoration: none; color: #ffffff; font-weight: bold; transition: color 0.3s ease; padding: 10px; border-radius: 5px;">About Me</a></li>
-                    <li><a href="contact.html" style="text-decoration: none; color: #ffffff; font-weight: bold; transition: color 0.3s ease; padding: 10px; border-radius: 5px;">Contact</a></li>
-                    <li><a href="photographs.html" style="text-decoration: none; color: #ffffff; font-weight: bold; transition: color 0.3s ease; padding: 10px; border-radius: 5px;">Photo Gallery</a></li>
-                </ul>
-            </nav>
+<!--HEADER BEGIN (end ln 179)-->
+    <header class="main-header" aria-label="Site Header">
+        <div class="header-container">
+          <div class="header-logo-name">
+            <!-- Optional Logo Image -->
+            <img src="images/logos/custom/tinyLogo.png" alt="My Personal Logo" class="logo-img">
+            <div class="header-name">Brady M. Chisholm</div>
+          </div>
+      
+          <nav class="header-links" aria-label="Main Navigation">
+            <ul>
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="projects.html" class="nav-link">Projects</a></li>
+              <li><a href="about.html" class="nav-link">About Me</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li><a href="photos.html" class="nav-link">Image Gallery</a></li>
+            </ul>
+          </nav>
+      
+          <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
         </div>
-    </header>
+      </header>
+        <!-- Optional Logo Image -->
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=TimesNewRoman:400,700&display=swap');
+      
+        :root {
+          --maroon: #800000;
+          --maroon-hover: #a00000;
+          --white: #ffffff;
+          --grey-light: #f4f4f4;
+          --grey-dark: #555555;
+        }
+      
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      
+        .main-header {
+          background-color: var(--maroon);
+          color: var(--white);
+          padding: 20px 0;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+          position: sticky;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+        }
+      
+        .header-container {
+          width: 95%;
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      
+        .header-logo-name {
+          display: flex;
+          align-items: center;
+        }
+      
+        .logo-img {
+          width: 125px;
+          height: 50px;
+          margin-right: 10px;
+        }
+      
+        .header-name {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      
+        .header-links ul {
+          list-style: none;
+          display: flex;
+          gap: 20px;
+          padding: 0;
+          margin: 0;
+        }
+      
+        .header-links .nav-link {
+          text-decoration: none;
+          font-size: 1rem;
+          color: var(--white);
+          font-weight: bold;
+          padding: 10px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease, color 0.3s ease;
+        }
+      
+        .header-links .nav-link.active {
+          font-weight: bold;
+          border-bottom: 2px solid var(--white);
+        }
+      
+        .header-links .nav-link:hover {
+          background-color: var(--white);
+          color: var(--maroon);
+        }
+      
+        .hamburger-menu {
+          display: none;
+          flex-direction: column;
+          gap: 5px;
+          border: none;
+          background: none;
+          cursor: pointer;
+        }
+      
+        .hamburger-menu .line {
+          width: 25px;
+          height: 3px;
+          background-color: var(--white);
+        }
+      
+        @media (max-width: 768px) {
+          .header-links {
+            display: none;
+          }
+      
+          .hamburger-menu {
+            display: flex;
+          }
+      
+          .header-links.active {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: var(--maroon);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+          }
+      
+          .header-links ul {
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+      </style>
+      
+      <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+          document.querySelector('.header-links').classList.toggle('active');
+        });
+      </script>
+      
+    <!-- /HEADER END -->
 
     <!-- Quick Links Section -->
-    <section class="quick-links" style="background-color: #f9f9f9; padding: 30px 0; text-align: left;">
-        <div class="container" style="max-width: 600px; margin: 0 auto;">
-            <h2 style="color: #800000; font-size: 1.0rem; font-weight: bold; margin-bottom: 10px;">Quick Links</h2>
-    
-            <!-- Links Section -->
-            <div style="margin-bottom: 20px;">
-                <a href="bchisholm08/professional_materials/cv_fa24_verN.pdf" target="_blank" class="quick-link" style="text-decoration: none; color: #800000; border: .5px solid #800000; padding: 10px 20px; border-radius: 6px; font-size: 1rem; transition: background-color 0.3s, color 0.3s, transform 0.3s; margin: 8px; display: inline-block;">
-                    My CV
-                </a>
+    <section class="quick-links-section">
+        <div class="container narrow">
+            <h2 class="section-title-sm">Quick Links</h2>
+            <div class="quick-link-wrapper">
+                <a href="bchisholm08/professional_materials/cv_fa24_verN.pdf" target="_blank" class="quick-link">CV</a>
             </div>
-    
-            <p style="color: #555555; font-size: 1rem; margin-bottom: 15px;">Click below to learn more about labs I'm involved in:</p>
-    
-            <!-- Lab Link Section -->
-            <div>
-                <a href="https://apc.psych.umn.edu/" target="_blank" class="quick-link" style="text-decoration: none; color: #800000; border: 1px solid #800000; padding: 10px 20px; border-radius: 6px; font-size: 1rem; transition: background-color 0.3s, color 0.3s, transform 0.3s; margin: 8px; display: inline-block;">
-                    APC Lab @ UMN-TC
-                </a>
+            <p>Click below to learn about research labs I'm involved in:</p>
+            <div class="quick-link-wrapper">
+                <a href="https://apc.psych.umn.edu/" target="_blank" class="quick-link">APC Lab @ UMN Dpt. of Psychology</a>
+            </div>
+            <div class = "quick-link-wrapper">
+                <a href = "https://noel-lab.org/" target = "_blank" class = "quick-link">Noel Lab @ UMN Dpt. of Neuroscience</a>
             </div>
         </div>
-    </section>  
-    
-    <!-- Main Content -->
-    <main>
-        <section class="intro">
-            <div class="container">
-                <p>
-                    Welcome to my personal website! I am an undergraduate student at the University of Minnesota, majoring with a B.S. in Psychology. 
-                    My research interests involve any work that explains how we function and percieve the world around us. 
-                    I believe we are at an optimal time in science to take advantage of technology we have available to unlock the secrets of the brain. 
-                    For me, answering these questions involves cognitive psychology, biology, statistics, and computational neuroscience. These are all areas I am 
-                    working on developing as I wrap up my undergraduate experience and look towards graduate school.
-                    
-                <br>    
-                
-                </br>
+    </section>
 
-                    Currently, I am working as a research assistant in Dr. Andrew Oxenham's Auditory Perception and Cognition Lab and Dr. Jean-Paul Noel's Neuroscience Laboratory.
+    <!-- Intro/ Main Content -->
+    <main>
+        <section class="intro-section">
+            <div class="container">
+              <p>
+                Welcome to my personal website! I am an undergraduate student at the University of Minnesota, majoring in Psychology (B.S.). 
+                My research interests are aimed at work that helps to explain how we function and perceive the world around us. Part of this is cognitive 
+                perception, but another tool for this that I'm interested in exploring is computational neuroscience. Modern technology and computational 
+                power give us so much capability when it comes to modeling the neural activity and behavior of the brain. For me, this involves cognitive psychology, biology, statistics, and 
+                computational neuroscience—areas I continue to develop as I look towards graduate school.
+              </p>
+              <p>
+                Currently, I am working as a research assistant in Dr. Andrew Oxenham's Auditory Perception and Cognition Lab and Dr. Jean-Paul Noel's Neuroscience Lab.
+              </p>
+              <p>
+                Explore my website to learn about my academic background, projects I've worked on, and goals for my future graduate studies.
+              </p>
+            </div>
+          </section>
+
+        <!-- CATSS Visit Section -->
+        <section class="image-card-section">
+            <div class="container narrow">
+                <div class="image-card">
+                    <img src="images/others/presidential.jpg" alt="CATSS Visit October 2024">
+                    <div class="image-card-content">
+                        <h3>CATSS Visit October 2024</h3>
+                        <p>University President Rebecca Cunningham visiting the CATSS laboratory at UMN.</p>
+                        <p class="caption">
+                            (L to R) <a href="https://cla.umn.edu/about/directory/profile/oxenham" target="_blank">Dr. Andrew Oxenham</a> (CATSS Director, APC Lab PI), GerShun Avilez (CLA Dean), self, Neha Rajappa (APC Researcher), President Rebecca Cunningham, <a href="https://apc.psych.umn.edu/people/magdalena-wojtczak-phd" target="_blank">Dr. Magdalena Wojtczak</a> (APC PI)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conference Presentation Section -->
+        <section class="image-card-section">
+            <div class="container narrow">
+                <div class="image-card">
+                    <img src="images/others/rhiPresentation(2).JPG" alt="Presenting at a conference">
+                    <div class="image-card-content">
+                        <h3>Gustavus Adolphus Spring Research Symposium, May 2023</h3>
+                        <p>Presenting research completed with Dr. Lauren Hecht on a new experiment paradigm and its possible applications to the rubber hand illusion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collage Gallery Section -->
+        <section class="collage-gallery">
+            <div class="container">
+                <h2 class="section-title">Figure Fun</h2>
+                <p class="section-subtitle">
+                    Below is a random selection (full library 
+                    <a href="https://github.com/bchisholm08/rmdArtform_files/tree/516d36030cae929911a245435c3de13c1fe7b64b/coolFigs/figureFun" target="_blank">here</a>) of some figures generated using R. Each image uses a different algorithm, some known and some random, along with randomly generated data to create the image you see. 
+                    Some turn out to be artsy, and others don't look so great. Either way, it is a fun way to explore coding, math and statistics!
                 </p>
-                <br>    
-                
-                </br>
-                <p>
-                    Explore my website to learn about my academic background, projects I've worked on, and my goals for future graduate studies.
+                <div class="gallery-grid">
+                    <!-- Repeat these items as needed -->
+                    <div class="gallery-item">
+                        <a href="images/graphs_plottingArt/plot_0.jpg" data-lightbox="gallery" data-title="Plot - 1">
+                            <img src="images/graphs_plottingArt/plot_0.jpg" alt="Plot - 1">
+                        </a>
+                        <h3>Plot - 1</h3>
+                        <p>Figure description for Plot - 1.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="images/graphs_plottingArt/plot_1.jpg" data-lightbox="gallery" data-title="Plot - 2">
+                            <img src="images/graphs_plottingArt/plot_1.jpg" alt="Plot - 2">
+                        </a>
+                        <h3>Plot - 2</h3>
+                        <p>Figure description for Plot - 2.</p>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="images/graphs_plottingArt/plot_2.jpg" data-lightbox="gallery" data-title="Plot - 3">
+                            <img src="images/graphs_plottingArt/plot_2.jpg" alt="Plot - 3">
+                        </a>
+                        <h3>Plot - 3</h3>
+                        <p>Figure description for Plot - 3.</p>
+                    </div>
+                    <!-- Add more items as you see fit -->
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Stats Section -->
+        <section class="github-stats">
+            <div class="container">
+                <h1 class="section-title">GitHub Highlights</h1>
+                <p class="section-subtitle">
+                    Fun insights into my GitHub activity, showcasing contributions and coding streaks.
                 </p>
+                <div class="stats-grid">
+                    <div class="stats-card">
+                        <img src="https://github-readme-stats.vercel.app/api?username=bchisholm08&show_icons=true&theme=maroon" alt="GitHub Stats Card">
+                        <p class="stats-caption">Contribution Statistics</p>
+                    </div>
+                    <div class="stats-card">
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=bchisholm08&theme=maroon" alt="GitHub Streak Stats">
+                        <p class="stats-caption">GitHub Activity Streak</p>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <section style="padding: 60px 20px; background-color: #f9f9f9;">
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <div style="width: 90%; max-width: 750px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s; background-color: #F8F8F8;">
-                <img src="images/others/presidential.jpg" alt="CATSS" style="width: 100%; height: auto; object-fit: contain;">
-                <div style="padding: 20px; text-align: center;">
-                    <h3 style="font-size: 1.2rem; font-weight: bold; color: #333333;">CATSS Visit October 2024</h3>
-                    <p style="font-size: 1rem; color: #666666;">University President Rebecca Cunningham visiting the CATSS (Center for Applied & Translational Sensory Science) laboratory at UMN.</p>
-                  <br>
-                    <p style="font-size: 0.75rem; color: #666666;">
-                        (Left to right) <a href="https://cla.umn.edu/about/directory/profile/oxenham" target="_blank" style="color: #800000; text-decoration: underline;">Dr. Andrew Oxenham</a> (CATSS Director, APC Lab PI), GerShun Avilez (CLA Dean), self, Neha Rajappa (APC Researcher), President Rebecca Cunningham, <a href="https://apc.psych.umn.edu/people/magdalena-wojtczak-phd" target="_blank" style="color: #800000; text-decoration: underline;">Dr. Magdalena Wojtczak</a> (APC PI)
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section style="padding: 60px 20px; background-color: #f9f9f9;">
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <div style="width: 90%; max-width: 750px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s; background-color: #F8F8F8;">
-                <img src="images/others/rhiPresentation(2).JPG" alt="Presenting at a conference" style="width: 100%; height: auto; object-fit: contain;">
-                <div style="padding: 20px; text-align: center;">
-                    <h3 style="font-size: 1.2rem; font-weight: bold; color: #333333;">Gustavus Adolphus Spring Research Symposium, May 2023</h3>
-                    <p style="font-size: 1rem; color: #666666;">Presenting research Dr. Lauren Hecht and I did on developing a new experiment paradigm and possible applications to the rubber hand illusion.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Collage Gallery Section -->
-    <section class="collage-gallery" style="background-color: #f9f9f9; padding: 40px 20px;">
-        <div class="container">
-            <h2 style="font-size: 2.5rem; text-align: center; font-weight: bold; color: #800000;">Figure Fun</h2>
-            <p style="font-size: 1.2rem; text-align: center; color: #555555;">
-                Below is a random selection (view the full library <a href="https://github.com/bchisholm08/photo-library" target="_blank" style="color: #800000; text-decoration: underline;">here</a>) of some of the figures I have generated using R. Each figure uses a different visualization or exploration with artificially generated data.
-            </p>
-                        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-                
-                <!-- Individual Figure with Lightbox Feature -->
-                <div style="width: 300px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s; background-color: #ffffff; border-radius: 10px;">
-                    <a href="images/graphs_plottingArt/plot_0.jpg" data-lightbox="gallery" data-title="Plot - 1">
-                        <img src="images/graphs_plottingArt/plot_0.jpg" alt="Wave Plot - 1" style="width: 100%; height: auto; object-fit: cover;">
-                    </a>
-                    <div style="padding: 20px; text-align: center;">
-                        <h3 style="font-size: 1.2rem; font-weight: bold; color: #333333;">Plot - 1</h3>
-                        <p style="font-size: 1rem; color: #666666;">Figure description for Plot - 1.</p>
-                    </div>
-                </div>
-    
-                <!-- Individual Figure with Lightbox Feature -->
-                <div style="width: 300px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s; background-color: #ffffff; border-radius: 10px;">
-                    <a href="images/graphs_plottingArt/plot_1.jpg" data-lightbox="gallery" data-title="Plot - 2">
-                        <img src="images/graphs_plottingArt/plot_1.jpg" alt="Wave Plot - 2" style="width: 100%; height: auto; object-fit: cover;">
-                    </a>
-                    <div style="padding: 20px; text-align: center;">
-                        <h3 style="font-size: 1.2rem; font-weight: bold; color: #333333;">Plot - 2</h3>
-                        <p style="font-size: 1rem; color: #666666;">Figure description for Plot - 2.</p>
-                    </div>
-                </div>
-    
-                <!-- Individual Figure with Lightbox Feature -->
-                <div style="width: 300px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s; background-color: #ffffff; border-radius: 10px;">
-                    <a href="images/graphs_plottingArt/plot_2.jpg" data-lightbox="gallery" data-title="Plot - 3">
-                        <img src="images/graphs_plottingArt/plot_2.jpg" alt="Wave Plot - 3" style="width: 100%; height: auto; object-fit: cover;">
-                    </a>
-                    <div style="padding: 20px; text-align: center;">
-                        <h3 style="font-size: 1.2rem; font-weight: bold; color: #333333;">Plot - 3</h3>
-                        <p style="font-size: 1rem; color: #666666;">Figure description for Plot - 3.</p>
-                    </div>
-                </div>
-    
-                <!-- Repeat for the rest of the gallery items -->
-                <!-- Plot - 4 -->
-                <div style="width: 300px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s; background-color: #ffffff; border-radius: 10px;">
-                    <a href="images/graphs_plottingArt/plot_3.jpg" data-lightbox="gallery" data-title="Plot - 4">
-                        <img src="images/graphs_plottingArt/plot_3.jpg" alt="Wave Plot - 4" style="width: 100%; height: auto; object-fit: cover;">
-                    </a>
-                    <div style="padding: 20px; text-align: center;">
-                        <h3 style="font-size: 1.2rem; font-weight: bold; color: #333333;">Plot - 4</h3>
-                        <p style="font-size: 1rem; color: #666666;">Figure description for Plot - 4.</p>
-                    </div>
-                </div>
-    
-                <!-- Plot - 5 -->
-                <div style="width: 300px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s; background-color: #ffffff; border-radius: 10px;">
-                    <a href="images/graphs_plottingArt/plot_4.jpg" data-lightbox="gallery" data-title="Plot - 5">
-                        <img src="images/graphs_plottingArt/plot_4.jpg" alt="Wave Plot - 5" style="width: 100%; height: auto; object-fit: cover;">
-                    </a>
-                    <div style="padding: 20px; text-align: center;">
-                        <h3 style="font-size: 1.2rem; font-weight: bold; color: #333333;">Plot - 5</h3>
-                        <p style="font-size: 1rem; color: #666666;">Figure description for Plot - 5.</p>
-                    </div>
-                </div>
-    
-                <!-- Plot - 6 -->
-                <div style="width: 300px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s; background-color: #ffffff; border-radius: 10px;">
-                    <a href="images/graphs_plottingArt/plot_5.jpg" data-lightbox="gallery" data-title="Plot - 6">
-                        <img src="images/graphs_plottingArt/plot_5.jpg" alt="Wave Plot - 6" style="width: 100%; height: auto; object-fit: cover;">
-                    </a>
-                    <div style="padding: 20px; text-align: center;">
-                        <h3 style="font-size: 1.2rem; font-weight: bold; color: #333333;">Plot - 6</h3>
-                        <p style="font-size: 1rem; color: #666666;">Figure description for Plot - 6.</p>
-                    </div>
-                </div>
-    
-                <!-- Plot - 7 -->
-                <div style="width: 300px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s; background-color: #ffffff; border-radius: 10px;">
-                    <a href="images/graphs_plottingArt/plot_6.jpg" data-lightbox="gallery" data-title="Plot - 7">
-                        <img src="images/graphs_plottingArt/plot_6.jpg" alt="Wave Plot - 7" style="width: 100%; height: auto; object-fit: cover;">
-                    </a>
-                    <div style="padding: 20px; text-align: center;">
-                        <h3 style="font-size: 1.2rem; font-weight: bold; color: #333333;">Plot - 7</h3>
-                        <p style="font-size: 1rem; color: #666666;">Figure description for Plot - 7.</p>
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-    </section>
-    
-    <!-- Lightbox JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
-    
-
-     <!-- GitHub Stats Section -->
-<!-- GitHub Stats Section -->
-<section style="padding: 40px 20px; background-color: #E8E8E8;">
-    <div style="text-align: center; margin-bottom: 40px;">
-        <h1 style="font-size: 2.5rem; font-weight: bold; text-align: center; color: #800000; margin-bottom: 10px;">GitHub Highlights</h1>
-        <p style="font-size: 1.2rem; color: #555555; max-width: 800px; margin: 0 auto;">
-            Below are fun insights into my GitHub activity, showcasing contributions and coding streaks.
-        </p>
-    </div>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
-        <!-- GitHub Stats Cards -->
-        <div style="width: 90%; max-width: 550px; background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-            <img src="https://github-readme-stats.vercel.app/api?username=bchisholm08&show_icons=true&theme=maroon" alt="GitHub Stats Card" style="width: 100%; border-radius: 5px;">
-            <p style="font-size: 1.1rem; color: #666666; margin-top: 15px; text-align: center;">
-                Contribution Statistics
-            </p>
-        </div>
-
-        <div style="width: 90%; max-width: 550px; background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=bchisholm08&theme=maroon" alt="GitHub Streak Stats" style="width: 100%; border-radius: 5px;">
-            <p style="font-size: 1.1rem; color: #666666; margin-top: 15px; text-align: center;">
-                GitHub Activity Streak
-            </p>
-        </div>
-
-
-    </div>
-</section>
-
-</main>
-
     <!-- Footer Section -->
     <footer class="custom-footer">
-        <div class="footer-container">
+        <div class="container footer-content">
             <div class="footer-icons">
                 <a href="https://github.com/bchisholm08" target="_blank" aria-label="GitHub">
-                    <img src="images\others\logos\githubLogo.svg" alt="GitHub Icon">
+                    <img src="images/others/logos/githubLogo.svg" alt="GitHub Icon">
                 </a>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2024 Brady M. Chisholm</p>
+            <p class="footer-note">&copy; 2024 Brady M. Chisholm</p>
         </div>
     </footer>
 
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

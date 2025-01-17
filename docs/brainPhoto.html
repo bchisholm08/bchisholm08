@@ -15,21 +15,27 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="main-header">
-        <div class="container header-container">
-            <div class="header-name">
-                <h1>Brady M. Chisholm</h1>
-            </div>
-            <nav class="header-links">
-                <ul>
-                   <a href="index.html">Home</a>
-                    <a href="about.html">About Me</a>
-                </ul>
-            </nav>
+    <header class="main-header" aria-label="Site Header">
+        <div class="header-container">
+          <div class="header-logo">
+            <!-- Optional Logo Image -->
+            <img src="images/logo.png" alt="My Personal Logo" class="logo-img">
+            <div class="header-name">Brady M. Chisholm</div>
+          </div>
+          
+          <nav class="header-links" aria-label="Main Navigation">
+            <ul>
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="about.html" class="nav-link">About Me</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li><a href="photos.html" class="nav-link">Photo Library</a></li>
+            </ul>
+            <!-- Possibly add a hamburger icon for mobile -->
+          </nav>
         </div>
-    </header>
-
+      </header>
+      
+    <!-- /HEADER -->
 
     <main>
         <section style="padding: 40px 20px; background-color: #f9f9f9;">
