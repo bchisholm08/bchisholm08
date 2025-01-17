@@ -4,18 +4,51 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poppy Photo Gallery | B.M.C.</title>
-    <!-- Link to External CSS -->
+    <title>B.M.C | Home</title>
+    
+    <!-- point to css file -->
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- Google Fonts for Enhanced Typography -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Swiper.js CSS for Carousel -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- Lightbox2 CSS for Image Viewing -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    
+    <!-- import font -->
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');">
+    
+    <!-- browser icon -->
+    <link rel="icon" href="images/logos/custom/colorschm2-smallLogo.svg">
+    
+    <!-- Meta info for SEO -->
+    <meta name="description" content="Contact Brady M. Chisholm, an undergraduate student in Psychology and Research Assistant in Auditory Perception and Neuroscience.">
+    <meta name="keywords" content="Brady Chisholm, Contact, Psychology, AI, Artificial Intelligence, Machine Learning, Research Assistant, Auditory Perception, Neuroscience">
+
 </head>
+<body>
+<!--HEADER BEGIN (end ln 51)-->
+    <header class="main-header" aria-label="Site Header">
+        <div class="header-container">
+          <div class="header-logo-name">
+            <img src="images/logos/custom/55pxSQLogo.svg" alt="My Personal Logo" class="logo-img">
+            <div class="header-name">Brady M. Chisholm</div>
+          </div>
+      
+          <nav class="header-links" aria-label="Main Navigation">
+            <ul>
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="projects.html" class="nav-link">Projects</a></li>
+              <li><a href="about.html" class="nav-link">About Me</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li><a href="imageGallery.html" class="nav-link">Image Gallery</a></li>
+            </ul>
+          </nav>
+      
+          <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+
+        </div>
+
+      </header>  
+    <!-- /HEADER END -->
 <body>
 
         <!-- Header Section KEEP -->
@@ -84,19 +117,21 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Brady M. Chisholm. All rights reserved.</p>
-            <!-- Social Media Links -->
+    <footer class="custom-footer" aria-label="Site Footer">
+        <div class="footer-container">
+            <div class="footer-socials">
+                <h4>Connect</h4>
+                <ul>
+                  <!--  <li><a href="https://scholar.google.com/" target="_blank" aria-label="Google Scholar">Google Scholar</a></li> -->
+                    <li><a href="https://github.com/bchisholm08" target="_blank" aria-label="GitHub Profile">GitHub</a></li>
+                    <li><a href="contact.html" target="_blank" aria-label="Contact Page">Contact Page</a></li>
+                  </ul>
+            </div>
         </div>
-    </footer>
-
-        <!-- Back to Top Button COPY FOR OTHER PAGES-->
-        <button onclick="scrollToTop()" id="backToTopButton" style="position: fixed; bottom: 30px; right: 30px; padding: 10px 20px; font-size: 1rem; background-color: #800000; color: #ffffff; border: none; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); cursor: pointer; display: none; z-index: 1000;">
-            Back to Top
-        </button>
-        <!-- Reference to external JavaScript file -->
-        <script src="scripts/backToTop.js"></script>
-
-</body>
-</html>
+        <div element class="footer-note">
+            <p>&copy; 2025 Brady M. Chisholm</p>
+        </div>
+      </footer>
+      <!-- /FOOTER END-->    
+      </body>
+      </html>

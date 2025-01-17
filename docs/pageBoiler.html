@@ -4,28 +4,28 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.M.C. | -PAGE TITLE- </title>
+    <title>B.M.C | Home</title>
     
-    <!-- External CSS -->
+    <!-- point to css file -->
     <link rel="stylesheet" href="styles/styles.css">
     
-    <!-- Google Fonts -->
+    <!-- import font -->
     <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');">
     
-    <!-- Favicon -->
-    <link rel="icon" href="images/logos/custom/colorschm2-smallLogo.svg" type="image/x-icon">
+    <!-- browser icon -->
+    <link rel="icon" href="images/logos/custom/colorschm2-smallLogo.svg">
     
-    <!-- Meta Description & Keywords -->
+    <!-- Meta info for SEO -->
     <meta name="description" content="Contact Brady M. Chisholm, an undergraduate student in Psychology and Research Assistant in Auditory Perception and Neuroscience.">
     <meta name="keywords" content="Brady Chisholm, Contact, Psychology, AI, Artificial Intelligence, Machine Learning, Research Assistant, Auditory Perception, Neuroscience">
+
 </head>
 <body>
-<!--HEADER BEGIN (end ln 179)-->
+<!--HEADER BEGIN (end ln 51)-->
     <header class="main-header" aria-label="Site Header">
         <div class="header-container">
           <div class="header-logo-name">
-            <!-- Optional Logo Image -->
-            <img src="images/logos/custom/colorschm2-smallLogo.svg" alt="My Personal Logo" class="logo-img">
+            <img src="images/logos/custom/55pxSQLogo.svg" alt="My Personal Logo" class="logo-img">
             <div class="header-name">Brady M. Chisholm</div>
           </div>
       
@@ -35,7 +35,7 @@
               <li><a href="projects.html" class="nav-link">Projects</a></li>
               <li><a href="about.html" class="nav-link">About Me</a></li>
               <li><a href="contact.html" class="nav-link">Contact</a></li>
-              <li><a href="photos.html" class="nav-link">Image Gallery</a></li>
+              <li><a href="imageGallery.html" class="nav-link">Image Gallery</a></li>
             </ul>
           </nav>
       
@@ -44,173 +44,48 @@
             <span class="line"></span>
             <span class="line"></span>
           </button>
+
         </div>
-      </header>
-        <!-- Optional Logo Image -->
-      <style>
-        @import url('https://fonts.googleapis.com/css?family=TimesNewRoman:400,700&display=swap');
-      
-        :root {
-          --maroon: #800000;
-          --maroon-hover: #a00000;
-          --white: #ffffff;
-          --grey-light: #f4f4f4;
-          --grey-dark: #555555;
-        }
-      
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-      
-        .main-header {
-          background-color: var(--maroon);
-          color: var(--white);
-          padding: 20px 0;
-          box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-          position: sticky;
-          top: 0;
-          width: 100%;
-          z-index: 1000;
-        }
-      
-        .header-container {
-          width: 95%;
-          max-width: 1200px;
-          margin: 0 auto;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-      
-        .header-logo-name {
-          display: flex;
-          align-items: center;
-        }
-      
-        .logo-img {
-          width: 125px;
-          height: 50px;
-          margin-right: 10px;
-        }
-      
-        .header-name {
-          font-size: 2rem;
-          font-weight: bold;
-        }
-      
-        .header-links ul {
-          list-style: none;
-          display: flex;
-          gap: 20px;
-          padding: 0;
-          margin: 0;
-        }
-      
-        .header-links .nav-link {
-          text-decoration: none;
-          font-size: 1rem;
-          color: var(--white);
-          font-weight: bold;
-          padding: 10px;
-          border-radius: 5px;
-          transition: background-color 0.3s ease, color 0.3s ease;
-        }
-      
-        .header-links .nav-link.active {
-          font-weight: bold;
-          border-bottom: 2px solid var(--white);
-        }
-      
-        .header-links .nav-link:hover {
-          background-color: var(--white);
-          color: var(--maroon);
-        }
-      
-        .hamburger-menu {
-          display: none;
-          flex-direction: column;
-          gap: 5px;
-          border: none;
-          background: none;
-          cursor: pointer;
-        }
-      
-        .hamburger-menu .line {
-          width: 25px;
-          height: 3px;
-          background-color: var(--white);
-        }
-      
-        @media (max-width: 768px) {
-          .header-links {
-            display: none;
-          }
-      
-          .hamburger-menu {
-            display: flex;
-          }
-      
-          .header-links.active {
-            display: block;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background-color: var(--maroon);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            padding: 10px;
-          }
-      
-          .header-links ul {
-            flex-direction: column;
-            gap: 10px;
-          }
-        }
-      </style>
-      
-      <script>
-        document.querySelector('.hamburger-menu').addEventListener('click', function () {
-          document.querySelector('.header-links').classList.toggle('active');
-        });
-      </script>
-      
+
+      </header>  
     <!-- /HEADER END -->
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT BEGIN -->
     <main>
-        <section>
-            Words and content 
-        </section>
-
-        <section>
-            Words and content 
-        </section>
-
-        <section>
-            Words and content 
-        </section>
-
-        <section>
-            Words and content 
-        </section>
-    </main>
-    <!-- /MAIN CONTENT -->
-
-    <footer class="custom-footer" aria-label="Site Footer">
-        <div class="container footer-content">
-          <div class="footer-socials">
-            <a href="https://scholar.google.com/" target="_blank" aria-label="Google Scholar">Google Scholar</a>
-            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a>
-            <!-- Add other relevant links -->
-          </div>
-          <p class="footer-note">&copy; 2024 Brady M. Chisholm. All Rights Reserved.</p>
-        </div>
-      </footer>
+      <section>      
+        <p style="margin-top:3cm;">This is the first question?</p>
+      </section>
       
-    
-    <!-- Lightbox JS (if needed) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+      <section>
+        <img src="https://picsum.photos/300" alt="Test Placeholder Image" class="img">
+      </section>
+
+      <p style="margin-top:3cm;">This is the second question?</p>
+       
+      <section>
+          Words and content 
+      </section>
+    </main>
+    <section>
+      More words down here for the boilerplate!
+    </section>
+    <!-- MAIN CONTENT END -->
+<!--FOOTER START-->
+<footer class="custom-footer" aria-label="Site Footer">
+  <div class="footer-container">
+      <div class="footer-socials">
+          <h4>Connect</h4>
+          <ul>
+            <!--  <li><a href="https://scholar.google.com/" target="_blank" aria-label="Google Scholar">Google Scholar</a></li> -->
+              <li><a href="https://github.com/bchisholm08" target="_blank" aria-label="GitHub Profile">GitHub</a></li>
+              <li><a href="contact.html" target="_blank" aria-label="Contact Page">Contact Page</a></li>
+            </ul>
+      </div>
+  </div>
+  <div element class="footer-note">
+      <p>&copy; 2025 Brady M. Chisholm</p>
+  </div>
+</footer>
+<!-- /FOOTER END-->    
 </body>
 </html>
