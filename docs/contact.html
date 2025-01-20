@@ -4,11 +4,11 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.M.C | Home</title>
+    <title>B.M.C | Contact</title>
     
     <!-- point to css file -->
     <link rel="stylesheet" href="styles/styles.css">
-    
+    <link rel="stylesheet" href="styles/contactPageStyles.css">
     <!-- import font -->
     <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');">
     
@@ -21,63 +21,88 @@
 
 </head>
 <body>
-<!--HEADER BEGIN (end ln 51)-->
-    <header class="main-header" aria-label="Site Header">
-        <div class="header-container">
-          <div class="header-logo-name">
-            <img src="images/logos/custom/55pxSQLogo.svg" alt="My Personal Logo" class="logo-img">
-            <div class="header-name">Brady M. Chisholm</div>
-          </div>
-      
-          <nav class="header-links" aria-label="Main Navigation">
-            <ul>
-              <li><a href="index.html" class="nav-link active">Home</a></li>
-              <li><a href="projects.html" class="nav-link">Projects</a></li>
-              <li><a href="about.html" class="nav-link">About Me</a></li>
-              <li><a href="contact.html" class="nav-link">Contact</a></li>
-              <li><a href="imageGallery.html" class="nav-link">Image Gallery</a></li>
-            </ul>
-          </nav>
-      
-          <button class="hamburger-menu" aria-label="Toggle Navigation">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </button>
-
-        </div>
-
-      </header>  
-    <!-- /HEADER END -->
-
-    <main>
-        <section class="contact-section">
-            <div class="container">
-                <h2>Get in Touch!</h2>
-                <p>If you have any questions or would like to collaborate, please reach out using the form below.</p>
-                <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                    <p class="success-message">Thank you for reaching out! I'll get back to you soon.</p>
-                    <p class="error-message">Oops! Something went wrong. Please try again.</p>
-                </form>
+        <!-- Header Section -->
+        <header class="main-header">
+            <div class="header-container">
+                <div class="header-logo-name">
+                    <img src="images/logos/custom/55pxSQLogo.svg" alt="Brady M. Chisholm Logo" class="logo-img">
+                    <h1 class="header-name">Brady M. Chisholm</h1>
+                </div>
+                <nav class="header-links">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="projects.html" class="nav-link">Projects</a></li>
+                        <li><a href="about.html" class="nav-link">About Me</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                        <li><a href="imageGallery.html" class="nav-link">Image Gallery</a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-    </main>
+        </header>
+    
+        </head>
+        <body class="contact-page">
+            <!-- Header Section -->
+            <header class="main-header">
+                <div class="header-container">
+                    <div class="header-logo-name">
+                        <img src="images/logos/custom/55pxSQLogo.svg" alt="Brady M. Chisholm Logo" class="logo-img">
+                        <h1 class="header-name">Brady M. Chisholm</h1>
+                    </div>
+                    <nav class="header-links">
+                        <ul>
+                            <li><a href="index.html" class="nav-link">Home</a></li>
+                            <li><a href="projects.html" class="nav-link">Projects</a></li>
+                            <li><a href="about.html" class="nav-link">About Me</a></li>
+                            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                            <li><a href="imageGallery.html" class="nav-link">Image Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        
+            <!-- Main Content -->
+            <main>
+                <section class="contact-section">
+                    <div class="container">
+                        <h2>Contact Me</h2>
+                        <p>If you have any questions or would like to collaborate, please use the form below to get in touch.</p>
+                        
+                        <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                            <!-- Name Field -->
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+        
+                            <!-- Email Field -->
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            </div>
+        
+                            <!-- Message Field -->
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                            </div>
+        
+                            <!-- Submit Button -->
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </body>
+        </html>
+        
+    
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2025 Brady M. Chisholm. All rights reserved.</p>
+            </div>
+        </footer>
 
-    <footer>
-        <p>&copy; 2024 Brady M. Chisholm. All rights reserved.</p>
-    </footer>
 </body>
 </html>
