@@ -6,8 +6,8 @@
 
   
 - **Where I Am Now**: Working on a Bachelor of Science in Psychology, Computer Science minor at University of Minnesota, Twin Cities
-- **Researching speech and listening effort** with Professor Andrew Oxenham in the Auditory Perception and Cognition Lab 
-  - My Current Lab Project: working on statistical models of pupillometry data; specifically GAMM and LME
+- **Researching speech and listening effort** in the Auditory Perception and Cognition Lab 
+  - My Current Lab Project: working on statistical models of pupillometry data; specifically GAMM
     
   **For more work from the APC lab click on our logo! ➡️**
   <a href="https://apc.psych.umn.edu/" target="_blank">
