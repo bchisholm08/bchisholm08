@@ -1,205 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Information -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.M.C | Home</title>
-    
-    <!-- point to css file -->
-    <link rel="stylesheet" href="styles/styles.css">
-    
-    <!-- import font -->
-    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');">
-    
-    <!-- browser icon -->
-    <link rel="icon" href="images/logos/custom/colorschm2-smallLogo.svg">
-    
-    <!-- Meta info for SEO -->
-    <meta name="description" content="Contact Brady M. Chisholm, an undergraduate student in Psychology and Research Assistant in Auditory Perception and Neuroscience.">
-    <meta name="keywords" content="Brady Chisholm, Contact, Psychology, AI, Artificial Intelligence, Machine Learning, Research Assistant, Auditory Perception, Neuroscience">
+  <!-- ===== Meta ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B.M.C | Home</title>
 
+  <!-- ===== SEO ===== -->
+  <meta name="description" content="Portfolio of Brady M. Chisholm — undergraduate researcher in cognitive & auditory neuroscience.">
+  <meta name="keywords" content="Brady Chisholm, Psychology, Cognitive Neuroscience, Auditory Perception, Machine Learning, Research">
+  <link rel="canonical" href="https://brady-c.cc/">
+
+  <!-- ===== Styles ===== -->
+  <link rel="preload" href="styles/styles.css" as="style">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" href="images/logos/custom/colorschm2-smallLogo.svg">
 </head>
+
 <body>
-<!--HEADER BEGIN (end ln 51)-->
-    <header class="main-header" aria-label="Site Header">
-        <div class="header-container">
-          <div class="header-logo-name">
-            <img src="images/logos/custom/55pxSQLogo.svg" alt="My Personal Logo" class="logo-img">
-            <div class="header-name">Brady M. Chisholm</div>
-          </div>
-      
-          <nav class="header-links" aria-label="Main Navigation">
-            <ul>
-              <li><a href="index.html" class="nav-link active">Home</a></li>
-              <li><a href="projects.html" class="nav-link">Projects</a></li>
-              <li><a href="about.html" class="nav-link">About Me</a></li>
-              <li><a href="contact.html" class="nav-link">Contact</a></li>
-              <li><a href="imageGallery.html" class="nav-link">Image Gallery</a></li>
-            </ul>
-          </nav>
-      
-          <button class="hamburger-menu" aria-label="Toggle Navigation">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </button>
+<!-- ============ HEADER ============ -->
+<header class="main-header" aria-label="Site Header">
+  <div class="header-container">
+    <div class="header-logo-name">
+      <img src="images/logos/custom/55pxSQLogo.svg" alt="" class="logo-img" loading="lazy">
+      <h1 class="header-name">Brady M. Chisholm</h1>
+    </div>
 
+    <nav class="header-links" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html"          class="nav-link active">Home</a></li>
+        <li><a href="projects.html"       class="nav-link">Projects</a></li>
+        <li><a href="about.html"          class="nav-link">About Me</a></li>
+        <li><a href="contact.html"        class="nav-link">Contact</a></li>
+        <li><a href="imageGallery.html"   class="nav-link">Image Gallery</a></li>
+      </ul>
+    </nav>
+
+    <button class="hamburger-menu" aria-label="Toggle Navigation">
+      <span class="line"></span><span class="line"></span><span class="line"></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO / INTRO ============ -->
+<section class="quick-links-section">
+  <div class="container narrow quick-links-content">
+    <div class="quick-links-text">
+      <h2 class="section-title-sm">Welcome to my Website!</h2>
+      <p>My name is Brady, and I'm an undergraduate student at the University of Minnesota, majoring in Psychology (B.S.). My research interests are aimed at work that helps to explain how we function and perceive the world around us. Part of this is cognitive perception, but another tool for this that I'm interested in exploring is computational neuroscience. Modern technology and computational power give us so much capability when it comes to modeling the neural activity and behavior of the brain. For me, this involves cognitive psychology, biology, statistics, and computational neuroscience—areas I continue to develop as I look towards graduate school.
+
+        Currently, I am working as a research assistant in Dr. Andrew Oxenham's Auditory Perception and Cognition Lab and Dr. Jean-Paul Noel's Neuroscience Lab.
+        
+        Explore my website to learn about my academic background, projects I've worked on, and goals for my future graduate studies.</p>
+      <p>Currently working as a research assistant in <a href="https://apc.psych.umn.edu/" target="_blank" rel="noopener noreferrer">Oxenham’s Auditory Perception Lab</a> and <a href="https://noel-lab.org/" target="_blank" rel="noopener noreferrer">Noel’s Neuroscience Lab</a>.</p>
+    </div>
+
+    <div class="quick-links-image">
+      <img src="images/others/poppyRockClimbing.jpg"
+           alt="Outdoor climbing with Poppy observing"
+           class="right-image" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUICK LINKS ============ -->
+<section class="quick-links-section">
+  <div class="container narrow quick-links-content">
+    <div class="quick-links-text">
+      <h2 class="section-title-sm">Quick Links</h2>
+
+      <div class="quick-link-wrapper">
+        <a href="https://raw.githubusercontent.com/bchisholm08/bchisholm08/main/professional_materials/cv_fa24_verN.pdf"
+           target="_blank" rel="noopener noreferrer"
+           class="quick-link">Curriculum Vitae (PDF)</a>
+      </div>
+
+      <p>Research groups:</p>
+      <div class="quick-link-wrapper">
+        <a href="https://apc.psych.umn.edu/" target="_blank" rel="noopener noreferrer" class="quick-link">APC Lab</a>
+      </div>
+      <div class="quick-link-wrapper">
+        <a href="https://noel-lab.org/" target="_blank" rel="noopener noreferrer" class="quick-link">Noel Lab</a>
+      </div>
+    </div>
+
+    <div class="quick-links-image">
+      <img src="images/others/eegPhoto.JPG"
+           alt="Piloting an EEG session in the lab"
+           class="right-image" loading="lazy">
+    </div>
+    <div class="quick-links-image">
+      <img src="images/others/minnehahaFrozen25.jpeg"
+           alt="Frozen Minnehaha Falls"
+           class="right-image" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<main>
+  <!-- ============ IMAGE CARD — CATSS VISIT ============ -->
+  <section class="image-card-section">
+    <div class="container narrow">
+      <article class="image-card">
+        <img src="images/others/presidential.jpg"
+             alt="President Cunningham visiting CATSS laboratory"
+             loading="lazy">
+        <div class="image-card-content">
+          <h3>CATSS Visit · Oct 2024</h3>
+          <p>University President Rebecca Cunningham touring CATSS lab space.</p>
+          <p class="caption">
+            (L → R) <a href="https://cla.umn.edu/about/directory/profile/oxenham" target="_blank" rel="noopener noreferrer">Dr. Andrew Oxenham</a>,
+            GerShun Avilez, Brady Chisholm, Neha Rajappa, President Cunningham,
+            <a href="https://apc.psych.umn.edu/people/magdalena-wojtczak-phd" target="_blank" rel="noopener noreferrer">Dr. Magdalena Wojtczak</a>
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ IMAGE CARD — RHI SYMPOSIUM ============ -->
+  <section class="image-card-section">
+    <div class="container narrow">
+      <article class="image-card">
+        <img src="images/others/rhiPresentation(2).JPG"
+             alt="Presenting at Gustavus Adolphus Research Symposium"
+             loading="lazy">
+        <div class="image-card-content">
+          <h3>Research Symposium · May 2023</h3>
+          <p>Presenting a new paradigm designed with the Rubber Hand Illusion aimed at investigating entomophoic responses. Work with Dr. Lauren Hecht.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ COLLAGE GALLERY ============ -->
+  <section class="collage-gallery">
+    <div class="container">
+      <h2 class="section-title">Figure Fun</h2>
+      <p class="section-subtitle">
+        Abstract, semi-mathematic art generated in R —
+        view more
+        <a href="https://github.com/bchisholm08/rmdArtform_files/tree/main/coolFigs/figureFun"
+           target="_blank" rel="noopener noreferrer">here!!</a>.
+      </p>
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <a href="images/graphs_plottingArt/plot_0.jpg" data-lightbox="gallery" data-title="Plot 1">
+            <img src="images/graphs_plottingArt/plot_0.jpg" alt="Algorithmic art plot 1" loading="lazy">
+          </a>
+          <figcaption>
+            <h3>Plot 1</h3>
+            <p>Spiral noise.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <a href="images/graphs_plottingArt/plot_1.jpg" data-lightbox="gallery" data-title="Plot 2">
+            <img src="images/graphs_plottingArt/plot_1.jpg" alt="Algorithmic art plot 2" loading="lazy">
+          </a>
+          <figcaption>
+            <h3>Plot 2</h3>
+            <p>Voronoi map.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <a href="images/graphs_plottingArt/plot_2.jpg" data-lightbox="gallery" data-title="Plot 3">
+            <img src="images/graphs_plottingArt/plot_2.jpg" alt="Algorithmic art plot 3" loading="lazy">
+          </a>
+          <figcaption>
+            <h3>Plot 3</h3>
+            <p>Bezier weave.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GITHUB STATS ============ -->
+  <section class="github-stats">
+    <div class="container">
+      <h2 class="section-title">GitHub Highlights</h2>
+      <p class="section-subtitle">Snapshots of some of my activity.</p>
+
+      <div class="stats-grid">
+        <div class="stats-card">
+          <img src="https://github-readme-stats.vercel.app/api?username=bchisholm08&show_icons=true&theme=maroon"
+               alt="GitHub stats card" loading="lazy">
+          <p class="stats-caption">Contribution summary</p>
         </div>
 
-      </header>  
-    <!-- /HEADER END -->
-
-    <!-- Quick Links Section -->
-    <section class="quick-links-section">
-        <div class="container narrow">
-            <div class="quick-links-content">
-                <div class="quick-links-text">
-                    <h2 class="section-title-sm">Quick Links</h2>
-                    <div class="quick-link-wrapper">
-                        <a href="bchisholm08/professional_materials/cv_fa24_verN.pdf" target="_blank" class="quick-link">CV</a>
-                    </div>
-                    <p>Click below to learn about research labs I'm involved in:</p>
-                    <div class="quick-link-wrapper">
-                        <a href="https://apc.psych.umn.edu/" target="_blank" class="quick-link">APC Lab @ UMN Dpt. of Psychology</a>
-                    </div>
-                    <div class="quick-link-wrapper">
-                        <a href="https://noel-lab.org/" target="_blank" class="quick-link">Noel Lab @ UMN Dpt. of Neuroscience</a>
-                    </div>
-                </div>
-                <div class="quick-links-image">
-                    <img src="images/others/eegPhoto.JPG" alt="Lab Work, Piloting EEG" class="right-image">
-                </div>
-                <div class="quick-links-image">
-                    <img src="images/others/minnehahaFrozen25.jpeg" alt="Minnehaha Falls Frozen" class="right-image">
-                 </div>
-            </div>
+        <div class="stats-card">
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=bchisholm08&theme=maroon"
+               alt="GitHub streak card" loading="lazy">
+          <p class="stats-caption">Commit streak</p>
         </div>
-    </section>
-    
-    <!-- Intro/ Main Content -->
-    <main>
-        <section class="intro-section">
-            <div class="container">
-              <p>
-                Welcome to my personal website! I am an undergraduate student at the University of Minnesota, majoring in Psychology (B.S.). 
-                My research interests are aimed at work that helps to explain how we function and perceive the world around us. Part of this is cognitive 
-                perception, but another tool for this that I'm interested in exploring is computational neuroscience. Modern technology and computational 
-                power give us so much capability when it comes to modeling the neural activity and behavior of the brain. For me, this involves cognitive psychology, biology, statistics, and 
-                computational neuroscience—areas I continue to develop as I look towards graduate school.
-              </p>
-              <p>
-                Currently, I am working as a research assistant in Dr. Andrew Oxenham's Auditory Perception and Cognition Lab and Dr. Jean-Paul Noel's Neuroscience Lab.
-              </p>
-              <p>
-                Explore my website to learn about my academic background, projects I've worked on, and goals for my future graduate studies.
-              </p>
-            </div>
-          </section>
-
-        <!-- CATSS gallery  -->
-        <section class="image-card-section">
-            <div class="container narrow">
-                <div class="image-card">
-                    <img src="images/others/presidential.jpg" alt="CATSS Visit October 2024">
-                    <div class="image-card-content">
-                        <h3>CATSS Visit October 2024</h3>
-                        <p>University President Rebecca Cunningham visiting the CATSS laboratory at UMN.</p>
-                        <p class="caption">
-                            (L to R) <a href="https://cla.umn.edu/about/directory/profile/oxenham" target="_blank">Dr. Andrew Oxenham</a> (CATSS Director, APC Lab PI), GerShun Avilez (CLA Dean), self, Neha Rajappa (APC Researcher), President Rebecca Cunningham, <a href="https://apc.psych.umn.edu/people/magdalena-wojtczak-phd" target="_blank">Dr. Magdalena Wojtczak</a> (APC PI)
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- conference prezzi section -->
-        <section class="image-card-section">
-            <div class="container narrow">
-                <div class="image-card">
-                    <img src="images/others/rhiPresentation(2).JPG" alt="Presenting at a conference">
-                    <div class="image-card-content">
-                        <h3>Gustavus Adolphus Spring Research Symposium, May 2023</h3>
-                        <p>Presenting research completed with Dr. Lauren Hecht on a new experiment paradigm and its possible applications to the rubber hand illusion.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- collage gallery -->
-        <section class="collage-gallery">
-            <div class="container">
-                <h2 class="section-title">Figure Fun</h2>
-                <p class="section-subtitle">
-                    Below is a random selection (full library 
-                    <a href="https://github.com/bchisholm08/rmdArtform_files/tree/516d36030cae929911a245435c3de13c1fe7b64b/coolFigs/figureFun" target="_blank">here</a>) of some figures generated using R. Each image uses a different algorithm, some known and some random, along with randomly generated data to create the image you see. 
-                    Some turn out to be artsy, and others don't look so great. Either way, it is a fun way to explore coding, math and statistics!
-                </p>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <a href="images/graphs_plottingArt/plot_0.jpg" data-lightbox="gallery" data-title="Plot - 1">
-                            <img src="images/graphs_plottingArt/plot_0.jpg" alt="Plot - 1">
-                        </a>
-                        <h3>Plot - 1</h3>
-                        <p>Figure description for Plot - 1.</p>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="images/graphs_plottingArt/plot_1.jpg" data-lightbox="gallery" data-title="Plot - 2">
-                            <img src="images/graphs_plottingArt/plot_1.jpg" alt="Plot - 2">
-                        </a>
-                        <h3>Plot - 2</h3>
-                        <p>Figure description for Plot - 2.</p>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="images/graphs_plottingArt/plot_2.jpg" data-lightbox="gallery" data-title="Plot - 3">
-                            <img src="images/graphs_plottingArt/plot_2.jpg" alt="Plot - 3">
-                        </a>
-                        <h3>Plot - 3</h3>
-                        <p>Figure description for Plot - 3.</p>
-                    </div>
-                    <!-- Add more items as you see fit -->
-                </div>
-            </div>
-        </section>
-
-        <!-- GitHub Stats Section -->
-        <section class="github-stats">
-            <div class="container">
-                <h1 class="section-title">GitHub Highlights</h1>
-                <p class="section-subtitle">
-                    Fun insights into my GitHub activity, showcasing contributions and coding streaks.
-                </p>
-                <div class="stats-grid">
-                    <div class="stats-card">
-                        <img src="https://github-readme-stats.vercel.app/api?username=bchisholm08&show_icons=true&theme=maroon" alt="GitHub Stats Card">
-                        <p class="stats-caption">Contribution Statistics</p>
-                    </div>
-                    <div class="stats-card">
-                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=bchisholm08&theme=maroon" alt="GitHub Streak Stats">
-                        <p class="stats-caption">GitHub Activity Streak</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="custom-footer" aria-label="Site Footer">
-      <div class="footer-container">
-          <div class="footer-socials">
-              <h4>Connect</h4>
-              <ul>
-                <!--  <li><a href="https://scholar.google.com/" target="_blank" aria-label="Google Scholar">Google Scholar</a></li> -->
-                  <li><a href="https://github.com/bchisholm08" target="_blank" aria-label="GitHub Profile">GitHub</a></li>
-                  <li><a href="contact.html" target="_blank" aria-label="Contact Page">Contact Page</a></li>
-                </ul>
-          </div>
       </div>
-      <div element class="footer-note">
-          <p>&copy; 2025 Brady M. Chisholm</p>
-      </div>
-    </footer>
-    <!-- /FOOTER END-->    
-    </body>
-    </html>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="custom-footer" aria-label="Site Footer">
+  <div class="footer-container">
+    <div class="footer-socials">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://github.com/bchisholm08" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="contact.html">Contact Page</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-note">&copy; 2025 Brady M. Chisholm</p>
+</footer>
+
+<!-- ============ JS : Mobile Menu ============ -->
+<script>
+document.querySelector('.hamburger-menu')
+        .addEventListener('click', () =>
+          document.querySelector('.header-links').classList.toggle('active'));
+</script>
+</body>
+</html>

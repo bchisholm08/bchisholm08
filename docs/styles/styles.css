@@ -420,3 +420,16 @@ a:hover {
     margin-top: 1.5px;
     font-size: .75rem; 
 }
+/* -------------------------------
+   QUICK‑LINKS typography tweaks
+   (add near the bottom of styles.css,
+   after the existing .quick‑links rules)
+--------------------------------*/
+.quick-links-text p{
+    font-size: 1.15rem;   /* ≈18 px; adjust as needed  */
+    line-height: 1.65;    /* keeps the larger text airy */
+}
+
+.quick-links-text .section-title-sm{
+    font-size: 2.1rem;    /* was ~1.75rem in many setups */
+}
