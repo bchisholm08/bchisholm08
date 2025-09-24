@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.21)  24 SEP 2025 14:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.21)  24 SEP 2025 15:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -225,8 +225,7 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box52
-)
-No file cv.aux.
+) (./cv.aux)
 \openout1 = `cv.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
@@ -251,7 +250,7 @@ Package hyperref Info: Link coloring ON on input line 43.
 \@outlinefile=\write3
 \openout3 = `cv.out'.
 
-(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count279
 \scratchdimen=\dimen158
@@ -353,10 +352,10 @@ Package rerunfilecheck Info: Checksums for `cv.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12381 strings out of 474116
- 210244 string characters out of 5743682
+ 12384 strings out of 474116
+ 210277 string characters out of 5743682
  1944187 words of memory out of 5000000
- 34634 multiletter control sequences out of 15000+600000
+ 34635 multiletter control sequences out of 15000+600000
  564032 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,584b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s

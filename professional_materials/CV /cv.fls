@@ -108,6 +108,9 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT ./cv.aux
+INPUT ./cv.aux
+INPUT cv.aux
 OUTPUT cv.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
 OUTPUT cv.out
