@@ -1,0 +1,127 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{hyperref} % allows hyperlinking
+\usepackage{xcolor} % For text colors
+\definecolor{Maroon}{RGB}{128, 0, 0} % Define maroon color
+\definecolor{Gray}{RGB}{120, 120, 120} % Define light gray for footer text
+\usepackage{marvosym} % For symbols (phone, email, etc.)
+\usepackage{geometry} % For page margins
+\geometry{margin=0.75in, top=0.4in} % Adjust top margin to reduce space
+\usepackage[useregional]{datetime2}
+
+[% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Hyperlink color settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=Maroon,
+    urlcolor=Maroon
+}
+
+% Footer settings
+\usepackage{fancyhdr}
+\usepackage{courier} % Use Courier New for monospace font
+\pagestyle{fancy}
+\fancyhf{} % Clear default header/footer
+\renewcommand{\headrulewidth}{0pt} % Remove header rule
+\renewcommand{\footrulewidth}{0pt} % No footer line
+
+% Define footer text formatting
+\fancyfoot[L]{\textcolor{Gray}{\texttt{\textsc{\DTMMonthname{\the\year}}}}}
+\fancyfoot[C]{\textcolor{Gray}{\texttt{\textsc{Brady M. Chisholm-Curriculum Vitae}}}}
+\fancyfoot[R]{\textcolor{Gray}{\texttt{\textsc{\thepage}}}}
+
+% Custom section formatting
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+
+\newcommand{\sectionrule}{%
+    \noindent\makebox[\textwidth][l]{\hrulefill}\par\vspace{-0.25em}
+}
+
+\begin{document}
+
+% Centered name and contact info
+\begin{center}
+    {\Large \textsc{Brady M. Chisholm}} \\[0.3em] % Small caps for name
+    \normalsize
+    \textbf{Email:} \href{mailto:chish071@umn.edu}{chish071@umn.edu} \quad $|$ \quad
+    \textbf{Phone:} \href{null}{612-499-6865} \quad $|$ \quad
+    \textbf{Website:} \href{http://brady-c.cc}{brady-c.cc} \\
+\end{center}
+
+\vspace{-1.8em}
+
+\section*{Research Interests}
+My research interests focus on understanding how the brain perceives and interacts with the world. 
+During my time in Dr. Andrew Oxenham's lab, I engaged in auditory perception research, which introduced 
+me to computational neuroscience. My goal is to pursue a Ph.D. that leverages AI, machine learning, and 
+computational methods to model biological systems in humans and animals. I aim to contribute to research 
+that deciphers how neural activity translates into behavior and decision-making.\\
+\vspace{-1.8em}
+\section*{Education}
+\textbf{University of Minnesota, Minneapolis, MN} \hfill \textit{Sep 2023--Aug 2025} \\
+\textit{Bachelor of Science: Psychology} \\
+- \textbf{Relevant coursework:} Regression and Correlated Data, Calculus I, Biopsychology\\
+\textbf{Gustavus Adolphus College, St. Peter, MN} \hfill \textit{Sep 2022--May 2023} \\
+- Participated in two semesters of research apprenticeship \\
+- Awarded two semesters of research grant funding \\
+- Men’s Varsity Swim \& Dive Competitor \\
+- \textbf{Relevant coursework:} Attention (Special Seminar), Latin I \& II, Statistics 101 CLASSNAME\\
+\vspace{-1.8em}
+\section*{Experience}
+\textbf{Researcher, UMN Neuroscience Department} \hfill \textit{September 2025-Present}\\
+\textbf{Research Assistant, UMN Neuroscience Department} \hfill \textit{Jan 2025--Aug 2025} \\
+Dr. Jean-Paul Noel's Cognitive and Systems Neuroscience Laboratory \\
+- Decoding neural activity and decision-making in mice\\
+\textbf{Research Assistant, UMN Psychology Department} \hfill \textit{Dec 2023--Aug 2025} \\
+Dr. Andrew Oxenham's Auditory Perception and Cognition Laboratory \\
+- Data collection: EEG, audiograms \\
+- Statistical analysis: GAM, GCA, ICA, linear regression, ANOVA \\
+- Various independent projects\\
+\textbf{Research Assistant, UMN Ecology, Evolution, and Behavior} \hfill \textit{Jun 2024--Aug 2024} \\
+Dr. Mark Bee's Animal Communication Laboratory \\
+- Seasonal assistant supporting research in \textit{Hyla chrysoscelis} and \textit{Hyla versicolor} tree frogs \\
+- Animal handling, experiment protocols, exploratory statistical analysis \\
+- Assisted in craniotomies and brain sample extraction\\
+\vspace{-1.8em}
+\section*{Grants and Awards}
+\textbf{Career Grant Monies Awarded:} \$5,000
+
+\textbf{Undergraduate Research Opportunities Project Grant} \hfill \textit{May 2024} \\
+- \$2,100 research grant supporting \textit{Analysis of Pupillometry Data} with Juraj Mesik
+
+\textbf{Dean’s First-Year Research and Academics Scholarship} \hfill \textit{Jan 2024} \\
+- \$900 scholarship for research with Dr. Oxenham \\
+- Assisted in EEG and pupillometry data analysis
+
+\textbf{Presidential Research Grant, Gustavus Adolphus College} \hfill \textit{May 2023} \\
+- \$1,500 summer research grant (\textit{declined})\\
+\vspace{-1.8em}
+\section*{Publications and Presentations}
+\textbf{Publications} \\
+1. Brady M. Chisholm, Juraj Mesik. \textit{An Analysis of Pupillometry Data in a Speech Paradigm}. Nov 2024.\\
+\textbf{Posters and Presentations} \\
+2. Registered poster presenter for ASA 2025: \textit{Analysis of Pupillometric Fatigue in Listening Effort} \\
+3. Brady M. Chisholm, Lauren Hecht, \textit{Entomophobic Responses and the Rubber Hand Illusion}, Spring Research Day, Gustavus Adolphus College, May 2023\\
+\vspace{-1.8em}
+\section*{Professional Membership and Service}
+\textbf{Journal Reviewer} \hfill \textit{Minnesota Undergraduate Research \& Academic Journal (2025)} \\
+\textbf{Psi Chi International Honor Society} \hfill \textit{Winner, R Data Science Competition (Oct 2024)} \\
+\textbf{Gustavus Adolphus College} \hfill \textit{Presidents Honor Research Award (May 2023)} \\
+\textbf{Eagle Scout, Boy Scouts of America} \hfill \textit{Nov 2021}\\
+\vspace{-1.8em}
+\section*{Projects}
+\textbf{A GAM Analysis of Pupillometry Data} \hfill \textit{2024} \\
+- Fatigue effects in pupillometry data modeled using GAM
+
+\textbf{The CodeR Sessions} \hfill \textit{2024--Present} \\
+- Increasing accessibility for R and data science education \\
+- Project website: \href{http://brady-c.cc}{brady-c.cc}
+
+\section*{Research Skills and Technologies}
+\textbf{Research Skills:} EEG data collection, CAD, animal handling, audiograms, chemical handling \\
+\textbf{Technology:} MATLAB, Python, R, HTML, Git, GitHub
+
+\end{document}
