@@ -49,12 +49,19 @@
   <div class="container narrow quick-links-content">
     <div class="quick-links-text">
       <h2 class="section-title-sm">Welcome to my Website!</h2>
-      <p>My name is Brady, and I'm an undergraduate student at the University of Minnesota, majoring in Psychology (B.S.). My research interests are aimed at work that helps to explain how we function and perceive the world around us. Part of this is cognitive perception, but another tool for this that I'm interested in exploring is computational neuroscience. Modern technology and computational power give us so much capability when it comes to modeling the neural activity and behavior of the brain. For me, this involves cognitive psychology, biology, statistics, and computational neuroscience—areas I continue to develop as I look towards graduate school.
+      <p>My name is Brady, and I'm an undergraduate student at the University of Minnesota, majoring in Psychology (B.S.). My research interests are aimed at work that helps to explain how we function and perceive the world around us. Part of this is cognitive perception, but another tool for this that I'm interested in exploring is computational neuroscience. Modern technology and computational power give us so much capability when it comes to modeling the neural activity and behavior of the brain. For me, this involves cognitive psychology, biology, statistics, and computational neuroscience—areas I continue to develop as I look towards graduate school.</p>
 
-        Currently, I am working as a research assistant in Dr. Andrew Oxenham's Auditory Perception and Cognition Lab and Dr. Jean-Paul Noel's Neuroscience Lab.
-        
-        Explore my website to learn about my academic background, projects I've worked on, and goals for my future graduate studies.</p>
-      <p>Currently working as a research assistant in <a href="https://apc.psych.umn.edu/" target="_blank" rel="noopener noreferrer">Oxenham’s Auditory Perception Lab</a> and <a href="https://noel-lab.org/" target="_blank" rel="noopener noreferrer">Noel’s Neuroscience Lab</a>.</p>
+      <div class="lab-links">
+        <h3 class="section-subtitle-sm">Current Labs</h3>
+        <div class="quick-link-wrapper">
+          <a href="https://apc.psych.umn.edu/" target="_blank" rel="noopener noreferrer" class="quick-link">Oxenham’s Auditory Perception Lab</a>
+        </div>
+        <div class="quick-link-wrapper">
+          <a href="https://noel-lab.org/" target="_blank" rel="noopener noreferrer" class="quick-link">Noel’s Neuroscience Lab</a>
+        </div>
+      </div>
+
+      <p>Explore my website to learn about my academic background, projects I've worked on, and goals for my future graduate studies.</p>
     </div>
 
     <div class="quick-links-image">
@@ -218,9 +225,9 @@
 
 <!-- ============ JS : Mobile Menu ============ -->
 <script>
-document.querySelector('.hamburger-menu')
-        .addEventListener('click', () =>
-          document.querySelector('.header-links').classList.toggle('active'));
+  document.querySelector('.hamburger-menu')
+          .addEventListener('click', () =>
+            document.querySelector('.header-links').classList.toggle('active'));
 </script>
 </body>
 </html>

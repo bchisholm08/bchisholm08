@@ -1,91 +1,99 @@
 \documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
 \usepackage{geometry}
-\geometry{margin=0.8in}
-\usepackage{enumitem}
-\setlist[itemize]{noitemsep, topsep=0pt, partopsep=0pt}  % Compact spacing for bullet points
-\pagenumbering{gobble}
+\usepackage{xcolor}
 \usepackage{titlesec}
-\usepackage{parskip}
+\usepackage{enumitem}
 
-% Formatting section titles
-\titlespacing*{\section}{0pt}{1em}{0.5em}
-\titleformat{\section}{\bfseries\large}{}{0em}{}[\titlerule]
+\geometry{margin=0.65in} % tighten margins a bit
+\linespread{0.96}        % slightly tighter line spacing
+
+% Define colors
+\definecolor{Maroon}{RGB}{128,0,0}
+
+% Hyperlink settings
+\hypersetup{
+  colorlinks=true,
+  urlcolor=Maroon
+}
+
+% No paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Section spacing
+\titlespacing*{\section}{0pt}{0.6em}{0.3em}
+
+% List spacing
+\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[enumerate]{noitemsep, topsep=0pt}
 
 \begin{document}
 
+%-------------------- Header --------------------
 \begin{center}
-    \textbf{\Large Brady M. Chisholm} \\
-    Minneapolis, MN \\
-    E: chish071@umn.edu \quad — \quad C: 612.499.6865 \quad — \quad Website: brady-c.cc
+    {\LARGE \textbf{Brady M. Chisholm}} \\
+    \href{mailto:bmc@brady-c.cc}{bmc@brady-c.cc} \quad | \quad (612) 499-6865 \quad | \quad \href{http://brady-c.cc}{brady-c.cc} \\
 \end{center}
 
-\vspace{-0.1in}  % Slightly reduced space between header and first section
+%-------------------- Summary --------------------
+\section*{Professional Summary}
+Early-career researcher with experience in neuroscience, 
+data science, and computational modeling. Skilled in EEG data collection, 
+statistical modeling (GAM, ICA, regression), and programming in Python,
+ MATLAB, and R. Seeking experience in industry research and data science roles with opportunities for innovation and professional growth towards graduate school.  
 
+%-------------------- Education --------------------
 \section*{Education}
-\vspace{-0.02in}
+\textbf{University of Minnesota, Minneapolis, MN} \hfill Sep 2023 -- Aug 2025 \\
+Bachelor of Science in Psychology \\
+Relevant Coursework: Regression and Correlated Data, Calculus I, Biopsychology  
 
-\textbf{University of Minnesota, Twin Cities} \hfill Minneapolis, MN \\
-College of Liberal Arts \hfill September 2023-Present \\
-B.S. Psychological Science \\
-Minor in Computer Science \\
-University Honors Program Major
-\begin{itemize}
-    \item Research Assistant, Auditory Perception and Cognition Laboratory under Dr. Andrew Oxenham
-    \item PsyChi Club Member
+\textbf{Gustavus Adolphus College, St. Peter, MN} \hfill Sep 2022 -- May 2023 \\
+Research apprenticeship, grant-funded projects; Varsity Swim \& Dive  
+
+%-------------------- Experience --------------------
+\section*{Research Experience}
+\textbf{Researcher / Research Assistant, UMN Neuroscience Department} \hfill Jan 2025 -- Present \\
+Cognitive and Systems Neuroscience Lab (Dr. Jean-Paul Noel) 
+\begin{itemize}  
+  \item Designed and implement studies aimed at decoding decision making from neural activity 
+  \item Collect EEG data, implement EEG methods, analyze EEG data 
+  \item Applied computational analysis to large-scale neural datasets  
 \end{itemize}
 
-\textbf{Gustavus Adolphus College} \hfill St. Peter, MN \\
-B.S. in Psychology \hfill August 2022-May 2023
+\textbf{Research Assistant, UMN Psychology Department} \hfill Dec 2023 -- Aug 2025 \\
+Auditory Perception and Cognition Lab (Dr. Andrew Oxenham \& Dr. Juraj Mesik) 
 \begin{itemize}
-    \item Presidential Research Grant Recipient, Summer 2023
-    \item Swanson Holcomb Undergraduate Research Experience Grant Recipient, Spring 2023
-    \item Research Apprentice, Fall 2022-Spring 2023
-    \item Varsity Swim and Dive Competitor, 2022-2023
+  \item Designed and analyzed experiments using EEG and pupillometry to study listening effort  
+  \item Built GAM and regression models to study auditory perception and fatigue  
+  \item Co-authored publication and prepared ASA 2025 presentation  
 \end{itemize}
 
-\section*{Work Experience}
-\vspace{-0.05in}
-
-\textbf{Supportive Living Solutions} \hfill Minneapolis, MN \\
-Mental Health Advocate II \hfill June 2023-Present
+\textbf{Research Assistant, UMN Ecology, Evolution, and Behavior} \hfill Jun 2024 -- Aug 2024 \\
+Animal Communication Lab (Dr. Mark Bee) 
 \begin{itemize}
-    \item Client caseload management, medication administration 
-    \item On-The-Job Trainer for new company staff 
+  \item Assisted in experiments with \textit{Hyla} species; supported craniotomy procedures  
+  \item Collected and analyzed behavioral data  
 \end{itemize}
 
-\textbf{South Suburban Athletic Conference} \hfill Metro Area, MN \\
-Head Official \hfill September 2018-Present
-\begin{itemize}
-    \item Referee for youth sports and tournaments.
-    \item Managed teams of officials and trained new referees.
-\end{itemize}
+%-------------------- Selected Projects --------------------
+\section*{Publications and Posters}
+\textbf{Analysis of Pupillometry Data} (2024)  
+- Developed GAM models to examine fatigue effects in listening effort studies  
 
-\textbf{The Gustavian Weekly} \hfill St. Peter, MN \\
-Lead Copy Editor \hfill August 2022-June 2023
-\begin{itemize}
-    \item Managed a team of editors and oversaw final publication review.
-\end{itemize}
+\textbf{The CodeR Sessions} (2024--Present)  
+- Created tutorials and open-source materials to teach R and data science methods  
 
-\textbf{Kwik Trip Inc.} \hfill Lakeville, MN \\
-Guest Service Coworker \hfill June 2019-May 2023
-\begin{itemize}
-    \item Handled customer service, inventory, and store operations.
-\end{itemize}
+%-------------------- Awards --------------------
+\section*{Awards \& Grants}
+Undergraduate Research Opportunities Project Grant (\$2,100, 2024) \\
+Dean’s First-Year Research and Academics Scholarship (\$900, 2024) \\
+Presidential Research Grant, Gustavus Adolphus College (\$1,500, 2023)  
 
-\vspace{0.1in}
-
-\section*{Awards and Achievements}
-\vspace{-0.05in}
-
-\begin{itemize}
-    \item Residential Directors Service Award, February 2024
-    \item Deans First-Year Research and Creative Scholar Grant Recipient, Spring 2024
-    \item Presidential Research Grant Recipient, Summer 2023
-    \item Swanson Holcomb Research Grant Recipient, Spring 2023
-    \item President’s Academic Honor List, Fall 2022, Spring 2023
-    \item Eagle Scout, November 2021
-    \item Varsity Captain, Apple Valley Swim and Dive, 2020-2022
-\end{itemize}
+%-------------------- Skills --------------------
+\section*{Technical Skills}
+\textbf{Programming:} Python, R, MATLAB, HTML, Git/GitHub \\
+\textbf{Analysis:} EEG, ICA, GAM, regression, ANOVA, data visualization \\
+\textbf{Research:} Experimental design, animal handling, data collection  
 
 \end{document}
