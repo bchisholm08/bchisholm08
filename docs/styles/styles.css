@@ -58,8 +58,8 @@ header {
 
 /* Profile Picture Section */
 .profile-picture {
-    width: 650px; /* Increased from 300px */
-    height: 550px; /* Increased from 300px */
+    width: 300px; /* Increased from 300px */
+    height: 300px; /* Increased from 300px */
     border-radius: 10%;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -78,7 +78,7 @@ header {
 
 .explore-section h2 {
     color: #800000;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 2rem;
 }
 
@@ -332,4 +332,282 @@ textarea:focus {
 
 .error-message {
     color: #dc3545; /* Red for error */
+}
+
+/* =========================================================
+   NEW HEADER STYLES
+========================================================= */
+
+/* A. Main Header Bar */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+/* B. Overriding the old header-container */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Pushes name to left, nav to right */
+    align-items: center;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    gap: 20px;
+}
+
+/* C. Your Name and Title */
+.site-branding h1 {
+    margin: 0;
+    color: #333333;
+    font-size: 2.2rem;
+}
+
+.site-branding .subtitle {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555555;
+    font-weight: 400;
+}
+
+/* D. Main Navigation Links */
+.main-navigation {
+    display: flex;
+    gap: 25px;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #800000; /* Your maroon color */
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent; /* For hover effect */
+    transition: border-color 0.3s;
+}
+
+.main-navigation a:hover {
+    color: #a00000;
+    border-bottom-color: #a00000; /* Underline appears on hover */
+}
+
+/* =========================================================
+   NEW INTRO SECTION STYLES
+========================================================= */
+
+/* E. The container for the intro text and photo */
+.intro-section {
+    background-color: #f9f9f9; /* A very light gray background */
+    padding: 50px 0;
+    text-align: left; /* Override the global center alignment */
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Stacks image on top of text on small screens */
+    justify-content: center; /* Center the items when they wrap */
+}
+
+/* F. The new styling for the profile picture in this section */
+.profile-picture-intro {
+    width: 250px; /* Smaller and more appropriate */
+    height: 250px;
+    border-radius: 65%; /* A circular crop looks modern */
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* G. The text next to the picture */
+.intro-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1em; /* Space between paragraphs */
+}
+
+/* =========================================================
+   ABOUT PAGE STYLES
+========================================================= */
+
+/* A. Page Banner (using the Seattle fog image) */
+.page-banner {
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make text pop */
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    z-index: 1; /* Puts text above the overlay */
+}
+
+/* B. Main Page Content Container */
+.page-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* C. Intro Section (Headshot + Text) */
+.about-intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    justify-content: center; /* Center items when they wrap */
+}
+
+.about-headshot {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Circular headshot */
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: 5px solid white;
+}
+
+.intro-text-about {
+    flex: 1;
+    max-width: 650px;
+    text-align: left;
+}
+
+.intro-text-about h2 {
+    margin-bottom: 15px;
+    color: #800000; /* Your maroon color */
+}
+
+/* D. Main Article/Details Section */
+.about-details {
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto 50px auto; /* Center the text column */
+}
+
+.about-details h2 {
+    color: #333;
+    border-bottom: 2px solid #800000;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.about-details p {
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+}
+
+/* E. Professional Documents Section */
+.professional-documents {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.professional-documents h2 {
+    margin-bottom: 15px;
+}
+
+.document-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.document-link-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 35px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.document-link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.document-link-card .document-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* ==================
+   Kitty Gallery Styles
+   ================== */
+
+.kitty-gallery {
+    text-align: center; /* Centers the heading and paragraph */
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* A light background to separate the section */
+    margin-top: 40px;
+}
+
+.kitty-gallery h2 {
+    margin-bottom: 10px;
+}
+
+.kitty-gallery p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.kitty-photos {
+    display: flex; /* This is key to placing images side-by-side */
+    justify-content: center; /* Centers the images horizontally */
+    gap: 30px; /* Adds space between the photos */
+    flex-wrap: wrap; /* Allows images to stack on smaller screens */
+}
+
+.kitty-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.kitty-card img {
+    width: 100%; /* Makes the image fill the card */
+    height: 200px; /* Gives a consistent height */
+    object-fit: cover; /* Prevents image from stretching */
+    border-radius: 8px; /* Rounds the corners of the photo */
+}
+
+.kitty-name {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
 }

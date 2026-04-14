@@ -13,19 +13,23 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <img src="images/photo.jpg" alt="Brady M. Chisholm" class="profile-picture">
+<!-- Header Section; set as site-wide header updated 3/18/2026-->
+<header class="site-header">
+    <div class="container header-container">
+        <div class="site-branding">
             <h1>Brady M. Chisholm</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Back to Homepage</a></li>
-                    <!-- Add more navigation links if needed -->
-                </ul>
-            </nav>
+            <p class="subtitle">Researcher</p> <!-- changed from "Post-Bacc Researcher" to "Researcher" 2/2/26. Uncertain.... -->
         </div>
-    </header>
+        <nav class="main-navigation">
+            <a href="about.html">About Me</a>
+            <a href="research.html">Research</a>
+            <a href="../mySiteDocs/cv.pdf" target="_blank">My CV</a>
+            <!-- <a href="photographs.html">Photos</a> UNCOMMENT ONCE UPDATED -->
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+<!-- end header -->
 
     <!-- Main Content -->
     <main>
@@ -52,20 +56,18 @@
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Brady M. Chisholm. All rights reserved.</p>
-            <!-- Social Media Links -->
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
-                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-icons">
+                <a href="https://github.com/bchisholm08" target="_blank" aria-label="GitHub">
+                    <img src="images\others\logos\githubLogo.svg" alt="GitHub Icon">
                 </a>
-                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
-                    <img src="images/github.svg" alt="GitHub Icon">
-                </a>
-                <!-- Add more social media links as needed -->
             </div>
         </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Brady M. Chisholm</p>
+        </div>
     </footer>
+    
 </body>
 </html>

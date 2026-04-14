@@ -1,0 +1,30 @@
+<!-- 
+
+INTRO TEXT -- index.html  
+
+-->
+
+<p>
+
+Welcome to my personal website! My name is Brady, I'm a scientist who graduated from the University of Minnesota, having earned my B.S. in Psychology in 
+August 2025.I am currently working as a Research Professional in Dr. Andrew Oxenham's Auditory Perception and Cognition Laboratory.
+
+</p>
+
+
+<p>
+
+My research interests involve cognitive perception, along with statistics and computational neuroscience. I am particularly interested in how we can use behavioral datasets, such as pupillometry or EEG, and apply statistical methods to explore and explain human behavior. Explore my work and feel free to get in touch!
+</p>
+	
+============================================== =
+<!--  
+RESEARCH INTERESTS -- about.html 
+-->
+
+<p>
+
+I am a data-driven researcher interested in the intersection of cognitive science and data science, and motivated asking: How does our brain interface with the world? To investigate this, I have been involved in multiple labs using a multi-modal approach, collecting and analyzing EEG, pupillometry, and behavioral data from human participants.
+My software experience is centered around R and MATLAB, where I’ve developed end-to-end analytical pipelines for signal processingand statistical modeling. I'm passionate about designing robust experiments and visualizing complex data in ways that reveal clear, compelling stories about human cognition.
+ 
+</p>

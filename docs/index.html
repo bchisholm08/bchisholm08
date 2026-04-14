@@ -12,40 +12,73 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Meta Description for SEO -->
-    <meta name="description" content="Contact Brady M. Chisholm, an undergraduate student in Psychology and Research Assistant in Auditory Perception and Neuroscience.">
+    <meta name="description" content="Contact Brady M. Chisholm, Researcher in Psychology.">
     <!-- Meta Keywords for SEO -->
     <meta name="keywords" content="Brady Chisholm, Contact, Psychology, AI, Artificial Intelligence, Machine Learning, Research Assistant, Auditory Perception, Neuroscience">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container header-container">
-            <!-- Profile Picture Section -->
-            <div class="profile-section">
-                <img src="images/others/bostonZoomedIn.JPG" alt="Brady M. Chisholm" class="profile-picture">
-            </div>
-            <!-- Explore Section -->
-            <div class="explore-section">
-                <h2>Explore</h2>
-                <div class="explore-links">
-                    <a href="about.html" class="explore-link">About Me</a>
-                    <a href="contact.html" class="explore-link">Contact Me</a>
-                    <a href="photographs.html" class="explore-link">Photo Gallery</a>
-                    <a href="https://github.com/bchisholm08" target="_blank" class="explore-link">GitHub</a>
-                </div>
+
+<!-- Header Section; set as site-wide header updated 4/14/2026-->
+<header class="site-header">
+    <div class="container header-container">
+<div class="site-branding">
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1>Brady M. Chisholm</h1>
+        <p class="subtitle">Researcher</p>
+    </a>
+</div>
+        <nav class="main-navigation">
+            <a href="about.html">About Me</a>
+            <a href="research.html">Research</a>
+            <a href="../mySiteDocs/cv.pdf" target="_blank">My CV</a>
+            <!-- <a href="photographs.html">Photos</a> UNCOMMENT ONCE UPDATED -->
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+<!-- end header -->
+
+<main>
+    <section class="intro-section">
+        <div class="container intro-container">
+            <img src="images/others/bostonZoomedIn.JPG" alt="Brady M. Chisholm" class="profile-picture-intro">
+            <div class="intro-text">
+                <p>
+                    Welcome to my personal website! I am a researcher who received their undergraduate degree from the University of Minnesota, earning my B.S. in Psychology in August 2025.
+                     I am currently working as a Research Professional in Dr. Andrew Oxenham's Auditory Perception and Cognition Laboratory.
+                </p>
+                <p>
+                    My research interests involve cognitive perception, along with statistics and computational neuroscience.
+                    I am particularly interested in how we can use behavioral data and statistical methods to explore and explain human behavior. 
+                    Explore <a href="research.html">my work</a> and feel free to get in touch!
+                </p>
             </div>
         </div>
-        <h2>Brady M. Chisholm</h2>
-    </header>
+    </section>
 
     <!-- Quick Links Section -->
     <section class="quick-links">
-        <div class="container">
+        <div class="container" style = "margin-bottom: 15px;">
             <h2>Quick Links</h2>
-            <a href="bchisholm08/professional_materials/cv_fa24_verN.pdf" target="_blank" class="quick-link">My CV</a>
-            <p>Click below to learn more about labs I'm involved in!</p>
-            <a href="https://apc.psych.umn.edu/" target="_blank" class="quick-link">APC Lab @ UMN-TC</a>
+            <a href="../mySiteDocs/cv.pdf" target="_blank" class="quick-link">My CV</a>  <!-- fixed cv dir 1/6/26 -->
         </div>
+
+<div class="container" style="margin-bottom: 15px;">
+            <p>Current Lab I'm Working In:</p>
+            <a href="https://apc.psych.umn.edu/" target="_blank" class="quick-link">Auditory Perception & Cognition Lab @ UMN-TC</a>
+</div>
+        <div class="container">
+        
+        Previous Labs I've Worked In:
+         
+         <p><a href="https://noel-lab.org/" target = "_blank" class="quick-link">Noel Neuroscience Lab @ UMN-TC </a></p>
+
+           <p><a href="https://cbs.umn.edu/animal-communication-lab" target = "_blank" class="quick-link">Animal Communication Lab @ UMN-TC</a></p>
+          
+        </div>
+        
+    </p>
+
     </section>
 
     <!-- Main Content -->
@@ -53,70 +86,32 @@
         <section class="intro">
             <div class="container">
                 <p>
-                    Welcome to my personal website! I am an undergraduate student at the University of Minnesota, majoring with a B.S. in Psychology. 
-                    My research interests involve any work that explains how we function and percieve the world around us. 
-                    I believe we are at an optimal time in science to take advantage of technology we have available to unlock the secrets of the brain. 
-                    For me, answering these questions involves cognitive psychology, biology, statistics, and computational neuroscience. These are all areas I am 
-                    working on developing as I wrap up my undergraduate experience and look towards graduate school.
-                    
-                <br>    
-                
-                </br>
-
-                    Currently, I am working as a research assistant in Dr. Andrew Oxenham's Auditory Perception and Cognition Lab and Dr. Jean-Paul Noel's Neuroscience Laboratory.
-                </p>
-                <br>    
-                
-                </br>
-                <p>
-                    Explore my website to learn about my academic background, projects I've worked on, and my goals for future graduate studies.
+                    Explore my website to learn about my academic background, see posters & projects I've worked on, cool photos I've taken, and hopes for future research endeavours. Email me with questions or just to chat at <a href="mailto:bmc@brady-c.cc">bmc@brady-c.cc</a>
                 </p>
             </div>
         </section>
     </main>
 
-    <!-- Collage Gallery Section -->
-    <section class="collage-gallery">
-        <div class="container">
-            <h2>Figure Fun</h2>
-            <p>Below is a random selection (view the full library here) of some of the figures I have generated using R. Each figure uses a different 
-                visualization or exploration with artifically generated data.</p>
-            <div class="gallery">
-                <!-- Individual Figure with Caption -->
-                <div class="gallery-item">
-                    <img src="images/graphs_plottingArt/plot_0.jpg" alt="Wave Plot - 1">
-                    <figcaption>Plot - 1</figcaption>
+<section class="kitty-gallery container">
+                <h2>Research Support Staff</h2>
+                <p>
+                    My work is diligently supported by my two cats, Poppy and Lloyd. Though they may lack
+                    experience in the lab, they are always ready to assist in reading some literature or reviewing code.
+                </p>
+                <div class="kitty-photos">
+                    <div class="kitty-card">
+                        <img src="images\poppy.jpg" alt="A photo of Poppy.">
+                        <p class="kitty-name">Poppy</p>
+                    </div>
+                    <div class="kitty-card">
+                        <img src="images\lloyd.jpg" alt="A photo of Lloyd.">
+                        <p class="kitty-name">Lloyd</p>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/graphs_plottingArt/plot_1.jpg" alt="Wave Plot - 2">
-                    <figcaption>Plot - 2</figcaption>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/graphs_plottingArt/plot_2.jpg" alt="Wave Plot - 3">
-                    <figcaption>Plot - 3</figcaption>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/graphs_plottingArt/plot_3.jpg" alt="Wave Plot - 4">
-                    <figcaption>Plot - 4</figcaption>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/graphs_plottingArt/plot_4.jpg" alt="Wave Plot - 5">
-                    <figcaption>Plot - 5</figcaption>
-                </div>
-                <!-- Add more figures as needed -->
-                <div class="gallery-item">
-                    <img src="images/graphs_plottingArt/plot_5.jpg" alt="Wave Plot - 6">
-                    <figcaption>Plot - 6</figcaption>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/graphs_plottingArt/plot_6.jpg" alt="Wave Plot - 7">
-                    <figcaption>Plot - 7</figcaption>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Footer Section -->
+
+    <!-- Footer Section; set as site-wide header updated 1/4/2026 -->
     <footer class="custom-footer">
         <div class="footer-container">
             <div class="footer-icons">
@@ -126,9 +121,11 @@
             </div>
         </div>
         <div class="footer-copyright">
-            <p>&copy; 2024 Brady M. Chisholm</p>
+            <p>&#xa9; 2026 Brady M. Chisholm</p>
+            <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization</i></p>
         </div>
     </footer>
+<!-- end footer -->
 
 </body>
 </html>

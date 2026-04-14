@@ -3,46 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research</title>
+    <title>Research | Brady M. Chisholm</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <script defer src="scripts/carousel.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Research</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="poppy.html">Poppy Pics</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+<!-- Header Section; set as site-wide header updated 4/14/2026-->
+<header class="site-header">
+    <div class="container header-container">
+<div class="site-branding">
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1>Brady M. Chisholm</h1>
+        <p class="subtitle">Researcher</p>
+    </a>
+</div>
+        <nav class="main-navigation">
+            <a href="about.html">About Me</a>
+            <a href="research.html">Research</a>
+            <a href="../mySiteDocs/cv.pdf" target="_blank">My CV</a>
+            <!-- <a href="photographs.html">Photos</a> UNCOMMENT ONCE UPDATED -->
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+<!-- end header -->
+
     <main>
-        <section>
-            <h2>My Research & Projects</h2>
-            <div class="carousel">
-                <button class="carousel-prev">❮</button>
-                <div class="carousel-item">
-                    <h3>Project 1: Auditory Perception</h3>
-                    <p>Investigating how humans process auditory stimuli under cognitive load. <a href="#">Learn More</a></p>
-                </div>
-                <div class="carousel-item">
-                    <h3>Project 2: Machine Learning in Psychology</h3>
-                    <p>Using machine learning to predict behavioral outcomes. <a href="#">Learn More</a></p>
-                </div>
-                <div class="carousel-item">
-                    <h3>Project 3: Experimental Design</h3>
-                    <p>Designing and analyzing complex psychological experiments. <a href="#">Learn More</a></p>
-                </div>
-                <button class="carousel-next">❯</button>
-            </div>
+        <section class="page-banner" style="background-image: url('images/others/seattleFog.jpg');">
+            <div class="banner-overlay"></div>
+            <h1 class="banner-title">My Research</h1>
         </section>
+
+        <div class="container page-content">
+
+            <section class="research-intro">
+                <h2>Research Focus</h2>
+                <p>
+                I am a data-driven researcher interested in the intersection of cognitive science and data science, and motivated by asking, how does our brain interface with the world? To investigate this, I have been involved in multiple labs using a multi-modal approach, collecting and analyzing EEG, pupillometry, and behavioral data from human participants.
+
+                My technical experience is centered around R and MATLAB, where I’ve developed end-to-end pipelines for signal processing and statistical modeling. I'm passionate about designing robust experiments and visualizing complex data in ways that reveal clear, compelling stories about human cognition.
+
+                </p>
+            </section>
+
+            <section class="about-details">
+                <h2>Posters</h2>
+                <p> <a href="asa/poster/path.pdf" target="_blank">ASA Poster</a></p>
+
+                <!-- <h2>Submitted Manuscripts</h2>
+                <p> <a href="paper/path.pdf" target="_blank">Paper Title</a></p> -->
+                
+                <!-- <h2>Peer Reviewed Publications</h2>
+                <p> <a href="paper/path.pdf" target="_blank">Paper Title</a></p> -->
+            </section>
+
+            <!-- <section class="projects-section">
+                <h2>Research Projects</h2>
+                <div class="project-grid">
+
+                  <div class="project-card">
+                        <img src="images/graphs_plottingArt/plot_6.jpg" alt="Image representing auditory perception research" class="project-image">
+                        <div class="project-content">
+                            <h3>Auditory Perception Under Cognitive Load</h3>
+                            <p class="project-role"><strong>Role:</strong> Research Assistant</p>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Investigating how humans process complex auditory stimuli while performing demanding cognitive tasks. Utilized Python for data analysis and visualization.
+                            </p>
+                            <a href="#" class="project-link disabled-link">Details (Coming Soon)</a>
+                        </div>
+                    </div> -->
+                    <!-- </div>
+            </section> --> 
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Brady M. Chisholm</p>
+
+<!-- Footer Section; set as site-wide header updated 1/4/2026 -->
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-icons">
+                <a href="https://github.com/bchisholm08" target="_blank" aria-label="GitHub">
+                    <img src="images\others\logos\githubLogo.svg" alt="GitHub Icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&#xa9; 2026 Brady M. Chisholm</p>
+            <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization</i></p>
+        </div>
     </footer>
+<!-- end footer -->
+ 
 </body>
 </html>
