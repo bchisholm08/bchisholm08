@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-<!-- Header Section; set as site-wide header updated 4/14/2026-->
-<header class="site-header">
-    <div class="container header-container">
-<div class="site-branding">
-    <a href="index.html" style="text-decoration: none; color: inherit;">
-        <h1>Brady M. Chisholm</h1>
-        <p class="subtitle">Researcher</p>
-    </a>
-</div>
-        <nav class="main-navigation">
-            <a href="about.html">About Me</a>
-            <a href="research.html">Research</a>
-            <a href="../mySiteDocs/cv.pdf" target="_blank">My CV</a>
-            <!-- <a href="photographs.html">Photos</a> UNCOMMENT ONCE UPDATED -->
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-</header>
-<!-- end header -->
+    <!-- Header Section; set as site-wide header updated 4/14/2026-->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="site-branding">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Brady M. Chisholm</h1>
+                    <p class="subtitle">Researcher</p>
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <a href="about.html">About Me</a>
+                <a href="research.html" class="active">Research</a>
+                <a href="../mySiteDocs/cv.pdf" target="_blank">My CV</a>
+                <!-- <a href="photographs.html">Photos</a> UNCOMMENT ONCE UPDATED -->
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- end header -->
 
     <main>
         <section class="page-banner" style="background-image: url('images/others/seattleFog.jpg');">
@@ -38,61 +40,130 @@
         <div class="container page-content">
 
             <section class="research-intro">
-                <h2>Research Focus</h2>
-                <p>
-                I am a data-driven researcher interested in the intersection of cognitive science and data science, and motivated by asking, how does our brain interface with the world? To investigate this, I have been involved in multiple labs using a multi-modal approach, collecting and analyzing EEG, pupillometry, and behavioral data from human participants.
+                <h2>Research Interests</h2>
+                <div class="research-intro-text">
+                    <p>
+                        I am a data-driven researcher interested in how we can leverage cognitive science and data
+                        science to help understand <em>how does our brain interface with and understand the world?
+                        </em> To investigate this, I've been training in gathering and analysis of multi-modal data
+                        across
+                        various labs, including EEG, pupillometry, and behavioral data from human participants.
+                    </p>
+                    <p>
+                        My technical expertise is centered around <strong>R</strong> and <strong>MATLAB</strong>, where
+                        I’ve developed end-to-end pipelines for signal processing and statistical modeling. I am
+                        passionate about designing robust experiments and visualizing complex data to create clear,
+                        compelling stories about human cognition.
+                    </p>
+                </div>
 
-                My technical experience is centered around R and MATLAB, where I’ve developed end-to-end pipelines for signal processing and statistical modeling. I'm passionate about designing robust experiments and visualizing complex data in ways that reveal clear, compelling stories about human cognition.
-
-                </p>
+                <!-- Skill Badges -->
+                <div class="skills-wrapper">
+                    <h3>Technical Toolboxes & Skills</h3>
+                    <div class="skills-container">
+                        <span class="skill-badge">EEG (BioSemi)</span>
+                        <span class="skill-badge">Pupillometry (Tobii)</span>
+                        <span class="skill-badge">MATLAB</span>
+                        <span class="skill-badge">Generalized Additive Mixed Models</span>
+                        <span class="skill-badge">R/RStudio</span>
+                        <span class="skill-badge">Data preprocessing</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Linear Mixed Effects Modeling</span>
+                    </div>
+                </div>
             </section>
 
             <section class="about-details">
-                <h2>Posters</h2>
-                <p> <a href="asa/poster/path.pdf" target="_blank">ASA Poster</a></p>
 
                 <!-- <h2>Submitted Manuscripts</h2>
-                <p> <a href="paper/path.pdf" target="_blank">Paper Title</a></p> -->
-                
-                <!-- <h2>Peer Reviewed Publications</h2>
-                <p> <a href="paper/path.pdf" target="_blank">Paper Title</a></p> -->
+                <div class="publication-list">
+                    <a href="paper/path.pdf" target="_blank" class="publication-card">
+                        <img src="images/others/logos/cvDoc.svg" alt="Document Icon" class="publication-icon">
+                        <div class="publication-info">
+                            <span class="publication-title">Pupillometry Preprint</span>
+                            <span class="publication-meta">Submitted 2025</span>
+                        </div>
+                    </a>
+                </div> -->
+
+                <h2>Posters & Presentations</h2>
+                <div class="publication-list">
+                    <!-- SRD Poster -->
+                    <a href="images/posters/SRD_26poster.pdf" target="_blank" class="publication-card">
+                        <img src="images/others/logos/cvDoc.svg" alt="Poster Icon" class="publication-icon">
+                        <div class="publication-info">
+                            <span class="publication-title">Assessing the Effect of Pupillometric Fatigue on Task-Evoked
+                                Responses in a Listening Effort Paradigm</span>
+                            <span class="publication-meta">Center for Applied Translational and Sensory Science Spring
+                                Research Day, April 10th 2026</span>
+                            <span class="publication-meta">University of Minnesota Twin-Cities, Minneapolis, MN</span>
+                        </div>
+                    </a>
+
+                    <a href="images/posters/gammsClub04092026.pdf" target="_blank" class="publication-card">
+                        <img src="images/others/logos/cvDoc.svg" alt="Presentation Icon" class="publication-icon">
+                        <div class="publication-info">
+                            <span class="publication-title">Generalized Additive Models and More Club
+                                Presentation</span>
+                            <span class="publication-meta">Pupillometry Remains Sensitive to SNR-based Manipulations
+                                Across Prolonged Experimental Sessions</span>
+                            <span class="publication-meta">April 8th 2026</span>
+                        </div>
+                    </a>
+
+                    <!-- ASA Poster -->
+                    <a href="images/posters/asa2025_BC_JM_ver4.pdf" target="_blank" class="publication-card">
+                        <img src="images/others/logos/cvDoc.svg" alt="Poster Icon" class="publication-icon">
+                        <div class="publication-info">
+                            <span class="publication-title">Assessing the Effect of Pupillometric Fatigue on Task-evoked
+                                Responses in a Listening Effort Paradigm</span>
+                            <span class="publication-meta">188th Meeting of the
+                                Acoustical Society of America, New Orleans, LA. May 2025</span>
+                        </div>
+                    </a>
+                </div>
             </section>
 
             <!-- <section class="projects-section">
                 <h2>Research Projects</h2>
                 <div class="project-grid">
 
-                  <div class="project-card">
-                        <img src="images/graphs_plottingArt/plot_6.jpg" alt="Image representing auditory perception research" class="project-image">
+                    <div class="project-card">
+                        <img src="images/graphs_plottingArt/plot_6.jpg" alt="Auditory Perception Research"
+                            class="project-image">
                         <div class="project-content">
                             <h3>Auditory Perception Under Cognitive Load</h3>
                             <p class="project-role"><strong>Role:</strong> Research Assistant</p>
                             <p class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Investigating how humans process complex auditory stimuli while performing demanding cognitive tasks. Utilized Python for data analysis and visualization.
+                                Investigating how humans process complex auditory stimuli while performing demanding
+                                cognitive tasks. Utilized Python and MATLAB for data analysis and visualization.
                             </p>
                             <a href="#" class="project-link disabled-link">Details (Coming Soon)</a>
                         </div>
-                    </div> -->
-                    <!-- </div>
-            </section> --> 
+                    </div>
+
+                </div>
+            </section> -->
         </div>
     </main>
 
-<!-- Footer Section; set as site-wide header updated 1/4/2026 -->
+    <!-- Footer Section; set as site-wide header updated 1/4/2026 -->
     <footer class="custom-footer">
         <div class="footer-container">
             <div class="footer-icons">
                 <a href="https://github.com/bchisholm08" target="_blank" aria-label="GitHub">
-                    <img src="images\others\logos\githubLogo.svg" alt="GitHub Icon">
+                    <img src="images/others/logos/githubLogo.svg" alt="GitHub Icon">
                 </a>
             </div>
         </div>
         <div class="footer-copyright">
             <p>&#xa9; 2026 Brady M. Chisholm</p>
-            <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization</i></p>
+            <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization</i>
+            </p>
         </div>
     </footer>
-<!-- end footer -->
- 
+    <!-- end footer -->
+
 </body>
+
 </html>

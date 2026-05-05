@@ -58,8 +58,10 @@ header {
 
 /* Profile Picture Section */
 .profile-picture {
-    width: 300px; /* Increased from 300px */
-    height: 300px; /* Increased from 300px */
+    width: 300px;
+    /* Increased from 300px */
+    height: 300px;
+    /* Increased from 300px */
     border-radius: 10%;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -67,7 +69,8 @@ header {
 }
 
 .profile-picture:hover {
-    transform: scale(1.05); /* Keep the hover effect as before */
+    transform: scale(1.05);
+    /* Keep the hover effect as before */
 }
 
 
@@ -111,25 +114,69 @@ header {
 ========================================================= */
 
 .quick-links {
-    background-color: #f9f9f9;
-    padding: 30px 0;
+    background-color: #800000;
+    /* Rich maroon background */
+    padding: 80px 0;
+    /* Increased padding for the dividers */
+    position: relative;
+    margin-top: -1px;
+    /* Prevents 1px gap rendering issue */
+}
+
+.quick-links .container {
+    position: relative;
+    z-index: 2;
 }
 
 .quick-links h2 {
-    color: #800000;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    color: #ffffff;
+    /* White text for contrast */
+    font-size: 2.2rem;
+    margin-bottom: 30px;
 }
 
-.quick-links a {
-    text-decoration: none;
-    color: #800000;
-    font-weight: bold;
-    margin: 10px;
+/* Shape Dividers for Transition */
+.custom-shape-divider-top {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
-.quick-links a:hover {
-    color: #a00000;
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-top .shape-fill {
+    fill: #f9f9f9;
+    /* Matches the intro-section background */
+}
+
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #ffffff;
+    /* Matches the main content background */
 }
 
 /* =========================================================
@@ -300,7 +347,8 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #800000; /* Maroon border on focus */
+    border-color: #800000;
+    /* Maroon border on focus */
     outline: none;
 }
 
@@ -316,22 +364,26 @@ textarea:focus {
 }
 
 .btn:hover {
-    background-color: #a00000; /* Darker maroon on hover */
+    background-color: #a00000;
+    /* Darker maroon on hover */
 }
 
 .success-message,
 .error-message {
     font-size: 1rem;
     margin-top: 15px;
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
 }
 
 .success-message {
-    color: #28a745; /* Green for success */
+    color: #28a745;
+    /* Green for success */
 }
 
 .error-message {
-    color: #dc3545; /* Red for error */
+    color: #dc3545;
+    /* Red for error */
 }
 
 /* =========================================================
@@ -340,17 +392,27 @@ textarea:focus {
 
 /* A. Main Header Bar */
 .site-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 4px solid #800000;
+    /* Maroon line to stop white-to-white transition */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    /* Drop shadow separates it from body */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* B. Overriding the old header-container */
 .header-container {
     display: flex;
-    justify-content: space-between; /* Pushes name to left, nav to right */
+    justify-content: space-between;
+    /* Pushes name to left, nav to right */
     align-items: center;
-    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    flex-wrap: wrap;
+    /* Allows stacking on smaller screens */
     gap: 20px;
 }
 
@@ -376,17 +438,21 @@ textarea:focus {
 
 .main-navigation a {
     text-decoration: none;
-    color: #800000; /* Your maroon color */
+    color: #800000;
+    /* Your maroon color */
     font-weight: bold;
     font-size: 1.1rem;
     padding-bottom: 5px;
-    border-bottom: 2px solid transparent; /* For hover effect */
+    border-bottom: 2px solid transparent;
+    /* For hover effect */
     transition: border-color 0.3s;
 }
 
-.main-navigation a:hover {
+.main-navigation a:hover,
+.main-navigation a.active {
     color: #a00000;
-    border-bottom-color: #a00000; /* Underline appears on hover */
+    border-bottom-color: #a00000;
+    /* Underline appears on hover and active */
 }
 
 /* =========================================================
@@ -395,24 +461,30 @@ textarea:focus {
 
 /* E. The container for the intro text and photo */
 .intro-section {
-    background-color: #f9f9f9; /* A very light gray background */
+    background-color: #f9f9f9;
+    /* A very light gray background */
     padding: 50px 0;
-    text-align: left; /* Override the global center alignment */
+    text-align: left;
+    /* Override the global center alignment */
 }
 
 .intro-container {
     display: flex;
     align-items: center;
     gap: 40px;
-    flex-wrap: wrap; /* Stacks image on top of text on small screens */
-    justify-content: center; /* Center the items when they wrap */
+    flex-wrap: wrap;
+    /* Stacks image on top of text on small screens */
+    justify-content: center;
+    /* Center the items when they wrap */
 }
 
 /* F. The new styling for the profile picture in this section */
 .profile-picture-intro {
-    width: 250px; /* Smaller and more appropriate */
+    width: 250px;
+    /* Smaller and more appropriate */
     height: 250px;
-    border-radius: 65%; /* A circular crop looks modern */
+    border-radius: 65%;
+    /* A circular crop looks modern */
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -424,9 +496,10 @@ textarea:focus {
 }
 
 .intro-text p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.8;
-    margin-bottom: 1em; /* Space between paragraphs */
+    margin-bottom: 1em;
+    /* Space between paragraphs */
 }
 
 /* =========================================================
@@ -451,13 +524,15 @@ textarea:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make text pop */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay to make text pop */
 }
 
 .banner-title {
     font-size: 3rem;
     font-weight: 700;
-    z-index: 1; /* Puts text above the overlay */
+    z-index: 1;
+    /* Puts text above the overlay */
 }
 
 /* B. Main Page Content Container */
@@ -472,16 +547,19 @@ textarea:focus {
     align-items: center;
     gap: 40px;
     margin-bottom: 50px;
-    flex-wrap: wrap; /* Allows stacking on smaller screens */
-    justify-content: center; /* Center items when they wrap */
+    flex-wrap: wrap;
+    /* Allows stacking on smaller screens */
+    justify-content: center;
+    /* Center items when they wrap */
 }
 
 .about-headshot {
     width: 250px;
     height: 250px;
-    border-radius: 50%; /* Circular headshot */
+    border-radius: 50%;
+    /* Circular headshot */
     object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 5px solid white;
 }
 
@@ -493,14 +571,16 @@ textarea:focus {
 
 .intro-text-about h2 {
     margin-bottom: 15px;
-    color: #800000; /* Your maroon color */
+    color: #800000;
+    /* Your maroon color */
 }
 
 /* D. Main Article/Details Section */
 .about-details {
     text-align: left;
     max-width: 900px;
-    margin: 0 auto 50px auto; /* Center the text column */
+    margin: 0 auto 50px auto;
+    /* Center the text column */
 }
 
 .about-details h2 {
@@ -554,7 +634,7 @@ textarea:focus {
 
 .document-link-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .document-link-card .document-icon {
@@ -562,14 +642,28 @@ textarea:focus {
     height: 50px;
 }
 
+.document-link-card.small-card {
+    padding: 15px 20px;
+    gap: 10px;
+    font-size: 0.95rem;
+    max-width: 250px;
+}
+
+.document-link-card.small-card .document-icon {
+    width: 35px;
+    height: 35px;
+}
+
 /* ==================
    Kitty Gallery Styles
    ================== */
 
 .kitty-gallery {
-    text-align: center; /* Centers the heading and paragraph */
+    text-align: center;
+    /* Centers the heading and paragraph */
     padding: 40px 20px;
-    background-color: #f9f9f9; /* A light background to separate the section */
+    background-color: #f9f9f9;
+    /* A light background to separate the section */
     margin-top: 40px;
 }
 
@@ -583,26 +677,40 @@ textarea:focus {
 }
 
 .kitty-photos {
-    display: flex; /* This is key to placing images side-by-side */
-    justify-content: center; /* Centers the images horizontally */
-    gap: 30px; /* Adds space between the photos */
-    flex-wrap: wrap; /* Allows images to stack on smaller screens */
+    display: flex;
+    /* This is key to placing images side-by-side */
+    justify-content: center;
+    /* Centers the images horizontally */
+    gap: 30px;
+    /* Adds space between the photos */
+    flex-wrap: wrap;
+    /* Allows images to stack on smaller screens */
 }
 
 .kitty-card {
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     width: 250px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kitty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .kitty-card img {
-    width: 100%; /* Makes the image fill the card */
-    height: 200px; /* Gives a consistent height */
-    object-fit: cover; /* Prevents image from stretching */
-    border-radius: 8px; /* Rounds the corners of the photo */
+    width: 100%;
+    /* Makes the image fill the card */
+    height: 200px;
+    /* Gives a consistent height */
+    object-fit: cover;
+    /* Prevents image from stretching */
+    border-radius: 8px;
+    /* Rounds the corners of the photo */
 }
 
 .kitty-name {
@@ -610,4 +718,328 @@ textarea:focus {
     font-weight: bold;
     color: #333;
     font-size: 1.1em;
+}
+
+/* =========================================================
+   Research Page Styles
+========================================================= */
+
+/* Research Intro Text */
+.research-intro-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.research-intro-text p {
+    margin-bottom: 15px;
+}
+
+/* Skills Badges */
+.skills-wrapper {
+    background-color: #fcfcfc;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.skills-wrapper h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-badge {
+    background-color: #f0f0f0;
+    color: #800000;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 1px solid #e0e0e0;
+}
+
+/* Publication List */
+.publication-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.publication-card {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.publication-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.publication-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.publication-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #800000;
+}
+
+.publication-meta {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Project Cards */
+.projects-section {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.projects-section h2 {
+    color: #333;
+    border-bottom: 2px solid #800000;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.project-content {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content h3 {
+    color: #800000;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.project-role {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #800000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #a00000;
+}
+
+.project-link.disabled-link {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #666;
+}
+
+/* =========================================================
+/* =========================================================
+   Other Involvement
+========================================================= */
+
+.other-involvement-section {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.other-involvement-section h2 {
+    color: #333;
+    border-bottom: 2px solid #800000;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.involvement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.involvement-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.involvement-card h3 {
+    margin: 0 0 5px 0;
+    color: #800000;
+    font-size: 1.15rem;
+}
+
+.involvement-role {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.involvement-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   MEDIA QUERIES FOR RESPONSIVENESS
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Header layout adjustments */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .site-branding h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Intro sections and banners */
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .intro-container,
+    .about-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text-about {
+        text-align: center;
+    }
+
+    .profile-picture-intro,
+    .about-headshot {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Quick links */
+    .quick-links h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Document Links */
+    .document-links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .document-link-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Kitty gallery */
+    .kitty-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kitty-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Footer */
+    .custom-footer {
+        padding: 15px 10px;
+        width: 100%;
+        border-radius: 0;
+        /* Remove rounding on small screens */
+    }
 }
