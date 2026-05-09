@@ -114,10 +114,10 @@ header {
 ========================================================= */
 
 .quick-links {
-    background-color: #800000;
-    /* Rich maroon background */
-    padding: 80px 0;
-    /* Increased padding for the dividers */
+    background-color: #4A5568;
+    /* Slate Gray background */
+    padding: 40px 0;
+    /* Must be larger than shape divider height to prevent overlap */
     position: relative;
     margin-top: -1px;
     /* Prevents 1px gap rendering issue */
@@ -131,8 +131,8 @@ header {
 .quick-links h2 {
     color: #ffffff;
     /* White text for contrast */
-    font-size: 2.2rem;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
 /* Shape Dividers for Transition */
@@ -149,7 +149,7 @@ header {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 50px;
+    height: 30px;
 }
 
 .custom-shape-divider-top .shape-fill {
@@ -171,7 +171,7 @@ header {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 50px;
+    height: 30px;
 }
 
 .custom-shape-divider-bottom .shape-fill {
@@ -264,7 +264,7 @@ header {
 ========================================================= */
 
 .custom-footer {
-    background-color: #800000;
+    background-color: #4A5568;
     color: #ffffff;
     border-top: 5px solid black;
     border-radius: 15px;
@@ -480,13 +480,12 @@ textarea:focus {
 
 /* F. The new styling for the profile picture in this section */
 .profile-picture-intro {
-    width: 250px;
-    /* Smaller and more appropriate */
-    height: 250px;
-    border-radius: 65%;
-    /* A circular crop looks modern */
+    width: 280px;
+    height: 280px;
+    border-radius: 16px;
+    /* Softly rounded square instead of a circle */
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* G. The text next to the picture */
@@ -554,8 +553,8 @@ textarea:focus {
 }
 
 .about-headshot {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     /* Circular headshot */
     object-fit: cover;
@@ -621,8 +620,8 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    padding: 25px 35px;
+    gap: 10px;
+    padding: 15px 25px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #ffffff;
@@ -638,8 +637,8 @@ textarea:focus {
 }
 
 .document-link-card .document-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .document-link-card.small-card {
@@ -725,11 +724,44 @@ textarea:focus {
 ========================================================= */
 
 /* Research Intro Text */
+.research-intro-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
 .research-intro-text {
     font-size: 1.15rem;
     line-height: 1.7;
     color: #444;
-    margin-bottom: 25px;
+}
+
+.fmri-scans-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.fmri-scan {
+    width: 30%;
+    max-width: 250px;
+    min-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fmri-caption {
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
+    margin-top: -10px;
 }
 
 .research-intro-text p {
@@ -738,12 +770,12 @@ textarea:focus {
 
 /* Skills Badges */
 .skills-wrapper {
-    background-color: #fcfcfc;
-    border: 1px solid #eaeaea;
+    background-color: #f4f4f4;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 20px;
     margin-top: 25px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .skills-wrapper h3 {
@@ -763,13 +795,23 @@ textarea:focus {
 }
 
 .skill-badge {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color: #800000;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.95rem;
     font-weight: 600;
     border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
 /* Publication List */
@@ -794,7 +836,7 @@ textarea:focus {
 
 .publication-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
 .publication-icon {
@@ -844,7 +886,7 @@ textarea:focus {
     border-radius: 12px;
     border: 1px solid #eee;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -852,7 +894,7 @@ textarea:focus {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
@@ -939,7 +981,7 @@ textarea:focus {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .involvement-card h3 {
@@ -961,6 +1003,60 @@ textarea:focus {
     font-size: 0.95rem;
     color: #666;
     line-height: 1.5;
+}
+
+/* =========================================================
+   PHOTOS PAGE STYLES (Collage)
+========================================================= */
+
+.photo-collage-section {
+    padding: 60px 0;
+}
+
+.collage-intro {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.collage-grid {
+    column-count: 1;
+    column-gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.collage-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.collage-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.collage-item img:hover {
+    transform: scale(1.02);
+}
+
+@media (min-width: 600px) {
+    .collage-grid {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 900px) {
+    .collage-grid {
+        column-count: 3;
+    }
 }
 
 /* =========================================================

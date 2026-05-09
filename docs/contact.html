@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Meta Information -->
     <meta charset="UTF-8">
@@ -12,30 +13,33 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Meta Description for SEO -->
-    <meta name="description" content="Contact Brady M. Chisholm, an undergraduate student in Psychology and Research Assistant in Auditory Perception and Neuroscience.">
+    <meta name="description"
+        content="Contact Brady M. Chisholm, an undergraduate student in Psychology and Research Assistant in Auditory Perception and Neuroscience.">
     <!-- Meta Keywords for SEO -->
-    <meta name="keywords" content="Brady Chisholm, Contact, Psychology, AI, Artificial Intelligence, Machine Learning, Research Assistant, Auditory Perception, Neuroscience">
+    <meta name="keywords"
+        content="Brady Chisholm, Contact, Psychology, AI, Artificial Intelligence, Machine Learning, Research Assistant, Auditory Perception, Neuroscience">
 </head>
+
 <body>
-<!-- Header Section; set as site-wide header updated 4/14/2026-->
-<header class="site-header">
-    <div class="container header-container">
-<div class="site-branding">
-    <a href="index.html" style="text-decoration: none; color: inherit;">
-        <h1>Brady M. Chisholm</h1>
-        <p class="subtitle">Researcher</p>
-    </a>
-</div>
-        <nav class="main-navigation">
-            <a href="about.html">About Me</a>
-            <a href="research.html">Research</a>
-            <a href="../mySiteDocs/cv.pdf" target="_blank">My CV</a>
-            <!-- <a href="photographs.html">Photos</a> UNCOMMENT ONCE UPDATED -->
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
-    </div>
-</header>
-<!-- end header -->
+    <!-- Header Section; set as site-wide header updated 4/14/2026-->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="site-branding">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Brady M. Chisholm</h1>
+                    <p class="subtitle">Researcher</p>
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <a href="about.html">About Me</a>
+                <a href="research.html">Research</a>
+                <a href="mySiteDocs/cv.pdf" target="_blank">My CV</a>
+                <a href="photos.html">Photos</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- end header -->
 
     <!-- Main Content -->
     <main>
@@ -43,31 +47,35 @@
             <div class="container">
                 <h2>Get in Touch</h2>
                 <!-- Contact Form -->
-                <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                <form action="mailto:bmc@brady-c.cc" method="POST" enctype="text/plain" class="contact-form">
                     <!-- Name Field -->
                     <div class="form-group">
                         <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-label="Full Name">
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required
+                            aria-label="Full Name">
                     </div>
-                    
+
                     <!-- Email Field -->
                     <div class="form-group">
                         <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-label="Email Address">
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required
+                            aria-label="Email Address">
                     </div>
-                    
+
                     <!-- Message Field -->
                     <div class="form-group">
                         <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required aria-label="Message"></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required
+                            aria-label="Message"></textarea>
                     </div>
-                    
+
                     <!-- Submit Button -->
                     <button type="submit" class="btn">Send Message</button>
-                    
+
                     <!-- Success Message -->
-                    <p class="success-message" style="display: none;">Thank you for reaching out! I'll get back to you soon.</p>
-                    
+                    <p class="success-message" style="display: none;">Thank you for reaching out! I'll get back to you
+                        soon.</p>
+
                     <!-- Error Message -->
                     <p class="error-message" style="display: none;">Oops! Something went wrong. Please try again.</p>
                 </form>
@@ -75,7 +83,7 @@
         </section>
     </main>
 
-<!-- Footer Section; set as site-wide header updated 1/4/2026 -->
+    <!-- Footer Section; set as site-wide header updated 1/4/2026 -->
     <footer class="custom-footer">
         <div class="footer-container">
             <div class="footer-icons">
@@ -86,19 +94,20 @@
         </div>
         <div class="footer-copyright">
             <p>&#xa9; 2026 Brady M. Chisholm</p>
-            <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization</i></p>
+            <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization</i>
+            </p>
         </div>
     </footer>
-<!-- end footer -->
+    <!-- end footer -->
 
     <!-- JavaScript for Form Feedback -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const form = document.querySelector('.contact-form');
             const successMessage = document.querySelector('.success-message');
             const errorMessage = document.querySelector('.error-message');
 
-            form.addEventListener('submit', function(event) {
+            form.addEventListener('submit', function (event) {
                 event.preventDefault();
                 const formData = new FormData(form);
 
@@ -109,25 +118,26 @@
                         'Accept': 'application/json'
                     }
                 })
-                .then(response => {
-                    if (response.ok) {
-                        successMessage.style.display = 'block';
-                        errorMessage.style.display = 'none';
-                        form.reset();
-                    } else {
-                        return response.json().then(data => {
-                            throw new Error(data.error || 'Something went wrong! Please try again.');
-                        });
-                    }
-                })
-                .catch(error => {
-                    errorMessage.textContent = error.message;
-                    errorMessage.style.display = 'block';
-                    successMessage.style.display = 'none';
-                });
+                    .then(response => {
+                        if (response.ok) {
+                            successMessage.style.display = 'block';
+                            errorMessage.style.display = 'none';
+                            form.reset();
+                        } else {
+                            return response.json().then(data => {
+                                throw new Error(data.error || 'Something went wrong! Please try again.');
+                            });
+                        }
+                    })
+                    .catch(error => {
+                        errorMessage.textContent = error.message;
+                        errorMessage.style.display = 'block';
+                        successMessage.style.display = 'none';
+                    });
             });
         });
     </script>
 
 </body>
+
 </html>
