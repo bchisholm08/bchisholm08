@@ -5,94 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Brady M. Chisholm</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Research on auditory perception: masking release, speech-in-noise listening effort, and psychophysics in cochlear and auditory nerve implant recipients.">
 </head>
 <body>
-<!-- Header Section; set as site-wide header updated 4/14/2026-->
 <header class="site-header">
     <div class="container header-container">
-<div class="site-branding">
-    <a href="index.html" style="text-decoration: none; color: inherit;">
-        <h1>Brady M. Chisholm</h1>
-        <p class="subtitle">Researcher</p>
-    </a>
-</div>
+        <div class="site-branding">
+            <a href="index.html" class="branding-link">
+                <h1>Brady M. Chisholm</h1>
+                <p class="subtitle">Auditory Perception Researcher</p>
+            </a>
+        </div>
         <nav class="main-navigation">
-            <a href="about.html">About Me</a>
-            <a href="research.html">Research</a>
-            <a href="../mySiteDocs/cv.pdf" target="_blank">My CV</a>
-            <!-- <a href="photographs.html">Photos</a> UNCOMMENT ONCE UPDATED -->
+            <a href="about.html">About</a>
+            <a href="research.html" class="active" aria-current="page">Research</a>
+            <a href="photos.html">Photos</a>
+            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
             <a href="contact.html">Contact</a>
         </nav>
     </div>
 </header>
-<!-- end header -->
+<main>
+    <section class="page-banner" style="background-image: url('images/others/seattleFog.jpg');">
+        <div class="banner-overlay"></div>
+        <h1 class="banner-title">Research</h1>
+    </section>
 
-    <main>
-        <section class="page-banner" style="background-image: url('images/others/seattleFog.jpg');">
-            <div class="banner-overlay"></div>
-            <h1 class="banner-title">My Research</h1>
+    <div class="container page-content">
+        <section class="research-intro">
+            <h2>Research Focus</h2>
+            <p>
+                I am interested in how listeners extract meaningful signals from competing sound, and how that ability
+                changes with hearing loss, age, or auditory prostheses. I have approached this question at several
+                levels: spatial and comodulation masking release in an animal model, speech-in-speech perception and
+                listening effort in human listeners with and without mild cognitive impairment, and pitch coding in
+                cochlear-implant and auditory-nerve-implant recipients.
+            </p>
+            <p>
+                Methodologically, I pair behavioral psychophysics with physiological measures &mdash; EEG and
+                pupillometry &mdash; and analyze the resulting data with mixed-effects and generalized additive models
+                in R and MATLAB.
+            </p>
         </section>
 
-        <div class="container page-content">
+        <section class="about-details">
+            <h2>Current Projects</h2>
 
-            <section class="research-intro">
-                <h2>Research Focus</h2>
-                <p>
-                I am a data-driven researcher interested in the intersection of cognitive science and data science, and motivated by asking, how does our brain interface with the world? To investigate this, I have been involved in multiple labs using a multi-modal approach, collecting and analyzing EEG, pupillometry, and behavioral data from human participants.
+            <h3>Psychophysics for an auditory nerve implant</h3>
+            <p>
+                In the Sensory Optimization &amp; Neural Implant Coding Lab (PI: Dr. Hubert Lim), I validate a
+                six-module psychophysical test suite for an auditory nerve implant, verifying stimulus output and
+                response hardware before protocols are released to the collaborating clinical team in Hannover,
+                Germany. I also lead recruitment and data collection for a pitch-scaling study in normal-hearing and
+                cochlear-implant listeners that establishes comparison data for the same task in implant recipients.
+            </p>
 
-                My technical experience is centered around R and MATLAB, where I’ve developed end-to-end pipelines for signal processing and statistical modeling. I'm passionate about designing robust experiments and visualizing complex data in ways that reveal clear, compelling stories about human cognition.
+            <h3>Listening effort and fatigue in speech-in-noise</h3>
+            <p>
+                In the Auditory Perception &amp; Cognition Lab (PI: Dr. Andrew Oxenham), I studied speech-in-speech
+                perception using EEG and pupillometry, including work with listeners experiencing mild cognitive
+                impairment. My first-author manuscript asks whether pupillometric fatigue interacts with experimental
+                manipulation in a speech-in-noise listening effort task.
+            </p>
 
-                </p>
-            </section>
+            <h3>Masking release in an animal model</h3>
+            <p>
+                In the Animal Communication Lab (PI: Dr. Mark Bee), I contributed to research on spatial release from
+                masking and comodulation masking release in Cope's gray treefrog &mdash; the same perceptual
+                phenomena studied in human speech-in-noise research, in a comparative model of signal detection in
+                noisy, multi-talker environments.
+            </p>
 
-            <section class="about-details">
-                <h2>Posters</h2>
-                <p> <a href="asa/poster/path.pdf" target="_blank">ASA Poster</a></p>
+            <h3>Community hearing and vision screening</h3>
+            <p>
+                Through the Center for Applied &amp; Translational Sensory Science, I administer hearing and vision
+                screenings aboard the
+                <a href="https://catss.umn.edu/see-hear-mn-mobile-unit" target="_blank" rel="noopener noreferrer">See, Hear, MN</a>
+                mobile sensory unit, a sound-attenuating screening suite serving underserved communities across
+                Minnesota. Over 1,000 screenings completed to date.
+            </p>
+        </section>
 
-                <!-- <h2>Submitted Manuscripts</h2>
-                <p> <a href="paper/path.pdf" target="_blank">Paper Title</a></p> -->
-                
-                <!-- <h2>Peer Reviewed Publications</h2>
-                <p> <a href="paper/path.pdf" target="_blank">Paper Title</a></p> -->
-            </section>
-
-            <!-- <section class="projects-section">
-                <h2>Research Projects</h2>
-                <div class="project-grid">
-
-                  <div class="project-card">
-                        <img src="images/graphs_plottingArt/plot_6.jpg" alt="Image representing auditory perception research" class="project-image">
-                        <div class="project-content">
-                            <h3>Auditory Perception Under Cognitive Load</h3>
-                            <p class="project-role"><strong>Role:</strong> Research Assistant</p>
-                            <p class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Investigating how humans process complex auditory stimuli while performing demanding cognitive tasks. Utilized Python for data analysis and visualization.
-                            </p>
-                            <a href="#" class="project-link disabled-link">Details (Coming Soon)</a>
-                        </div>
-                    </div> -->
-                    <!-- </div>
-            </section> --> 
+        <section class="about-details">
+            <h2>Publications &amp; Presentations</h2>
+            <ul class="feature-list">
+                <li>
+                    <strong>Chisholm, B. M.</strong>, Johns, M. A., &amp; Mesik, J. <em>Fatigue Does Not Interact with
+                    Experimental Manipulation in a Speech-in-Noise Listening Effort Task.</em> (Manuscript in preparation.)
+                </li>
+                <li>
+                    <strong>Chisholm, B. M.</strong>, Johns, M. A., &amp; Mesik, J. (2026, April). <em>Assessing the
+                    Effect of Pupillometric Fatigue on Task-Evoked Responses in a Listening Effort Paradigm.</em>
+                    Poster, CATSS Spring Research Day, University of Minnesota.
+                </li>
+                <li>
+                    <strong>Chisholm, B. M.</strong>, &amp; Mesik, J. (2025, May). <em>Assessing the Effect of
+                    Pupillometric Fatigue on Task-Evoked Responses in a Listening Effort Paradigm.</em>
+                    Poster, 188th Meeting of the Acoustical Society of America, New Orleans, LA.
+                </li>
+            </ul>
+            <p>
+                A full list of publications, presentations, and technical skills is available in my
+                <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>, or on my
+                <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer">ORCID profile</a>.
+            </p>
+        </section>
+    </div>
+</main>
+<footer class="custom-footer">
+    <div class="footer-container">
+        <div class="footer-icons">
+            <a href="https://github.com/bchisholm08" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="images/others/logos/githubLogo.svg" alt="" width="28" height="28">
+            </a>
+            <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+                <img src="images/others/logos/webLink.svg" alt="" width="28" height="28">
+            </a>
+            <a href="mailto:chish071@umn.edu" aria-label="Email">
+                <img src="images/others/logos/email.svg" alt="" width="28" height="28">
+            </a>
         </div>
-    </main>
-
-<!-- Footer Section; set as site-wide header updated 1/4/2026 -->
-    <footer class="custom-footer">
-        <div class="footer-container">
-            <div class="footer-icons">
-                <a href="https://github.com/bchisholm08" target="_blank" aria-label="GitHub">
-                    <img src="images\others\logos\githubLogo.svg" alt="GitHub Icon">
-                </a>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&#xa9; 2026 Brady M. Chisholm</p>
-            <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization</i></p>
-        </div>
-    </footer>
-<!-- end footer -->
- 
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2026 Brady M. Chisholm</p>
+        <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization.</i></p>
+    </div>
+</footer>
 </body>
 </html>

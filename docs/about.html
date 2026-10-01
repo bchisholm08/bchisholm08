@@ -1,104 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Brady M. Chisholm</title>
+    <title>About | Brady M. Chisholm</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="description" content="About Brady M. Chisholm, an auditory perception researcher at the University of Minnesota.">
 </head>
-
 <body>
-  <!-- Header Section; set as site-wide header updated 4/14/2026-->
 <header class="site-header">
     <div class="container header-container">
-<div class="site-branding">
-    <a href="index.html" style="text-decoration: none; color: inherit;">
-        <h1>Brady M. Chisholm</h1>
-        <p class="subtitle">Researcher</p>
-    </a>
-</div>
+        <div class="site-branding">
+            <a href="index.html" class="branding-link">
+                <h1>Brady M. Chisholm</h1>
+                <p class="subtitle">Auditory Perception Researcher</p>
+            </a>
+        </div>
         <nav class="main-navigation">
-            <a href="about.html">About Me</a>
+            <a href="about.html" class="active" aria-current="page">About</a>
             <a href="research.html">Research</a>
-            <a href="../mySiteDocs/cv.pdf" target="_blank">My CV</a>
-            <!-- <a href="photographs.html">Photos</a> UNCOMMENT ONCE UPDATED -->
+            <a href="photos.html">Photos</a>
+            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
             <a href="contact.html">Contact</a>
         </nav>
     </div>
 </header>
-<!-- end header -->
+<main>
+    <section class="page-banner" style="background-image: url('images/others/seattleFog.jpg');">
+        <div class="banner-overlay"></div>
+        <h1 class="banner-title">About Me</h1>
+    </section>
 
-    <main>
-        <section class="page-banner" style="background-image: url('images/others/seattleFog.jpg');">
-            <div class="banner-overlay"></div>
-            <h1 class="banner-title">About Me</h1>
+    <div class="container page-content">
+        <section class="about-intro">
+            <img src="images/others/bostonZoomedIn.JPG" alt="Headshot of Brady M. Chisholm" class="about-headshot">
+            <div class="intro-text-about">
+                <h2>Hello, I&rsquo;m Brady.</h2>
+                <p>
+                    I completed my B.S. in Psychology at the University of Minnesota Twin Cities and now work as a
+                    Research Professional in the Sensory Optimization &amp; Neural Implant Coding Lab and the Center
+                    for Applied &amp; Translational Sensory Science.
+                </p>
+                <p>
+                    I am applying to PhD programs in hearing science and auditory neuroscience for Fall 2027.
+                </p>
+            </div>
         </section>
 
-        <div class="container page-content">
-            <section class="about-intro">
-                <img src="images/others/bostonZoomedIn.JPG" alt="Headshot of Brady"
-                    class="about-headshot">
-                <div class="intro-text-about">
-                    <h2>Hello, my name is Brady!</h2>
-                    <p>
-                        Recent graduate from the University of Minnesota Twin-Cities with a B.S. in Psychology.
-                    </p>
+        <article class="about-details">
+            <h2>How I got here</h2>
+            <p>
+                I became interested in psychology by wondering how people make sense of the environment immediately
+                around them. For the past several years that interest has settled on hearing &mdash; on how physical
+                waves arriving at the eardrum become something meaningful, and on what happens when that process is
+                disrupted by hearing loss or rebuilt with an implant.
+            </p>
+            <p>
+                What I like about auditory research is that the same question can be asked at very different levels.
+                A treefrog picking a mate out of a chorus and a person following one talker in a crowded room are
+                solving a version of the same problem, and an implant recipient is solving it with a rebuilt front
+                end. I have been lucky to work on all three.
+            </p>
 
-                    <p>
-                       Working as a researcher in the Auditory Perception and Cognition lab at U of M Twin-Cities! 
-                    </p>
-                </div>
-            </section>
+            <h2>Training &amp; Tools</h2>
+            <ul class="feature-list">
+                <li>Psychophysics, EEG (BioSemi, EEGLAB), and pupillometry (Tobii Pro Spectrum)</li>
+                <li>Audiometric threshold testing and stimulus verification with oscilloscope/Picoscope measurement</li>
+                <li>Statistical modeling in R and MATLAB: GAMMs, linear mixed-effects, regression</li>
+                <li>Human-subjects research under IRB, HIPAA, and GCP; animal research under IACUC protocols</li>
+            </ul>
 
-            <article class="about-details">
-                <h2>Research Interests</h2>
-                <p>
-                I am a data-driven researcher interested in the intersection of cognitive science and data science, and motivated asking: How does our brain interface with the world?
-                To investigate this, I have been involved in multiple labs using a multi-modal approach, collecting and analyzing EEG, pupillometry, and behavioral data from human participants.
+            <h2>Outside the lab</h2>
+            <p>
+                I swam competitively at Gustavus Adolphus College, spend time outdoors with a camera, and am kept
+                company by two cats. Some of that ends up in the <a href="photos.html">photo galleries</a>.
+            </p>
+        </article>
 
-                My software experience is centered around R and MATLAB, where I’ve developed end-to-end analytical pipelines for signal processing
-                 and statistical modeling. I'm passionate about designing robust experiments and visualizing complex data in ways that reveal clear, compelling stories about human cognition.
-                </p>
-            </article>
-<!-- C:\Academics\gitHubREADME_source\bchisholm08\professional_materials\CV\cv.pdf -->
-            <section class="professional-documents">
-                <h2>Professional Documents</h2>
-                <p>For details about my experience, please view my Curriculum Vitae and Resume below.</p>
-                <div class="document-links-container">
-                    <a href="../mySiteDocs/cv.pdf" target="_blank" class="document-link-card">
-                        <img src="images/others/logos/personoutline.svg" alt="Curriculum Vitae Icon"
-                            class="document-icon">
-                        <span>Curriculum Vitae</span>
-                    </a>
-                    <a href="../mySiteDocs/placeholder.pdf" target="_blank" class="document-link-card">
-                        <img src="images/others/logos/personoutline.svg" alt="Resume" class="document-icon">
-                        <span>Resume</span>
-                    </a>
-
-                </div>
-            </section>
-        </div>
-    </main>
-
-<!-- Footer Section; set as site-wide header updated 1/4/2026 -->
-    <footer class="custom-footer">
-        <div class="footer-container">
-            <div class="footer-icons">
-                <a href="https://github.com/bchisholm08" target="_blank" aria-label="GitHub">
-                    <img src="images\others\logos\githubLogo.svg" alt="GitHub Icon">
+        <section class="professional-documents">
+            <h2>Curriculum Vitae</h2>
+            <p>For a fuller overview of my experience, training, and publications:</p>
+            <div class="document-links-container">
+                <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="document-link-card">
+                    <img src="images/others/logos/cvDoc.svg" alt="" class="document-icon">
+                    <span>Curriculum Vitae (PDF)</span>
+                </a>
+                <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer" class="document-link-card">
+                    <img src="images/others/logos/webLink.svg" alt="" class="document-icon">
+                    <span>ORCID Profile</span>
                 </a>
             </div>
+        </section>
+    </div>
+</main>
+<footer class="custom-footer">
+    <div class="footer-container">
+        <div class="footer-icons">
+            <a href="https://github.com/bchisholm08" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="images/others/logos/githubLogo.svg" alt="" width="28" height="28">
+            </a>
+            <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+                <img src="images/others/logos/webLink.svg" alt="" width="28" height="28">
+            </a>
+            <a href="mailto:chish071@umn.edu" aria-label="Email">
+                <img src="images/others/logos/email.svg" alt="" width="28" height="28">
+            </a>
         </div>
-        <div class="footer-copyright">
-            <p>&#xa9; 2026 Brady M. Chisholm</p>
-            <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization</i></p>
-        </div>
-    </footer>
-<!-- end footer -->
-
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2026 Brady M. Chisholm</p>
+        <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization.</i></p>
+    </div>
+</footer>
 </body>
-
 </html>

@@ -1,5 +1,7 @@
-/* =========================================================
+ /* =========================================================
    General Styling
+
+   CSS file generated with Claude and ChatGPT....certainly not my realm of expertise
 ========================================================= */
 
 /* Importing Google Fonts */
@@ -210,6 +212,119 @@ header {
     border-bottom-right-radius: 10px;
     text-align: center;
     line-height: 1.7;
+}
+
+/* =========================================================
+   Homepage and Content Enhancements
+========================================================= */
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #800000;
+    margin-bottom: 12px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #800000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a00000;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #800000;
+    border: 1px solid #800000;
+}
+
+.btn-secondary:hover {
+    background-color: #f4e9e9;
+    color: #800000;
+}
+
+.quick-link-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.quick-links .quick-link {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #800000;
+    border-radius: 999px;
+    background-color: #ffffff;
+    color: #800000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.quick-links .quick-link:hover {
+    background-color: #f4e9e9;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+    color: #800000;
+}
+
+.info-card a {
+    display: block;
+    color: #800000;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+.feature-list {
+    padding-left: 1.2rem;
+    line-height: 1.8;
+    color: #333333;
+}
+
+.feature-list li {
+    margin-bottom: 0.6rem;
 }
 
 /* =========================================================
@@ -611,3 +726,31 @@ textarea:focus {
     color: #333;
     font-size: 1.1em;
 }
+/* =========================================================
+   Additions: nav active state, gallery captions, back links
+========================================================= */
+.branding-link { text-decoration: none; color: inherit; }
+
+.main-navigation a.active {
+    font-weight: 700;
+    border-bottom: 2px solid #7a0019;
+}
+
+.gallery-item figcaption a {
+    color: #7a0019;
+    font-weight: 700;
+    text-decoration: none;
+}
+.gallery-item figcaption a:hover { text-decoration: underline; }
+
+.back-link { text-align: left; margin-bottom: 20px; }
+.back-link a { color: #7a0019; text-decoration: none; }
+.back-link a:hover { text-decoration: underline; }
+
+.about-details h3 {
+    margin-top: 24px;
+    margin-bottom: 6px;
+    font-size: 1.15rem;
+}
+
+.page-content section + section { margin-top: 32px; }

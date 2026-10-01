@@ -1,5 +1,7 @@
+// Toggle dark mode. Safe no-op on pages without a .dark-mode-toggle element.
 const toggle = document.querySelector('.dark-mode-toggle');
-// Add event listener to toggle dark mode class on body
-toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-});
+if (toggle) {
+    toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+}

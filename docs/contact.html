@@ -1,133 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me | Brady M. Chisholm</title>
-    <!-- Link to External CSS -->
+    <title>Contact | Brady M. Chisholm</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- Google Fonts for Enhanced Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Meta Description for SEO -->
-    <meta name="description" content="Contact Brady M. Chisholm, an undergraduate student in Psychology and Research Assistant in Auditory Perception and Neuroscience.">
-    <!-- Meta Keywords for SEO -->
-    <meta name="keywords" content="Brady Chisholm, Contact, Psychology, AI, Artificial Intelligence, Machine Learning, Research Assistant, Auditory Perception, Neuroscience">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Contact Brady M. Chisholm, auditory perception researcher at the University of Minnesota.">
 </head>
 <body>
-<!-- Header Section; set as site-wide header updated 4/14/2026-->
 <header class="site-header">
     <div class="container header-container">
-<div class="site-branding">
-    <a href="index.html" style="text-decoration: none; color: inherit;">
-        <h1>Brady M. Chisholm</h1>
-        <p class="subtitle">Researcher</p>
-    </a>
-</div>
+        <div class="site-branding">
+            <a href="index.html" class="branding-link">
+                <h1>Brady M. Chisholm</h1>
+                <p class="subtitle">Auditory Perception Researcher</p>
+            </a>
+        </div>
         <nav class="main-navigation">
-            <a href="about.html">About Me</a>
+            <a href="about.html">About</a>
             <a href="research.html">Research</a>
-            <a href="../mySiteDocs/cv.pdf" target="_blank">My CV</a>
-            <!-- <a href="photographs.html">Photos</a> UNCOMMENT ONCE UPDATED -->
-            <a href="contact.html">Contact</a>
+            <a href="photos.html">Photos</a>
+            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
         </nav>
     </div>
 </header>
-<!-- end header -->
+<main>
+    <section class="page-banner" style="background-image: url('images/others/seattleFog.jpg');">
+        <div class="banner-overlay"></div>
+        <h1 class="banner-title">Contact</h1>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-        <section class="contact-section">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <!-- Contact Form -->
-                <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-                    <!-- Name Field -->
-                    <div class="form-group">
-                        <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-label="Full Name">
-                    </div>
-                    
-                    <!-- Email Field -->
-                    <div class="form-group">
-                        <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-label="Email Address">
-                    </div>
-                    
-                    <!-- Message Field -->
-                    <div class="form-group">
-                        <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required aria-label="Message"></textarea>
-                    </div>
-                    
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn">Send Message</button>
-                    
-                    <!-- Success Message -->
-                    <p class="success-message" style="display: none;">Thank you for reaching out! I'll get back to you soon.</p>
-                    
-                    <!-- Error Message -->
-                    <p class="error-message" style="display: none;">Oops! Something went wrong. Please try again.</p>
-                </form>
-            </div>
-        </section>
-    </main>
-
-<!-- Footer Section; set as site-wide header updated 1/4/2026 -->
-    <footer class="custom-footer">
-        <div class="footer-container">
-            <div class="footer-icons">
-                <a href="https://github.com/bchisholm08" target="_blank" aria-label="GitHub">
-                    <img src="images\others\logos\githubLogo.svg" alt="GitHub Icon">
+    <div class="container page-content">
+        <section class="about-details">
+            <h2>Get in Touch</h2>
+            <p>
+                The best way to reach me is by email. I am always glad to hear from researchers working on auditory
+                perception, psychophysics, or auditory prostheses.
+            </p>
+            <div class="document-links-container">
+                <a href="mailto:chish071@umn.edu" class="document-link-card">
+                    <img src="images/others/logos/email.svg" alt="" class="document-icon">
+                    <span>chish071@umn.edu</span>
+                </a>
+                <a href="https://github.com/bchisholm08" target="_blank" rel="noopener noreferrer" class="document-link-card">
+                    <img src="images/others/logos/githubLogo.svg" alt="" class="document-icon">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer" class="document-link-card">
+                    <img src="images/others/logos/webLink.svg" alt="" class="document-icon">
+                    <span>ORCID</span>
+                </a>
+                <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="document-link-card">
+                    <img src="images/others/logos/cvDoc.svg" alt="" class="document-icon">
+                    <span>Curriculum Vitae</span>
                 </a>
             </div>
+        </section>
+    </div>
+</main>
+<footer class="custom-footer">
+    <div class="footer-container">
+        <div class="footer-icons">
+            <a href="https://github.com/bchisholm08" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="images/others/logos/githubLogo.svg" alt="" width="28" height="28">
+            </a>
+            <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+                <img src="images/others/logos/webLink.svg" alt="" width="28" height="28">
+            </a>
+            <a href="mailto:chish071@umn.edu" aria-label="Email">
+                <img src="images/others/logos/email.svg" alt="" width="28" height="28">
+            </a>
         </div>
-        <div class="footer-copyright">
-            <p>&#xa9; 2026 Brady M. Chisholm</p>
-            <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization</i></p>
-        </div>
-    </footer>
-<!-- end footer -->
-
-    <!-- JavaScript for Form Feedback -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('.contact-form');
-            const successMessage = document.querySelector('.success-message');
-            const errorMessage = document.querySelector('.error-message');
-
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-                const formData = new FormData(form);
-
-                fetch(form.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                })
-                .then(response => {
-                    if (response.ok) {
-                        successMessage.style.display = 'block';
-                        errorMessage.style.display = 'none';
-                        form.reset();
-                    } else {
-                        return response.json().then(data => {
-                            throw new Error(data.error || 'Something went wrong! Please try again.');
-                        });
-                    }
-                })
-                .catch(error => {
-                    errorMessage.textContent = error.message;
-                    errorMessage.style.display = 'block';
-                    successMessage.style.display = 'none';
-                });
-            });
-        });
-    </script>
-
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2026 Brady M. Chisholm</p>
+        <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization.</i></p>
+    </div>
+</footer>
 </body>
 </html>

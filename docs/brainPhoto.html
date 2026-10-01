@@ -1,104 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poppy Photo Gallery | Brady M. Chisholm</title>
-    <!-- Link to External CSS -->
+    <title>MRI Scans | Brady M. Chisholm</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- Google Fonts for Enhanced Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Swiper.js CSS for Carousel -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Structural MRI scans of my own brain, T1 and T2 weighted.">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <img src="images/photo.jpg" alt="Brady M. Chisholm" class="profile-picture">
-            <h1>Poppy Photo Gallery</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Back to Homepage</a></li>
-                    <li><a href="photographs.html">Back to Photographs</a></li>
-                </ul>
-            </nav>
+<header class="site-header">
+    <div class="container header-container">
+        <div class="site-branding">
+            <a href="index.html" class="branding-link">
+                <h1>Brady M. Chisholm</h1>
+                <p class="subtitle">Auditory Perception Researcher</p>
+            </a>
         </div>
-    </header>
+        <nav class="main-navigation">
+            <a href="about.html">About</a>
+            <a href="research.html">Research</a>
+            <a href="photos.html" class="active" aria-current="page">Photos</a>
+            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="page-banner" style="background-image: url('images/brainscans/T1_view2.png');">
+        <div class="banner-overlay"></div>
+        <h1 class="banner-title">MRI Scans</h1>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-        <section class="gallery-section">
-            <div class="container">
-                <!-- Swiper -->
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide">
-                            <img src="images/poppy/poppy1.jpg" alt="Poppy Playing">
-                            <div class="caption">Poppy taking a swipe at the camera </div>
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide">
-                            <img src="images/poppy/poppy2.jpg" alt="Poppy Sleeping">
-                            <div class="caption">action wd</div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide">
-                            <img src="images/poppy/poppy3.jpg" alt="Poppy Eating">
-                            <div class="caption">action wd </div>
-                        </div>
-                        <!-- Add more slides as needed -->
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Navigation -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
+    <div class="container page-content">
+        <p class="back-link"><a href="photos.html">&larr; Back to galleries</a></p>
+        <section class="about-details">
+            <h2>My brain, structurally</h2>
+            <p>
+                Structural MRI scans collected of my own brain. T1-weighted images show anatomy with good
+                grey/white matter contrast; T2-weighted images make cerebrospinal fluid appear bright.
+            </p>
         </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Brady M. Chisholm. All rights reserved.</p>
-            <!-- Social Media Links -->
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
-                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
-                </a>
-                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
-                    <img src="images/github.svg" alt="GitHub Icon">
-                </a>
-                <!-- Add more social media links as needed -->
-            </div>
+        <div class="gallery">
+            <figure class="gallery-item">
+                <img src="images/brainscans/T1_view1.png" alt="T1-weighted, view 1" loading="lazy">
+                <figcaption>T1-weighted, view 1</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/brainscans/T1_view2.png" alt="T1-weighted, view 2" loading="lazy">
+                <figcaption>T1-weighted, view 2</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/brainscans/T1_view3.png" alt="T1-weighted, view 3" loading="lazy">
+                <figcaption>T1-weighted, view 3</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/brainscans/T2_view1.png" alt="T2-weighted, view 1" loading="lazy">
+                <figcaption>T2-weighted, view 1</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/brainscans/T2_view2.png" alt="T2-weighted, view 2" loading="lazy">
+                <figcaption>T2-weighted, view 2</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/brainscans/T2_view3.png" alt="T2-weighted, view 3" loading="lazy">
+                <figcaption>T2-weighted, view 3</figcaption>
+            </figure>
         </div>
-    </footer>
 
-    <!-- Swiper.js JS for Carousel -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+        <section class="about-details">
+            <h2>Surface reconstruction</h2>
+            <p>A rendered walkthrough of the reconstructed cortical surface.</p>
+            <video controls preload="metadata" width="100%" style="max-width:700px;border-radius:10px;">
+                <source src="images/brainscans/fsviz.mp4" type="video/mp4">
+                Your browser does not support embedded video.
+                <a href="images/brainscans/fsviz.mp4">Download the video</a> instead.
+            </video>
+        </section>
+    </div>
+</main>
+<footer class="custom-footer">
+    <div class="footer-container">
+        <div class="footer-icons">
+            <a href="https://github.com/bchisholm08" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="images/others/logos/githubLogo.svg" alt="" width="28" height="28">
+            </a>
+            <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+                <img src="images/others/logos/webLink.svg" alt="" width="28" height="28">
+            </a>
+            <a href="mailto:chish071@umn.edu" aria-label="Email">
+                <img src="images/others/logos/email.svg" alt="" width="28" height="28">
+            </a>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2026 Brady M. Chisholm</p>
+        <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization.</i></p>
+    </div>
+</footer>
 </body>
 </html>
