@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MRI Scans | Brady M. Chisholm</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>MRI scans | Brady M. Chisholm</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <meta name="description" content="Structural MRI scans of my own brain, T1 and T2 weighted.">
+    <meta name="description" content="Structural MRI scans, T1 and T2 weighted.">
 </head>
 <body>
 <header class="site-header">
@@ -16,7 +17,7 @@
         <div class="site-branding">
             <a href="index.html" class="branding-link">
                 <h1>Brady M. Chisholm</h1>
-                <p class="subtitle">Auditory Perception Researcher</p>
+                <p class="subtitle">Research Professional &middot; University of Minnesota</p>
             </a>
         </div>
         <nav class="main-navigation">
@@ -29,18 +30,16 @@
     </div>
 </header>
 <main>
-    <section class="page-banner" style="background-image: url('images/brainscans/T1_view2.png');">
-        <div class="banner-overlay"></div>
-        <h1 class="banner-title">MRI Scans</h1>
+    <section class="page-banner">
+        <h1 class="banner-title">MRI scans</h1>
     </section>
 
     <div class="container page-content">
-        <p class="back-link"><a href="photos.html">&larr; Back to galleries</a></p>
-        <section class="about-details">
-            <h2>My brain, structurally</h2>
+        <p class="back-link"><a href="photos.html">&larr; All galleries</a></p>
+        <section>
             <p>
-                Structural MRI scans collected of my own brain. T1-weighted images show anatomy with good
-                grey/white matter contrast; T2-weighted images make cerebrospinal fluid appear bright.
+                Structural MRI scans of my own brain. T1-weighted images show anatomy with good grey/white matter
+                contrast; T2-weighted images make cerebrospinal fluid appear bright.
             </p>
         </section>
         <div class="gallery">
@@ -70,10 +69,9 @@
             </figure>
         </div>
 
-        <section class="about-details">
+        <section style="margin-top:34px;">
             <h2>Surface reconstruction</h2>
-            <p>A rendered walkthrough of the reconstructed cortical surface.</p>
-            <video controls preload="metadata" width="100%" style="max-width:700px;border-radius:10px;">
+            <video controls preload="metadata" width="100%" style="max-width:700px;border-radius:4px;">
                 <source src="images/brainscans/fsviz.mp4" type="video/mp4">
                 Your browser does not support embedded video.
                 <a href="images/brainscans/fsviz.mp4">Download the video</a> instead.
@@ -83,17 +81,12 @@
 </main>
 <footer class="custom-footer">
     <div class="footer-container">
-        <div class="footer-icons">
-            <a href="https://github.com/bchisholm08" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <img src="images/others/logos/githubLogo.svg" alt="" width="28" height="28">
-            </a>
-            <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
-                <img src="images/others/logos/webLink.svg" alt="" width="28" height="28">
-            </a>
-            <a href="mailto:chish071@umn.edu" aria-label="Email">
-                <img src="images/others/logos/email.svg" alt="" width="28" height="28">
-            </a>
-        </div>
+        <nav class="footer-links" aria-label="Elsewhere">
+            <a href="mailto:chish071@umn.edu">chish071@umn.edu</a>
+            <a href="https://github.com/bchisholm08" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        </nav>
     </div>
     <div class="footer-copyright">
         <p>&copy; 2026 Brady M. Chisholm</p>
