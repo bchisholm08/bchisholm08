@@ -1,47 +1,17 @@
-<h1 align="center">Hello! I'm Brady M. Chisholm 👋</h1>
+# Hi, I'm Brady 👋
 
-### 🔎 About Me
- <h4 align="left"><b><u>Check out my website</u></b> <a href="https://brady-c.cc">here</a> <b> for more info about me</b>
-   <b><h4>Or search <a>brady-c.cc</a></h4></b>
+Research Professional at the University of Minnesota. I study how people hear in noisy
+environments, with normal hearing, hearing loss, or a cochlear or auditory nerve implant.
+Applying to PhD programs in hearing science and auditory neuroscience for Fall 2027.
 
-  
-- **Where I Am Now**: Working as a Research Professional in Professor Andrew Oxenham's Auditory Perception and Cognition Lab
-- **Researching** speech and listening effort, 
-  - My current lab work: working on statistical models of pupillometry data; specifically GAMM and LME
-  - Learning more about Temporal Response Functions 
-    
-  **To learn more about work from the APC lab click on our logo! ➡️**
-  <a href="https://apc.psych.umn.edu/" target="_blank">
-    <img src="https://apc.psych.umn.edu/sites/sandbox-apc.psych.umn.edu/files/styles/folwell_third/public/2024-08/APC_Maroon_Gold_Logo_big_0.png?itok=wAUWBNNx" alt="APC Lab Logo" width="55"/>
-  </a>
-  
-- **Present Career Goal:** Gaining research experience and working towards applying for PhD programs in Psychology and/or Computational Neuroscience 
-- Member of Psi Chi International Honor Society and American Psychological Association  
-- I also love reading, running, baking, jazz, LEGOs and any activities that let me spend some time outside 
-- **Favorite Recent Book** 📖 Mistborn series by Brandon Sanderson
-  
----
-### 🖥️ Coding Languages I Work With:
-<div align="left">
-  <img src="https://img.shields.io/badge/-MATLAB-0076A8?logo=mathworks&logoColor=fff" alt="MATLAB"/>
-  <img src="https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=fff" alt="R"/>
-  <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=fff" alt="Python"/>
-</div>
+**Currently**
+- Psychophysical testing for an auditory nerve implant, Sensory Optimization & Neural Implant Coding Lab
+- Pitch scaling in normal-hearing and cochlear-implant listeners (talk at the CATSS Fall Research Symposium, Nov 2026)
+- First-author manuscript on pupillometric fatigue in listening effort, modeled with GAMMs
+- Hearing and vision screenings on the [See, Hear, MN](https://catss.umn.edu/see-hear-mn-mobile-unit) mobile unit
 
-## Tech I Know
-<div align="left">
-- Tobii Pro Spectrum Eye Tracker
-- BioSemi EEG Systems
-</div>
+**Tools:** MATLAB · R (mgcv, lme4, tidyverse) · EEG (BioSemi, EEGLAB) · pupillometry (Tobii Pro) · Python
 
-### 📬 Contact Me
-If you'd like to get in touch, feel free to reach out!
-- **Email**: [bmc@brady-c.cc](mailto:bmc@brady-c.cc) or [chish071@umn.edu](mailto:chish071@umn.edu) 📧
+**Find me:** [brady-c.cc](https://brady-c.cc) · [CV](https://brady-c.cc/cv.pdf) · [ORCID](https://orcid.org/0009-0008-7627-6376) · chish071@umn.edu
 
-I'm always eager to learn more about other people's research, coding, and graduate school programs!
-***
-> Do not put off until tomorrow what you can do today - Benjamin Franklin
-
-<div align="center">
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="125"/>
-</div>
+Outside the lab: running, reading, jazz, LEGO, and two cats who review my code.
