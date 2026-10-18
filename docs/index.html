@@ -1,42 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brady M. Chisholm | Researcher</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <meta name="description" content="Brady M. Chisholm is a research professional at the University of Minnesota working on auditory perception and psychophysics.">
-</head>
+---
+layout: null
+title: "Brady M. Chisholm | Researcher"
+description: "Brady M. Chisholm is a research professional at the University of Minnesota working on auditory perception and psychophysics."
+nav: home
+---
+{% include head.html %}
 <body>
-<header class="site-header">
-    <div class="container header-container">
-        <div class="site-branding">
-            <a href="index.html" class="branding-link">
-                <img src="images/bmc_webLogo_header.svg" alt="" class="site-logo" width="52" height="52"><div><h1>Brady M. Chisholm</h1>
-                <p class="subtitle">Research Professional &middot; University of Minnesota</p></div>
-            </a>
-        </div>
-        <nav class="main-navigation">
-            <a href="about.html">About</a>
-            <a href="research.html">Research</a>
-            <a href="photos.html">Photos</a>
-            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-</header>
-<main>
+{% include header.html %}
+<main id="main">
     <section class="masthead">
         <div class="container masthead-grid">
             <div class="masthead-text">
             <h2>I'm interested in how people hear in noisy environments, and how research can improve their outcomes.</h2>
             <p class="role">
-                Research Professional in the Sensory Optimization &amp; Neural Implant Coding Lab and the
-                <a href="https://catss.umn.edu/" target="_blank" rel="noopener noreferrer">Center for Applied &amp; Translational Sensory Science</a>.
+                Research Professional in the Sensory Optimization &amp; Neural Implant Coding Lab and administering free sensory screening with the
+                <a href="https://catss.umn.edu/" target="_blank" rel="noopener noreferrer">Center for Applied &amp; Translational Sensory Science<span class="visually-hidden"> (opens in new tab)</span></a>.
             </p>
             <p>
                 I run psychophysical experiments with normal-hearing and cochlear-implant listeners and 
@@ -47,12 +25,12 @@
                 I am applying to PhD programs in hearing science and auditory neuroscience for Fall 2027.
             </p>
             <div class="hero-actions">
-                <a href="research.html" class="btn">What I work on</a>
-                <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">CV (PDF)</a>
+                <a href="research.html" class="btn">My research work</a>
+                <a href="Chisholm_CV.pdf" class="btn btn-secondary">CV (PDF)</a>
             </div>
             </div>
             <figure class="masthead-photo">
-                <img src="images/catssSRD_2026_web.jpg" alt="Brady M. Chisholm with his pupillometry poster at CATSS Spring Research Day" width="1400" height="787">
+                <img src="images/catssSRD_2026_web.webp" alt="Brady M. Chisholm with his pupillometry poster at CATSS Spring Research Day" width="1200" height="675" fetchpriority="high">
                 <figcaption>CATSS Spring Research Day, April 2026</figcaption>
             </figure>
         </div>
@@ -68,16 +46,16 @@
                     <p class="position-where">Sensory Optimization &amp; Neural Implant Coding Lab &middot; PI: Hubert Lim</p>
                     <p class="position-note">Validating a psychophysical testing suite for an auditory 
                         nerve implant; running a pitch-scaling study in normal-hearing and 
-                        cochlear-implant listeners to speed up implant fitting.</p>
+                        cochlear-implant listeners to accelerate implant fitting.</p>
                 </div>
                 <p class="position-dates">Aug 2026 &ndash; present</p>
             </li>
             <li class="position">
                 <div class="position-main">
-                    <h3>Research Professional (25%)</h3>
+                    <h3>Research Professional</h3>
                     <p class="position-where">Center for Applied &amp; Translational Sensory Science &middot; Director: Andrew Oxenham</p>
                     <p class="position-note">Run hearing and vision screenings aboard the See, Hear, 
-                        MN mobile unit, and drive the unit to sites across metro and rural Minnesota.</p>
+                        MN mobile unit, and drive the unit to sites across metro and rural Minnesota. Support collaborators research efforts at events.</p>
                 </div>
                 <p class="position-dates">Aug 2026 &ndash; present</p>
             </li>
@@ -116,9 +94,9 @@
                 <p class="position-dates">Summer 2024</p>
             </li>
             </ol>
-            <p style="margin-top:22px;font-size:.95rem;">
+            <p class="list-note">
                 Full history, publications, posters, and technical skills are in my
-                <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>.
+                <a href="Chisholm_CV.pdf">CV</a>.
             </p>
         </div>
     </section>
@@ -132,7 +110,7 @@
                         <h3>B.S., Psychology</h3>
                         <p class="position-where">University of Minnesota, Twin Cities</p>
                     </div>
-                    <p class="position-dates">Augusts, 2025</p>
+                    <p class="position-dates">August 2025</p>
                 </li>
             </ol>
         </div>
@@ -147,32 +125,15 @@
             </p>
             <div class="kitty-photos">
                 <div class="kitty-card">
-                    <img src="images/poppy.jpg" alt="Poppy the cat" loading="lazy">
+                    <img src="images/poppy.webp" width="689" height="919" alt="Poppy the cat" loading="lazy">
                     <p class="kitty-name">Poppy</p>
                 </div>
                 <div class="kitty-card">
-                    <img src="images/lloyd.jpg" alt="Lloyd the cat" loading="lazy">
+                    <img src="images/lloyd.webp" width="689" height="919" alt="Lloyd the cat" loading="lazy">
                     <p class="kitty-name">Lloyd</p>
                 </div>
             </div>
         </div>
     </section>
 </main>
-<footer class="custom-footer">
-    <div class="footer-container">
-        <nav class="footer-links" aria-label="Elsewhere">
-            <a href="mailto:chish071@umn.edu">chish071@umn.edu</a>
-            <a href="https://www.linkedin.com/in/brady-chisholm-11556218b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer">ORCID</a>
-            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-        </nav>
-    </div>
-    <div class="footer-copyright">
-        <p>&copy; 2026 Brady M. Chisholm</p>
-        <p class="visit-count" hidden></p>
-        <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization.</i></p>
-    </div>
-</footer>
-<script src="scripts/goatcounter.js" defer></script>
-</body>
-</html>
+{% include footer.html %}

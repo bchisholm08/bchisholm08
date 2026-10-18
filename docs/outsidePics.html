@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outdoors | Brady M. Chisholm</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <meta name="description" content="Outdoor photography by Brady M. Chisholm.">
-</head>
+---
+layout: null
+title: "Outdoors | Brady M. Chisholm"
+description: "Outdoor photography by Brady M. Chisholm."
+nav: photos
+---
+{% include head.html %}
 <body>
-<header class="site-header">
-    <div class="container header-container">
-        <div class="site-branding">
-            <a href="index.html" class="branding-link">
-                <img src="images/bmc_webLogo_header.svg" alt="" class="site-logo" width="52" height="52"><div><h1>Brady M. Chisholm</h1>
-                <p class="subtitle">Research Professional &middot; University of Minnesota</p></div>
-            </a>
-        </div>
-        <nav class="main-navigation">
-            <a href="about.html">About</a>
-            <a href="research.html">Research</a>
-            <a href="photos.html" class="active" aria-current="page">Photos</a>
-            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-</header>
-<main>
+{% include header.html %}
+<main id="main">
     <section class="page-banner">
         <h1 class="banner-title">Outdoors</h1>
     </section>
@@ -38,47 +16,30 @@
         <p class="back-link"><a href="photos.html">&larr; All galleries</a></p>
         <div class="gallery gallery--full">
             <figure class="gallery-item">
-                <img src="images/others/seattleFog.jpg" alt="Fog over Seattle" loading="lazy">
+                <img src="images/others/seattleFog.webp" width="1200" height="900" alt="Fog over Seattle" loading="lazy">
                 <figcaption>Fog over Seattle</figcaption>
             </figure>
             <figure class="gallery-item">
-                <img src="images/others/portland2.jpg" alt="Portland, Oregon" loading="lazy">
+                <img src="images/others/portland2.webp" width="1200" height="475" alt="Portland, Oregon" loading="lazy">
                 <figcaption>Portland, Oregon</figcaption>
             </figure>
             <figure class="gallery-item">
-                <img src="images/others/portlandScenary.jpg" alt="Pacific Northwest" loading="lazy">
+                <img src="images/others/portlandScenary.webp" width="1200" height="515" alt="Pacific Northwest" loading="lazy">
                 <figcaption>Pacific Northwest</figcaption>
             </figure>
             <figure class="gallery-item">
-                <img src="images/others/outside1.jpg" alt="Outdoors" loading="lazy">
+                <img src="images/others/outside1.webp" width="1200" height="900" alt="Outdoors" loading="lazy">
                 <figcaption>Outdoors</figcaption>
             </figure>
             <figure class="gallery-item">
-                <img src="images/others/mePNW.jpg" alt="In the Pacific Northwest" loading="lazy">
+                <img src="images/others/mePNW.webp" width="1200" height="900" alt="In the Pacific Northwest" loading="lazy">
                 <figcaption>In the Pacific Northwest</figcaption>
             </figure>
             <figure class="gallery-item">
-                <img src="images/others/bostonZoomedIn.JPG" alt="Boston" loading="lazy">
+                <img src="images/others/bostonZoomedIn.webp" width="1200" height="900" alt="Boston" loading="lazy">
                 <figcaption>Boston</figcaption>
             </figure>
         </div>
     </div>
 </main>
-<footer class="custom-footer">
-    <div class="footer-container">
-        <nav class="footer-links" aria-label="Elsewhere">
-            <a href="mailto:chish071@umn.edu">chish071@umn.edu</a>
-            <a href="https://www.linkedin.com/in/brady-chisholm-11556218b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer">ORCID</a>
-            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-        </nav>
-    </div>
-    <div class="footer-copyright">
-        <p>&copy; 2026 Brady M. Chisholm</p>
-        <p class="visit-count" hidden></p>
-        <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization.</i></p>
-    </div>
-</footer>
-<script src="scripts/goatcounter.js" defer></script>
-</body>
-</html>
+{% include footer.html %}

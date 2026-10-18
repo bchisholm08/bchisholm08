@@ -1,42 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Brady M. Chisholm</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <meta name="description" content="About Brady M. Chisholm, a research professional in auditory perception at the University of Minnesota.">
-</head>
+---
+layout: null
+title: "About | Brady M. Chisholm"
+description: "About Brady M. Chisholm, a research professional in auditory perception at the University of Minnesota."
+nav: about
+---
+{% include head.html %}
 <body>
-<header class="site-header">
-    <div class="container header-container">
-        <div class="site-branding">
-            <a href="index.html" class="branding-link">
-                <img src="images/bmc_webLogo_header.svg" alt="" class="site-logo" width="52" height="52"><div><h1>Brady M. Chisholm</h1>
-                <p class="subtitle">Research Professional &middot; University of Minnesota</p></div>
-            </a>
-        </div>
-        <nav class="main-navigation">
-            <a href="about.html" class="active" aria-current="page">About</a>
-            <a href="research.html">Research</a>
-            <a href="photos.html">Photos</a>
-            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-</header>
-<main>
+{% include header.html %}
+<main id="main">
     <section class="page-banner">
         <h1 class="banner-title">About</h1>
     </section>
 
     <div class="container page-content">
         <section class="about-intro">
-            <img src="images/portrait.jpg" alt="Portrait of Brady M. Chisholm" class="about-headshot" width="190" height="190">
+            <img src="images/portrait.webp" alt="Portrait of Brady M. Chisholm" class="about-headshot" width="190" height="190">
             <div class="intro-text-about">
                 <h2>Hello, I&rsquo;m Brady.</h2>
                 <p>
@@ -53,16 +31,16 @@
                <section>
             <h2>How I got here</h2>
             <p>
-            I didn’t come into research with a plan to study hearing. After transferring from Gustavus to the University of Minnesota, I got a Dean’s First-Year Research and Creative Scholars award my sophomore year, 
+            I didn’t come into research with a plan to study hearing. After transferring from Gustavus to the University of Minnesota, I was awarded a Dean’s First-Year Research and Creative Scholars award my sophomore year, 
             which put me in Andrew Oxenham’s lab for a semester of EEG training on a speech-in-speech listening effort study. 
             I applied for a summer UROP to keep working on that dataset, and I’ve been involved in auditory research since.
             </p>
             <p>
-               When I get curious about something, I am generally the type of person to go all in on it, and that has taken me through a lot of different work: 
-               phonotaxis experiments with treefrogs in Mark Bee’s lab, 
-               a reward-prediction study in Jean-Paul Noel’s lab, a review of 300+ behavioral
-                health instruments for the Institute for Health Informatics, hearing screenings from a mobile van,
-                 and now test development for an auditory nerve implant.
+                When I get curious about something, I am typically the type of person to go all in on it, and that has taken me to a lot of different work: 
+                phonotaxis experiments with treefrogs in Mark Bee’s lab, 
+                a reward-prediction study in Jean-Paul Noel’s lab, a review of 300+ behavioral
+                health instruments for the Institute for Health Informatics, administering hearing screenings from a mobile van,
+                and now testing development for an auditory nerve implant.
             </p>
             <p>
                 Before research, I spent 14 months as a mental health advocate in supportive housing and planned to go into counseling. 
@@ -92,33 +70,16 @@
         <section>
             <h2>Curriculum vitae</h2>
             <div class="document-links-container">
-                <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="document-link-card">
+                <a href="Chisholm_CV.pdf" class="document-link-card">
                     <img src="images/others/logos/cvDoc.svg" alt="" class="document-icon">
                     <span>CV (PDF)</span>
                 </a>
                 <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer" class="document-link-card">
                     <img src="images/others/logos/webLink.svg" alt="" class="document-icon">
-                    <span>ORCID profile</span>
+                    <span>ORCID profile</span><span class="visually-hidden"> (opens in new tab)</span>
                 </a>
             </div>
         </section>
     </div>
 </main>
-<footer class="custom-footer">
-    <div class="footer-container">
-        <nav class="footer-links" aria-label="Elsewhere">
-            <a href="mailto:chish071@umn.edu">chish071@umn.edu</a>
-            <a href="https://www.linkedin.com/in/brady-chisholm-11556218b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://orcid.org/0009-0008-7627-6376" target="_blank" rel="noopener noreferrer">ORCID</a>
-            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-        </nav>
-    </div>
-    <div class="footer-copyright">
-        <p>&copy; 2026 Brady M. Chisholm</p>
-        <p class="visit-count" hidden></p>
-        <p><i>Views expressed on this website are mine alone, and not endorsed by any university or organization.</i></p>
-    </div>
-</footer>
-<script src="scripts/goatcounter.js" defer></script>
-</body>
-</html>
+{% include footer.html %}

@@ -1,0 +1,18 @@
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+    <div class="container header-container">
+        <div class="site-branding">
+            <a href="index.html" class="branding-link">
+                <img src="images/bmc_webLogo_header.svg" alt="" class="site-logo" width="52" height="52"><div>{% if page.nav == "home" %}<h1 class="site-name">Brady M. Chisholm</h1>{% else %}<p class="site-name">Brady M. Chisholm</p>{% endif %}
+                <p class="subtitle">Research Professional &middot; University of Minnesota</p></div>
+            </a>
+        </div>
+        <nav class="main-navigation" aria-label="Primary">
+            <a href="about.html"{% if page.nav == "about" %} class="active" aria-current="page"{% endif %}>About</a>
+            <a href="research.html"{% if page.nav == "research" %} class="active" aria-current="page"{% endif %}>Research</a>
+            <a href="photos.html"{% if page.nav == "photos" %} class="active" aria-current="page"{% endif %}>Photos</a>
+            <a href="Chisholm_CV.pdf">CV</a>
+            <a href="contact.html"{% if page.nav == "contact" %} class="active" aria-current="page"{% endif %}>Contact</a>
+        </nav>
+    </div>
+</header>

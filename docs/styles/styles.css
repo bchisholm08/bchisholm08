@@ -4,6 +4,22 @@
    Single stylesheet; no overrides appended below.
 ========================================================= */
 
+/* Self-hosted, Latin subset (OFL; licenses in fonts/) */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-latin.woff') format('woff');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Source Serif 4';
+    src: url('../fonts/source-serif-4-latin.woff') format('woff');
+    font-weight: 400 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --ink:   #111418;   /* headings, buttons, links */
     --body:  #4a5560;   /* paragraph text */
@@ -29,6 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    min-height: 100svh;
 }
 
 main { flex: 1 0 auto; }
@@ -53,6 +70,31 @@ a:hover { text-decoration-thickness: 2px; }
 img { max-width: 100%; height: auto; }
 
 :focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+.skip-link {
+    position: absolute;
+    left: var(--gutter);
+    top: 0;
+    z-index: 10;
+    padding: 8px 14px;
+    background-color: var(--ink);
+    color: var(--page);
+    text-decoration: none;
+    transform: translateY(-120%);
+}
+.skip-link:focus { transform: translateY(12px); }
 
 .container {
     width: 100%;
@@ -81,9 +123,15 @@ img { max-width: 100%; height: auto; }
 .branding-link { text-decoration: none; color: inherit; display: flex; align-items: center; gap: 14px; }
 .site-logo { width: 52px; height: 52px; flex: 0 0 52px; display: block; }
 
-.site-branding h1 {
+/* h1 on the home page, p elsewhere; both styled as the h1 */
+.site-branding .site-name {
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    color: var(--ink);
+    font-weight: 600;
+    line-height: 1.2;
     font-size: 1.32rem;
     margin: 0;
+    max-width: none;
     letter-spacing: -0.01em;
 }
 
@@ -100,7 +148,7 @@ img { max-width: 100%; height: auto; }
     font-size: .95rem;
     text-decoration: none;
     color: var(--body);
-    padding-bottom: 2px;
+    padding-block: 6px;
     border-bottom: 2px solid transparent;
 }
 
@@ -167,6 +215,9 @@ img { max-width: 100%; height: auto; }
 .page-content > section + article { margin-top: 44px; }
 
 .section-lede { color: var(--body); margin-bottom: 26px; }
+
+.list-note { margin-top: 22px; font-size: .95rem; }
+.list-note--tight { margin-top: 18px; }
 
 /* =========================================================
    Positions / experience list
@@ -276,7 +327,11 @@ img { max-width: 100%; height: auto; }
 .gallery-item { margin: 0; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; background-color: var(--page); }
 .gallery-item img { width: 100%; height: 220px; object-fit: cover; display: block; }
 .gallery-item figcaption { padding: 12px 14px; font-size: .92rem; color: var(--body); }
-.gallery-item figcaption a { color: var(--ink); }
+.gallery-card { display: block; color: var(--ink); text-decoration: none; }
+.gallery-card .gallery-item { height: 100%; }
+.gallery-card figcaption { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.gallery-card:hover .gallery-item { border-color: var(--ink); }
+.gallery-card:hover figcaption { text-decoration-thickness: 2px; }
 
 .back-link { margin-bottom: 22px; font-size: .93rem; }
 
@@ -289,9 +344,8 @@ img { max-width: 100%; height: auto; }
 .gallery--full .gallery-item { break-inside: avoid; margin-bottom: 22px; }
 .gallery--full .gallery-item img { height: auto; object-fit: initial; }
 
-/* orphaned viewer.html */
-.document-viewer iframe { border: 1px solid var(--rule); }
-.back-button { margin: 16px var(--gutter); padding: 9px 16px; border: 1px solid var(--rule); background: var(--page); cursor: pointer; }
+.video-section { margin-top: 34px; }
+.surface-video { display: block; width: 100%; max-width: 700px; height: auto; border-radius: 4px; }
 
 /* =========================================================
    Footer
@@ -306,11 +360,11 @@ img { max-width: 100%; height: auto; }
 .footer-container { max-width: 1060px; margin: 0 auto; padding: 0 var(--gutter); }
 
 .footer-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 16px; }
-.footer-links a { font-size: .93rem; color: var(--ink); }
+.footer-links a { font-size: .93rem; color: var(--ink); padding-block: 6px; }
 
 .footer-copyright { max-width: 1060px; margin: 0 auto; padding: 0 var(--gutter); }
 .footer-copyright p { font-size: .85rem; color: var(--muted); margin: 0 0 4px; max-width: none; }
-.visit-count { font-variant-numeric: tabular-nums; }
+.footer-copyright small { font-size: inherit; font-style: italic; }
 
 /* =========================================================
    Responsive

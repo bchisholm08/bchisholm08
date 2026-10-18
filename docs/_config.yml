@@ -1,0 +1,4 @@
+# GitHub Pages builds this folder with Jekyll so pages can share
+# _includes/head.html, header.html and footer.html.
+exclude:
+  - "fonts/*.zip"
