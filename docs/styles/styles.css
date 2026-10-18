@@ -260,6 +260,9 @@ img { max-width: 100%; height: auto; }
 .project:last-of-type { border-bottom: 1px solid var(--rule); }
 .project h3 { margin-bottom: 3px; }
 .project .project-meta { font-size: .9rem; color: var(--muted); margin-bottom: 10px; }
+.project-figure { margin: 18px 0 0; }
+.project-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 4px; }
+.project-figure figcaption { font-size: .85rem; color: var(--muted); margin-top: 8px; }
 
 /* =========================================================
    Lists
@@ -274,6 +277,7 @@ img { max-width: 100%; height: auto; }
     font-size: .97rem;
 }
 .citation-list li:last-child { border-bottom: 1px solid var(--rule); }
+.cite-link { display: inline-block; margin-left: .3em; font-size: .9rem; white-space: nowrap; }
 
 /* =========================================================
    Buttons
