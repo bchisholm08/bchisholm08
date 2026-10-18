@@ -78,7 +78,8 @@ img { max-width: 100%; height: auto; }
     gap: 10px 28px;
 }
 
-.branding-link { text-decoration: none; color: inherit; display: block; }
+.branding-link { text-decoration: none; color: inherit; display: flex; align-items: center; gap: 14px; }
+.site-logo { width: 52px; height: 52px; flex: 0 0 52px; display: block; }
 
 .site-branding h1 {
     font-size: 1.32rem;
@@ -129,11 +130,11 @@ img { max-width: 100%; height: auto; }
 
 .masthead-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
     gap: 40px;
-    align-items: center;
+    align-items: start;
 }
-.masthead-photo { margin: 0; }
+.masthead-photo { margin: 6px 0 0; }
 .masthead-photo img { display: block; width: 100%; height: auto; border-radius: 4px; }
 .masthead-photo figcaption { font-size: .85rem; color: var(--muted); margin-top: 8px; }
 
@@ -281,8 +282,12 @@ img { max-width: 100%; height: auto; }
 
 .kitty-photos { display: flex; flex-wrap: wrap; gap: 22px; }
 .kitty-card { flex: 0 1 260px; }
-.kitty-card img { width: 100%; height: 230px; object-fit: cover; border-radius: 4px; display: block; }
+.kitty-card img { width: 100%; height: auto; border-radius: 4px; display: block; }
 .kitty-name { margin: 8px 0 0; font-size: .92rem; color: var(--muted); }
+
+.gallery--full { display: block; columns: 3 260px; column-gap: 22px; }
+.gallery--full .gallery-item { break-inside: avoid; margin-bottom: 22px; }
+.gallery--full .gallery-item img { height: auto; object-fit: initial; }
 
 /* orphaned viewer.html */
 .document-viewer iframe { border: 1px solid var(--rule); }
@@ -305,6 +310,7 @@ img { max-width: 100%; height: auto; }
 
 .footer-copyright { max-width: 1060px; margin: 0 auto; padding: 0 var(--gutter); }
 .footer-copyright p { font-size: .85rem; color: var(--muted); margin: 0 0 4px; max-width: none; }
+.visit-count { font-variant-numeric: tabular-nums; }
 
 /* =========================================================
    Responsive
