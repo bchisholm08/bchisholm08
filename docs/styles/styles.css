@@ -263,6 +263,8 @@ img { max-width: 100%; height: auto; }
 .project-figure { margin: 18px 0 0; }
 .project-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 4px; }
 .project-figure figcaption { font-size: .85rem; color: var(--muted); margin-top: 8px; }
+.project-figure--narrow { max-width: 640px; }
+.project-figure--portrait { max-width: 320px; }
 
 /* =========================================================
    Lists
