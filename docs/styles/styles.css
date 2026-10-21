@@ -29,7 +29,7 @@
     --page:  #ffffff;
 
     --measure: 68ch;    /* max line length for prose */
-    --gutter: 24px;
+    --gutter: clamp(24px, 5vw, 40px);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -209,7 +209,7 @@ img { max-width: 100%; height: auto; }
 ========================================================= */
 .section { padding: 48px 0; }
 .band { background-color: var(--band); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
-.page-content { padding: 44px 0 56px; }
+.page-content { padding-block: 44px 56px; }
 .page-content > section + section,
 .page-content > article + section,
 .page-content > section + article { margin-top: 44px; }
