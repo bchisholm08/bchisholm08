@@ -1,7 +1,7 @@
 ---
 layout: null
 title: "About | Brady M. Chisholm"
-description: "About Brady M. Chisholm, a research professional in auditory perception at the University of Minnesota."
+description: "About Brady M. Chisholm, a post-baccalaureate researcher in auditory perception at the University of Minnesota."
 nav: about
 ---
 {% include head.html %}
@@ -19,8 +19,8 @@ nav: about
                 <h2>Hello, I&rsquo;m Brady.</h2>
                 <p>
                     I completed my B.S. in Psychology at the University of Minnesota Twin Cities and now work as a
-                    Research Professional in the Sensory Optimization &amp; Neural Implant Coding Lab and the Center
-                    for Applied &amp; Translational Sensory Science.
+                    Post-Baccalaureate Researcher in the Sensory Optimization &amp; Neural Implant Coding Lab and the Center
+                    for Applied &amp; Translational Sensory Science. 
                 </p>
                 <p>
                     I am applying to PhD programs in hearing science and auditory neuroscience for Fall 2027.
@@ -32,17 +32,17 @@ nav: about
             <h2>How I got here</h2>
             <p>
             I didn't set out to study hearing. A first-year research scholarship after I transferred to UMN
-            put me on an EEG study of listening effort, and I've been involved in auditory research ever since.
+            placed me as a research assistant in an EEG study of listening effort, and I've stayed involved in auditory research since.
             </p>
             <p>
             When I get curious about something, I am generally the type of person to commit fully to it, and that has taken me to a lot of different work: 
             phonotaxis experiments with treefrogs in Mark Bee’s lab, 
             a reward-prediction study in Jean-Paul Noel’s lab, a review of 300+ behavioral
             health instruments for the Institute for Health Informatics, administering hearing screenings from a mobile van,
-            and now testing development for an auditory nerve implant.
+            and now experimenting on psychophysics and assisting with development of some testing modules for an auditory nerve implant.
             </p>
             <p>
-            Before research, I spent over a year as a mental health advocate in supportive housing and planned to go into counseling for my professional career. 
+            Before fully committing to research, I spent over a year as a mental health advocate in supportive housing and intended on counseling for my professional career. 
             Now, I still want my work to help people directly. What keeps me in hearing research is that the work we do can improve outcomes for cochlear implant users,
             people with hearing loss, and older adults dealing with cognitive decline.
             </p>
@@ -55,6 +55,43 @@ nav: about
                 <li>Audiometric threshold testing; stimulus verification with oscilloscope and Picoscope measurement</li>
                 <li>Statistical modeling in R and MATLAB: GAMMs, linear mixed-effects, regression</li>
                 <li>Human-subjects research under IRB, HIPAA, and GCP; animal research under IACUC protocols</li>
+            </ul>
+        </section>
+
+        <section id="personal-projects">
+            <h2>Personal projects</h2>
+            <h3>Home server build</h3>
+            <div class="side-project">
+                <p class="side-project-text">
+                    A 10-inch mini rack built around a retired 2017 HP EliteDesk mini PC from <a href="https://www.freegeektwincities.org/" target="_blank" rel="noopener noreferrer"> Free Geek Twin Cities</a>. I took the cover off the PC
+                    and mounted onto a rack shelf, and I repurposed the small WLAN slot with adapter cards to add SATA ports for a bank of
+                    hot-swap hard drives. The drive cage and patch panel were 3D-printed at the College of Science
+                    and Engineering&rsquo;s
+                    <a href="https://cse.umn.edu/andersonlabs" target="_blank" rel="noopener noreferrer">Anderson Student Innovation Labs<span class="visually-hidden"> (opens in new tab)</span></a>.
+                </p>
+                <figure class="side-project-thumb">
+                    <a href="projectsPhoto.html"><img src="images/others/MyHomeServer.webp" width="960" height="1279" alt="The finished home server rack" loading="lazy"></a>
+                    <figcaption><a href="projectsPhoto.html">Larger photo, <i>click</i></a></figcaption>
+                </figure>
+            </div> 
+            <h4>Hardware</h4>
+            <ul class="feature-list">
+                <li><strong>Compute:</strong> HP EliteDesk mini PC, removed from its case and shelf-mounted</li>
+                <li><strong>Storage:</strong> the Wi-Fi (A+E-key) slot is extended to an M-key NVMe connector,
+                    which feeds an ASM1166 M.2-to-SATA card (6&nbsp;Gbps); drives sit in a 3D-printed
+                    <a href="https://makerworld.com/en/models/2885471-10-inch-rack-3u-7-x-3-5-inch-hdd-hot-swap" target="_blank" rel="noopener noreferrer">3U, seven-bay 3.5&Prime; hot-swap cage<span class="visually-hidden"> (opens in new tab)</span></a>;
+                    three hard drives currently provide about 8&nbsp;TB <i>(10&nbsp;TB total, with system storage) </i>, with room for seven HDDs
+                <li><strong>Networking:</strong> TP-Link TL-SG605 gigabit switch and a 3D-printed
+                    <a href="https://makerworld.com/en/models/2875409-10-inch-rack-patch-panel-keystone-bonanza" target="_blank" rel="noopener noreferrer">seven-port keystone patch panel<span class="visually-hidden"> (opens in new tab)</span></a></li>
+                <li><strong>Cooling:</strong> GeeekPi 1U four-fan unit with temperature display</li>
+                <li><strong>Power:</strong> ElecVoztile 1U PDU with eight outlets and surge protection</li>
+                <li><strong>Enclosure:</strong> GeeekPi DeskPi RackMate T2, a 12U 10-inch rack</li>
+            </ul>
+            <h4>Software</h4>
+            <ul class="feature-list">
+                <li><strong>Operating system:</strong> Ubuntu Server (Linux)</li>
+                <li><strong>Backups:</strong> storage for backing up my data, photos, documents, etc.</li>
+                <li><strong>Media:</strong> Jellyfin for streaming home media library</li>
             </ul>
         </section>
 

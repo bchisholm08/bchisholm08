@@ -1,6 +1,6 @@
 # Hi, I'm Brady 👋
 
-Research Professional at the University of Minnesota. I study how people hear in noisy
+Post-Baccalaureate Researcher at the University of Minnesota. I study how people hear in noisy
 environments, with normal hearing, hearing loss, or a cochlear or auditory nerve implant.
 Applying to PhD programs in hearing science and auditory neuroscience for Fall 2027.
 
